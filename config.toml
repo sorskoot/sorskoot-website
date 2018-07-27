@@ -14,12 +14,12 @@ googleAnalytics = ""
   description = "Timmy Kokke"
   copyright = "&copy;2018 Timmy Kokke"
   sidebarAbout = [
-    "I'ves been described as an expert in C#, JavaScript and web technologies. I'm a senior developer, 
-    technical lead with a lot of knowledge about architecture. I've been building software, 
-    primarily for the web, for over 2 decades ranging from large web portals and mobile apps 
-    to creating 3D artist impressions and virtual reality. 
-I currently work at Centric as an ICT Consultant. I founded the WebXR NL meetup and I am 
-recognized as a Microsoft MVP for Visual Studio and developer technologies since 2008."
+    "I've been described as an expert in C#, JavaScript and web technologies. I'm a senior developer,",
+    "technical lead with a lot of knowledge about architecture. I've been building software, ",
+    "primarily for the web, for over 2 decades ranging from large web portals and mobile apps ",
+    "to creating 3D artist impressions and virtual reality. ",
+    "I currently work at Centric as an ICT Consultant. I founded the WebXR NL meetup and I am ",
+    "recognized as a Microsoft MVP for Visual Studio and developer technologies since 2008."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
