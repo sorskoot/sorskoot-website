@@ -3,23 +3,19 @@ title = "Sorskoot Personal Website"
 theme = "hugo-creative-portfolio-theme"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "sorskoot"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
-  style = "red"
+  style = "green"
   description = "Timmy Kokke"
   copyright = "&copy;2018 Timmy Kokke"
   sidebarAbout = [
-    "I've been described as an expert in C#, JavaScript and web technologies. I'm a senior developer,",
-    "technical lead with a lot of knowledge about architecture. I've been building software, ",
-    "primarily for the web, for over 2 decades ranging from large web portals and mobile apps ",
-    "to creating 3D artist impressions and virtual reality. ",
-    "I currently work at Centric as an ICT Consultant. I founded the WebXR NL meetup and I am ",
-    "recognized as a Microsoft MVP for Visual Studio and developer technologies since 2008."
+    "I've been described as an expert in C#, JavaScript and web technologies. I'm a senior developer, technical lead with a lot of knowledge about architecture. I've been building software, primarily for the web, for over 2 decades ranging from large web portals and mobile apps to creating 3D artist impressions and virtual reality. ",
+    "I currently work as a Consultant for Centric. I founded the WebXR NL meetup and I am recognized as a Microsoft MVP for Visual Studio and developer technologies since 2008."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a

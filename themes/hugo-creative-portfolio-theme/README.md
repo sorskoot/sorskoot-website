@@ -48,7 +48,7 @@ Create `css/custom.css` in your `<<base dir>>/static` folder and add all your cu
 The optional comments system is powered by [Disqus](https://disqus.com). If you want to enable comments, create an account in Disqus and write down your shortname.
 
 ```toml
-disqusShortname = "your-disqus-short-name"
+disqusShortname = "sorskoot"
 ```
 
 You can disable the comments system by leaving the `disqusShortname` empty.
