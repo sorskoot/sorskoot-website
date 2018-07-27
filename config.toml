@@ -1,57 +1,102 @@
-baseurl = "https://sorskoot.github.io/sorskoot-website/"
-title = "Sorskoot Personal Website"
-theme = "hugo-creative-portfolio-theme"
+baseURL = "https://sorskoot.github.io/sorskoot-website/"
 languageCode = "en-us"
-# Enable comments by entering your Disqus shortname
-disqusShortname = "sorskoot"
-# Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+title = "Timmy Kokke"
+theme = "hugo-initio"
 
 [params]
-  # Style options: default (pink), blue, green, pink, red, sea, violet
-  # Use custom.css for your custom styling
-  style = "green"
-  description = "Timmy Kokke"
-  copyright = "&copy;2018 Timmy Kokke"
-  sidebarAbout = [
-    "I've been described as an expert in C#, JavaScript and web technologies. I'm a senior developer, technical lead with a lot of knowledge about architecture. I've been building software, primarily for the web, for over 2 decades ranging from large web portals and mobile apps to creating 3D artist impressions and virtual reality. ",
-    "I currently work as a Consultant for Centric. I founded the WebXR NL meetup and I am recognized as a Microsoft MVP for Visual Studio and developer technologies since 2008."
-  ]
-  # Contact page
-     # Since this template is static, the contact form uses www.formspree.io as a
-     # proxy. The form makes a POST request to their servers to send the actual
-     # email. Visitors can send up to a 1000 emails each month for free.
-     #
-     # What you need to do for the setup?
-     #
-     # - set your email address under 'email' below
-     # - upload the generated site to your server
-     # - send a dummy email yourself to confirm your account
-     # - click the confirm link in the email from www.formspree.io
-     # - you're done. Happy mailing!
-  email = "info@timmykokke.com"
+    name = "Timmy Kokke"
+    description = "Web - VR - AR - XR"
+    email = "info@timmykokke.com"
+    phone = ""
+    address = ""
+    year = 2018
+    background = ""
+    favicon = "images/gt_favicon.png"
+    DateForm = "January 2, 2006"
 
-  # Nav links in the side bar
-  [[params.navlinks]]
-  name = "Home"
-  url = "portfolio/"
-  home = true
+    showSubheader = true
+    showServices = true
+    showRecentWorks = true
+    showDownload = true
+    showClients = false
 
-  [[params.navlinks]]
-  name = "About"
-  url = "about/"
+    footerEnableContact = false
+    footerEnableFollowme = true
+    footerEnableTextWidget = true
+    footerEnableFormWidget = true
 
-  [[params.navlinks]]
-  name = "Get in touch"
-  url = "contact/"
+[[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "blog"
+    url = "/post/"
+    weight = 5
 
-  [params.social]
-  facebook      = "full page or profile url in facebook"
-  googleplus    = "full profile url in googleplus"
-  email         = "info@timmykokke.com"
-  twitter       = "full profile url in twitter"
-  linkedin      = "full profile url in linkedin"
-  stackoverflow = "full profile url in stackoverflow"
-  instagram     = "full profile url in instagram"
-  github        = "full profile url in github"
-  youtube       = "full profile url in youtube" 
+[params.disqus]
+    site = "hugo-initio-site.disqus.com"
+
+[params.sharethis]
+    property = "123456789012345678901234"
+    custom = true
+
+[params.google.analytics]
+    trackerID = "GA-000000000-0"
+
+[[params.social]]
+	title = "facebook"
+	url = "https://www.facebook.com/nickname"
+    icon = "fa-facebook-square"
+    footer = true
+    sharethis = true
+    network = "facebook"
+[[params.social]]
+	title = "twitter"
+	url = "https://twitter.com/nickname"
+    icon = "fa-twitter-square"
+    footer = true
+    sharethis = true
+    network = "twitter"
+[[params.social]]
+	title = "instagram"
+	url = "https://www.instagram.com/nickname"
+    icon = "fa-instagram"
+    footer = true
+    sharethis = false
+    network = ""
+[[params.social]]
+	title = "google+"
+	url = "https://plus.google.com/+nickname"
+    icon = "fa-google-plus-square"
+    footer = false
+    sharethis = true
+    network = "googleplus"
+[[params.social]]
+	title = "linkedin"
+	url = "https://www.linkedin.com/in/nickname"
+    icon = "fa-linkedin-square"
+    footer = false
+    sharethis = true
+    network = "linkedin"
+[[params.social]]
+	title = "tumblr"
+	url = "https://nickname.tumblr.com"
+    icon = "fa-tumblr-square"
+    footer = false
+    sharethis = false
+    network = "tumblr"
+[[params.social]]
+	title = "github"
+	url = "https://github.com/nickname"
+    icon = "fa-github"
+    footer = true
+    sharethis = false
+    network = ""
+[[params.social]]
+	title = "email"
+	url = "mailto:some.email@somewhere.com"
+    icon = "fa-envelope"
+    footer = false
+    sharethis = true
+    network = "email"
