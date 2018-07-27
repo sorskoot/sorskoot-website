@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 			var speed = $(this).attr('parallax-speed');
 			if( speed ) {
 				var background_pos = '-' + (window.pageYOffset / speed) + "px";
-				$(this).css( 'background-position', 'center ' + background_pos );
+				$(this).css( 'background-position', 'right ' + background_pos );
 			}
 		});
 	}
