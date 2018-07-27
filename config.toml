@@ -14,10 +14,10 @@ theme = "hugo-initio"
     favicon = "images/gt_favicon.png"
     DateForm = "January 2, 2006"
 
-    showSubheader = true
+    showSubheader = false
     showServices = true
     showRecentWorks = true
-    showDownload = true
+    showDownload = false
     showClients = false
 
     footerEnableContact = false
