@@ -10,12 +10,16 @@ googleAnalytics = ""
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
-  style = "default"
-  description = "Describe your website"
-  copyright = "&copy;2016 Your name or company"
+  style = "red"
+  description = "Timmy Kokke"
+  copyright = "&copy;2018 Timmy Kokke"
   sidebarAbout = [
-    "I am a creative illustrator and graphic designer with more than 10 years of experience.",
-    "Originally from Toronto, currently based in London."
+    "I'ves been described as an expert in C#, JavaScript and web technologies. I'm a senior developer, 
+    technical lead with a lot of knowledge about architecture. I've been building software, 
+    primarily for the web, for over 2 decades ranging from large web portals and mobile apps 
+    to creating 3D artist impressions and virtual reality. 
+I currently work at Centric as an ICT Consultant. I founded the WebXR NL meetup and I am 
+recognized as a Microsoft MVP for Visual Studio and developer technologies since 2008."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
@@ -29,7 +33,7 @@ googleAnalytics = ""
      # - send a dummy email yourself to confirm your account
      # - click the confirm link in the email from www.formspree.io
      # - you're done. Happy mailing!
-  email = "you@yoursite.com"
+  email = "info@timmykokke.com"
 
   # Nav links in the side bar
   [[params.navlinks]]
@@ -48,7 +52,7 @@ googleAnalytics = ""
   [params.social]
   facebook      = "full page or profile url in facebook"
   googleplus    = "full profile url in googleplus"
-  email         = "email@example.com"
+  email         = "info@timmykokke.com"
   twitter       = "full profile url in twitter"
   linkedin      = "full profile url in linkedin"
   stackoverflow = "full profile url in stackoverflow"
