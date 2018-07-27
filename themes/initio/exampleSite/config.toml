@@ -1,26 +1,27 @@
-baseURL = "https://sorskoot.github.io/sorskoot-website/"
+baseURL = "https://miguelsimoni.github.io/hugo-initio-site/"
 languageCode = "en-us"
-title = "Timmy Kokke"
-theme = "initio"
+title = "Initio - Free, multipurpose html5 template by GetTemplate"
+theme = "hugo-initio"
+publishDir = "docs"
 
 [params]
-    name = "Timmy Kokke"
-    description = "Web - VR - AR - XR"
-    email = "info@timmykokke.com"
-    phone = ""
-    address = ""
-    year = 2018
+    name = "Anthony Russel"
+    description = "A mystery person"
+    email = "anthony.russel42@example.com"
+    phone = "+234 23 9873237"
+    address = "234 Hidden Pond Road, Ashland City, TN 37015"
+    year = 2017
     background = ""
     favicon = "images/gt_favicon.png"
     DateForm = "January 2, 2006"
 
-    showSubheader = false
+    showSubheader = true
     showServices = true
     showRecentWorks = true
-    showDownload = false
-    showClients = false
+    showDownload = true
+    showClients = true
 
-    footerEnableContact = false
+    footerEnableContact = true
     footerEnableFollowme = true
     footerEnableTextWidget = true
     footerEnableFormWidget = true
@@ -35,7 +36,7 @@ theme = "initio"
     weight = 5
 
 [params.disqus]
-    site = "sorskoot.disqus.com"
+    site = "hugo-initio-site.disqus.com"
 
 [params.sharethis]
     property = "123456789012345678901234"
