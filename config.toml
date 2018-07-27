@@ -1,4 +1,4 @@
-baseurl = "https://sorskoot.github.org/"
+baseurl = "https://sorskoot.github.io/"
 title = "Creative portfolio"
 theme = "hugo-creative-portfolio-theme"
 languageCode = "en-us"
