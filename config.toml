@@ -41,7 +41,7 @@ paginate = 5
 [[menu.main]]
     name = "WebXR NL"
     url = "https://webxr.nl"
-    weight = 5
+    weight = 10
 
 [params.disqus]
     site = "sorskoot.disqus.com"
