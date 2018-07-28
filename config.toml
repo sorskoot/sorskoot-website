@@ -51,7 +51,7 @@ paginate = 5
     custom = true
 
 [params.google.analytics]
-    trackerID = "GA-000000000-0"
+    trackerID = "UA-11559922-3"
 
 [[params.social]]
 	title = "facebook"
@@ -89,7 +89,7 @@ paginate = 5
     sharethis = true
     network = "linkedin"
 [[params.social]]
-	title = "github"
+	title = "github""
 	url = "https://github.com/sorskoot"
     icon = "fa-github"
     footer = true
