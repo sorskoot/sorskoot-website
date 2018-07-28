@@ -42,6 +42,7 @@ paginate = 5
     name = "WebXR NL"
     url = "https://webxr.nl"
     weight = 10
+    target = "_blank"
 
 [params.disqus]
     site = "sorskoot.disqus.com"

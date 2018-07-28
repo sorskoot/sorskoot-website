@@ -3,12 +3,41 @@
         "id": 0,
         "name": "Instagram - Tiny Planet",
         "image": "https://scontent-amt2-1.cdninstagram.com/vp/6a7f1f858aee272560e59220f7e547b7/5C0DC269/t51.2885-15/sh0.08/e35/s640x640/37173530_2097747520295948_5104795478583672832_n.jpg",
-        "url": "#",
+        "url": "https://www.instagram.com/p/BlvKC2zgH9-/?taken-by=sorskoot360",
         "items": [
             {
                 "name": "Instagram",
                 "url": "https://www.instagram.com/p/BlvKC2zgH9-/?taken-by=sorskoot360"
             }
         ]
+    },
+    {
+        "id": 1,
+        "name": "YouTube - Livestream",
+        "image": "https://i.ytimg.com/vi/Hq-p9EqhaWE/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAI5CGAE=&rs=AOn4CLDc0D127tQfvaFK-J7dxsGTibDZcw",
+        "url": "https://www.youtube.com/watch?v=Hq-p9EqhaWE0",
+        "items": [
+            {
+                "name": "YouTube",
+                "url": "https://www.youtube.com/watch?v=Hq-p9EqhaWE"
+            },
+            {
+                "name": "Twitch",
+                "url": "https://Twitch.tv/sorskoot"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Slides VR on the Web",
+        "image": "//cdn.slidesharecdn.com/ss_thumbnails/virtualrealityontheweb-clean-180615182920-thumbnail-3.jpg?35481",
+        "url": "https://www.slideshare.net/TimmyKokke/virtual-reality-on-the-web-102505391?qid=b319879e-227e-45e2-ac41-829c87e1b43f&v=&b=&from_search=1",
+        "items": [
+            {
+                "name": "SlideShare",
+                "url": "https://www.slideshare.net/TimmyKokke/virtual-reality-on-the-web-102505391?qid=b319879e-227e-45e2-ac41-829c87e1b43f&v=&b=&from_search=1"
+            }
+        ]
     }
+    
 ]
