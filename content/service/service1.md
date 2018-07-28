@@ -1,8 +1,8 @@
 +++
-title = "Custom website design"
+title = "BabylonJS WebVR Hello World"
 +++
 
-I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.
+In a few weeks, we have our next [WebXR NL meetup](https://www.meetup.com/webxrnl/). This evening we are going to put a couple of WebVR frameworks head to head: **A-Frame**, **ThreeJS**, and **BabylonJS**. Since I happen to have some experience with <a href="https://babylonjs.com/" rel="noopener" target="_blank">BabylonJS </a>it is upon me to explain how to work with WebVR in BabylonJS. This post will be the first part, &#8220;Hello World&#8221;.
 
 <!--more-->
 

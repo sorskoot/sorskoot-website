@@ -20,19 +20,19 @@ tags:
 ---
 Node.js is a pretty powerful and versatile framework to build sites and tools. But using the defaults to handle HTTP requests and such can be a pain. Express.js can make your life a lot easier.
 
-In the previous tutorial I showed you how to <a href="http://www.timmykokke.com/2017/03/getting-started-with-node-js-on-chakracore/" target="_blank">get started with node.js</a>, this time I&#8217;m going to expand on that. We&#8217;re going to scaffold a new **<a href="http://expressjs.com" target="_blank">Express.js</a>** app.  Express.js is a web framework that makes it very easy to handle calls to the **node.js** server. It helps you with routing, error handling and it works very well other frameworks.
+In the previous tutorial I showed you how to <a href="http://www.timmykokke.com/2017/03/getting-started-with-node-js-on-chakracore/" target="_blank">get started with node.js</a>, this time I'm going to expand on that. We're going to scaffold a new **<a href="http://expressjs.com" target="_blank">Express.js</a>** app.  Express.js is a web framework that makes it very easy to handle calls to the **node.js** server. It helps you with routing, error handling and it works very well other frameworks.
 
 ## Installing the express generator
 
-The easiest way to get going with any Express.js-based node.js app is by using the express-generator. I&#8217;ve you are planning to use it multiple times (and trust me, you will), run the following command and install the express-generator globally.
+The easiest way to get going with any Express.js-based node.js app is by using the express-generator. I've you are planning to use it multiple times (and trust me, you will), run the following command and install the express-generator globally.
   
 
   
-This might take a moment, but if it&#8217;s done installing you should be able to run the &#8216;express&#8217; command with the &#8216;-h&#8217; flag to display the help.
+This might take a moment, but if it's done installing you should be able to run the &#8216;express' command with the &#8216;-h' flag to display the help.
 
 <img class="alignnone wp-image-1693" src="https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-help.png?resize=320%2C80" width="320" height="80" srcset="https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-help.png?w=1184&ssl=1 1184w, https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-help.png?resize=300%2C75&ssl=1 300w, https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-help.png?resize=768%2C193&ssl=1 768w, https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-help.png?resize=1024%2C257&ssl=1 1024w, https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-help.png?w=640&ssl=1 640w, https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-help.png?w=960&ssl=1 960w" sizes="(min-width: 900px) 600px, 900px" data-recalc-dims="1" />
 
-Options are limited, but that&#8217;s fine. You can select a one of a few common view engines and stylesheet engines. Personally I prefer <a href="https://pugjs.org" target="_blank"><em><strong>pug</strong> </em></a>and** <a href="http://sass-lang.com/" target="_blank"><em>sass</em></a>**. I plan on doing an entire tutorial on pug soon.
+Options are limited, but that's fine. You can select a one of a few common view engines and stylesheet engines. Personally I prefer <a href="https://pugjs.org" target="_blank"><em><strong>pug</strong> </em></a>and** <a href="http://sass-lang.com/" target="_blank"><em>sass</em></a>**. I plan on doing an entire tutorial on pug soon.
 
 Run the following command to bootstrap the new app.
 
@@ -40,11 +40,11 @@ Run the following command to bootstrap the new app.
 
 <img class="alignnone size-full wp-image-1694" src="https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/bootstrap-express.png?resize=320%2C210" alt="" width="320" height="210" srcset="https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/bootstrap-express.png?w=736&ssl=1 736w, https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/bootstrap-express.png?resize=300%2C197&ssl=1 300w, https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/bootstrap-express.png?w=640&ssl=1 640w" sizes="(min-width: 900px) 600px, 900px" data-recalc-dims="1" />
 
-Next, to install the necessary dependencies, run &#8216;npm install&#8217;.
+Next, to install the necessary dependencies, run &#8216;npm install'.
 
 &#8230;and wait&#8230;
 
-When it&#8217;s eventually done, run &#8216;npm start&#8217; to start your new application and go to the browser at http://localhost:3000 to view your node.js app running.
+When it's eventually done, run &#8216;npm start' to start your new application and go to the browser at http://localhost:3000 to view your node.js app running.
 
 <img class="alignnone size-full wp-image-1695" src="https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-running.png?resize=320%2C170" alt="" width="320" height="170" srcset="https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-running.png?w=779&ssl=1 779w, https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-running.png?resize=300%2C159&ssl=1 300w, https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-running.png?resize=768%2C408&ssl=1 768w, https://i0.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/express-running.png?w=640&ssl=1 640w" sizes="(min-width: 900px) 600px, 900px" data-recalc-dims="1" />
 
@@ -54,19 +54,19 @@ This was the easy part&#8230; now lets go into a bit more detail on what this ha
 
 <img class="alignleft" src="https://i2.wp.com/www.timmykokke.com/wp-content/uploads/2017/03/exporess-outline.png?resize=222%2C530" width="222" height="530" data-recalc-dims="1" />
 
-Left you can see a partial screenshot of the app opened in **Visual Studio Code**. Let&#8217;s go over the folders and let me briefly explain what these contain. In a later tutorial we&#8217;ll dive deeper in much of the concepts.
+Left you can see a partial screenshot of the app opened in **Visual Studio Code**. Let's go over the folders and let me briefly explain what these contain. In a later tutorial we'll dive deeper in much of the concepts.
 
-At the top you find a ./bin folder. In there is a _&#8216;www&#8217;. _This file actually contains the JavaScript needed too start your server. It handles the port at which the server is running. And it literally creates a server for your app.
+At the top you find a ./bin folder. In there is a _&#8216;www'. _This file actually contains the JavaScript needed too start your server. It handles the port at which the server is running. And it literally creates a server for your app.
 
 Which brings to the next important file. Near the bottom of the list you can find &#8216;_app.js_&#8216;. In here the express.js app is instantiated and the root level routing is configured. This means that there is some the app is told at what url specific could should be called to handle the requests. It also configures the apps view engine (pug) and the css engine (sass).
 
 Inside the ./views folder there are 3 .pug files. These files are used by the _pug_ view engine and contain the markup of the app.
 
-Then there are the 2 .js files in the ./routes folders. These two handle the requests on the root level routing configured in _app.js_. What happens is that a request comes at the server, say an HTTP GET request at url http://localhost:3000/users. The url /users is configured in _app.js_ and points to the _users.js_ file in ./routes. Inside _users.js_ the request is taken from there, so the HTTP GET is handled from &#8216;/&#8217; and a string is placed in the response.
+Then there are the 2 .js files in the ./routes folders. These two handle the requests on the root level routing configured in _app.js_. What happens is that a request comes at the server, say an HTTP GET request at url http://localhost:3000/users. The url /users is configured in _app.js_ and points to the _users.js_ file in ./routes. Inside _users.js_ the request is taken from there, so the HTTP GET is handled from &#8216;/' and a string is placed in the response.
 
 
 
-Last, there&#8217;s the public folder. This folders is configured in _app.js_ as the location from which static files are served. In fact, this folder is mapped to the root url. So http://localhost:3000/stylesheets/style.css returns the css file, note that there&#8217;s no &#8216;public&#8217; part in that url.
+Last, there's the public folder. This folders is configured in _app.js_ as the location from which static files are served. In fact, this folder is mapped to the root url. So http://localhost:3000/stylesheets/style.css returns the css file, note that there's no &#8216;public' part in that url.
 
 When using Gulp or Grunt to compile your JavaScript and Sass, the resulting files are placed in the public folder.
 

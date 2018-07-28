@@ -11,11 +11,11 @@ categories:
 tags:
   - JavaScript
 ---
-JavaScript has its quirks and difficulties. One of them is **null** **&** **undefined**. If there&#8217;s _undefined_, why does JavaScript even have null?
+JavaScript has its quirks and difficulties. One of them is **null** **&** **undefined**. If there's _undefined_, why does JavaScript even have null?
 
 ## Equality
 
-Let&#8217;s start exploring null and undefined by having a look at the following comparisons:
+Let's start exploring null and undefined by having a look at the following comparisons:
 
 <pre class="default prettyprint prettyprinted">null &gt;= 0; //true
 null &lt;= 0; //true 
@@ -35,7 +35,7 @@ In the case of Relational Operators, both operands are converted to the same typ
 
 Which makes much more sense. Number(null) return the value 0 and 0 is equal to 0.
 
-Let&#8217;s try the same examples with _undefined_:
+Let's try the same examples with _undefined_:
 
 <pre class="default prettyprint prettyprinted">undefined &gt;= 0;//false 
 undefined &lt;= 0;//false 
@@ -45,13 +45,13 @@ undefined &gt; 0;//false</pre>
 
 First thought would be that this should result in the same outcome. Although JavaScript is doing the same, the result is different. Again, JavaScript is converting _undefined_ to a number, but Number_(undefined)_ is not 0 but **NaN**. The JavaScript [spec](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators) says that every comparison with NaN results in false, even a comparison with NaN.
 
-There&#8217;s even a little bit more to the _[comparison algorithm](http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3) _than this, but this explains the idea.
+There's even a little bit more to the _[comparison algorithm](http://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3) _than this, but this explains the idea.
 
 ## Why null?
 
 Does JavaScript need a null value? Though it would be possible to write an entire application without using null, and often it does, there is a place for null. The difference in usage is _intention_. A null value is intenionally abcent, where an undefined value is often unintentional and just the default value.
 
-For example in a function retrieving a piece of data. When that data isn&#8217;t there, this function returns null. Otherwise, it returns the data. This way one can tell if the value is returned by the function and is set to null or if the variable that should contain the result isn&#8217;t set at all.
+For example in a function retrieving a piece of data. When that data isn't there, this function returns null. Otherwise, it returns the data. This way one can tell if the value is returned by the function and is set to null or if the variable that should contain the result isn't set at all.
 
 In other words: _null !== undefined_
 

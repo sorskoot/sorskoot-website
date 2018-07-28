@@ -2,10 +2,11 @@ baseURL = "https://sorskoot.github.io/sorskoot-website/"
 languageCode = "en-us"
 title = "Timmy Kokke"
 theme = "initio"
+paginate = 5
 
 [params]
     name = "Timmy Kokke"
-    description = "Web - VR - AR - XR"
+    description = "Web - Games - VR/AR/XR"
     email = "info@timmykokke.com"
     phone = ""
     address = ""
@@ -14,7 +15,7 @@ theme = "initio"
     favicon = "images/gt_favicon.png"
     DateForm = "January 2, 2006"
 
-    showSubheader = false
+    showSubheader = true
     showServices = true
     showRecentWorks = true
     showDownload = false
@@ -22,8 +23,8 @@ theme = "initio"
 
     footerEnableContact = false
     footerEnableFollowme = true
-    footerEnableTextWidget = true
-    footerEnableFormWidget = true
+    footerEnableTextWidget = false
+    footerEnableFormWidget = false
 
 [[menu.main]]
     name = "home"

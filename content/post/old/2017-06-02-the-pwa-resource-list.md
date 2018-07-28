@@ -14,7 +14,7 @@ tags:
   - Modern Web
   - Progressive web apps
 ---
-Recently I started getting asked more and more about the development of _Progressive Web Apps_. After the basic explanation about what they are I usually point to various places on the web. So, I decided to create this list of resources to have them available for everyone&#8230;
+Recently I started getting asked more and more about the development of _Progressive Web Apps_. After the basic explanation about what they are I usually point to various places on the web. So, I decided to create this list of resources to have them available for everyone.
 
 ## Resources
 
@@ -41,7 +41,7 @@ Recently I started getting asked more and more about the development of _Progres
     <b>What, Exactly, Makes Something A Progressive Web App?</b><br /> <a href="https://infrequently.org/2016/09/what-exactly-makes-something-a-progressive-web-app/" target="_blank" rel="noopener noreferrer">https://infrequently.org/2016/09/what-exactly-makes-something-a-progressive-web-app/</a>
   </li>
   <li>
-    <b>The Business Case for Progressive Web Apps</b><br /> Technical articles about Progressive Web Apps abound, but few tackle the question of why businesses should build Progressive Web Apps and why they should do so now. If you need to finance your business&#8217; web apps to gain more customers and popularity, you can borrow money at knightfinance.co.uk. A lot of people <a href="https://www.knightfinance.co.uk/">moved here</a> because they give excellent services no matter what background you have. You can also check out this <a href="http://financenut.co.uk/24-hour-loans/">this website</a> financenut.co.uk for more details.<br /> <a href="https://cloudfour.com/thinks/the-business-case-for-progressive-web-apps/" target="_blank" rel="noopener noreferrer">https://cloudfour.com/thinks/the-business-case-for-progressive-web-apps/</a>
+    <b>The Business Case for Progressive Web Apps</b><br /> Technical articles about Progressive Web Apps abound, but few tackle the question of why businesses should build Progressive Web Apps and why they should do so now. If you need to finance your business' web apps to gain more customers and popularity, you can borrow money at knightfinance.co.uk. A lot of people <a href="https://www.knightfinance.co.uk/">moved here</a> because they give excellent services no matter what background you have. You can also check out this <a href="http://financenut.co.uk/24-hour-loans/">this website</a> financenut.co.uk for more details.<br /> <a href="https://cloudfour.com/thinks/the-business-case-for-progressive-web-apps/" target="_blank" rel="noopener noreferrer">https://cloudfour.com/thinks/the-business-case-for-progressive-web-apps/</a>
   </li>
 </ul>
 
@@ -126,7 +126,7 @@ If you want to stay up to date with everything around progressive web apps (and 
 
 <ul class="ref-list">
   <li>
-    <b>Google Chrome Developers&#8217;s YouTube Channel</b><br /> This YouTube channels is a goldmine if you are looking for videos about progressive web apps. For example this <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIAdnzEsWkg0KpMn2WJwMBmN" target="_blank" rel="noopener">playlist</a> with a course of 21 short videos. You can find all of them here:<br /> <a href="https://www.youtube.com/user/ChromeDevelopers/videos" target="_blank" rel="noopener noreferrer">https://www.youtube.com/user/ChromeDevelopers/videos</a>
+    <b>Google Chrome Developers's YouTube Channel</b><br /> This YouTube channels is a goldmine if you are looking for videos about progressive web apps. For example this <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIAdnzEsWkg0KpMn2WJwMBmN" target="_blank" rel="noopener">playlist</a> with a course of 21 short videos. You can find all of them here:<br /> <a href="https://www.youtube.com/user/ChromeDevelopers/videos" target="_blank" rel="noopener noreferrer">https://www.youtube.com/user/ChromeDevelopers/videos</a>
   </li>
   <li>
     <b>The State of Progressive Web Apps</b><br /> A discussion on what Progressive Web Apps (PWAs) are and their benefits to developers, recorded at the Microsoft Build event.<br /> <a href="https://channel9.msdn.com/events/Build/2017/C9R04" target="_blank" rel="noopener noreferrer">https://channel9.msdn.com/events/Build/2017/C9R04</a>
@@ -155,4 +155,4 @@ If you want to stay up to date with everything around progressive web apps (and 
 
 ## Wrap
 
-I&#8217;ll keep this page up to date as new, or better, resources come around. If you know something that is absolutely missing from the list, please let me know in the comments, or through twitter ([@sorskoot](https://twitter.com/sorskoot)).
+I'll keep this page up to date as new, or better, resources come around. If you know something that is absolutely missing from the list, please let me know in the comments, or through twitter ([@sorskoot](https://twitter.com/sorskoot)).

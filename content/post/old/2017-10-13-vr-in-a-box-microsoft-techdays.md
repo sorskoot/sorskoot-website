@@ -16,7 +16,7 @@ tags:
 ---
 Today I spoke at the Microsoft Techdays in Amsterdam about Google Cardboard, Unity3D and Visual Studio.
 
-There will be a recording available later which I will add to this post. But I promised the APK I&#8217;ve built during the demo.
+There will be a recording available later which I will add to this post. But I promised the APK I've built during the demo.
 
 You can download it here:[ VR_TechDays](https://www.timmykokke.com/wp-content/uploads/2017/10/VR_TechDays.zip)
 

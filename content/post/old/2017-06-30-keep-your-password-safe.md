@@ -12,11 +12,11 @@ categories:
 tags:
   - websecurity
 ---
-I&#8217;m currently working on a short course on web security. In this course, I&#8217;m going to show a couple of common mistakes in websites that create gaping holes. I&#8217;d like to give you a small tip in advance, just to make you more aware of what you are doing when you hit that &#8216;remember my password&#8217; button in your browser.
+I'm currently working on a short course on web security. In this course, I'm going to show a couple of common mistakes in websites that create gaping holes. I'd like to give you a small tip in advance, just to make you more aware of what you are doing when you hit that &#8216;remember my password' button in your browser.
 
 [<img class="aligncenter wp-image-1837 size-full" src="https://i2.wp.com/www.timmykokke.com/wp-content/uploads/2017/06/Login.jpg?resize=320%2C220&#038;ssl=1" alt="" width="320" height="220" srcset="https://i2.wp.com/www.timmykokke.com/wp-content/uploads/2017/06/Login.jpg?w=370&ssl=1 370w, https://i2.wp.com/www.timmykokke.com/wp-content/uploads/2017/06/Login.jpg?resize=300%2C206&ssl=1 300w" sizes="(min-width: 900px) 600px, 900px" data-recalc-dims="1" />](https://i2.wp.com/www.timmykokke.com/wp-content/uploads/2017/06/Login.jpg?ssl=1)
 
-Although I&#8217;m pretty sure your browser itself keeps the password safe, it has to place it in the password field of the login form to be able to submit it. With this small trick you, (and anyone else that might sit behind your pc), can read it again&#8230;
+Although I'm pretty sure your browser itself keeps the password safe, it has to place it in the password field of the login form to be able to submit it. With this small trick you, (and anyone else that might sit behind your pc), can read it again&#8230;
 
 When the username is selected and the browser has filled in the &#8216; * &#8216; in the password box, right click the password box and hit inspect.
 
@@ -28,7 +28,7 @@ In the inspector go to the console and type: $0.value
 
 Et Voila, your password is exposed.
 
-The &#8216;$0&#8217; refers to the selected element in the inspector. &#8216;value&#8217; just writes the value property on that to the console. In this case, the password is in there.
+The &#8216;$0' refers to the selected element in the inspector. &#8216;value' just writes the value property on that to the console. In this case, the password is in there.
 
 &nbsp;
 
