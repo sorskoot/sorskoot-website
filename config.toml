@@ -77,16 +77,9 @@ paginate = 5
 	title = "linkedin"
 	url = "https://www.linkedin.com/in/timmykokke"
     icon = "fa-linkedin-square"
-    footer = false
+    footer = true
     sharethis = true
     network = "linkedin"
-# [[params.social]]
-# 	title = "tumblr"
-# 	url = "https://nickname.tumblr.com"
-#     icon = "fa-tumblr-square"
-#     footer = false
-#     sharethis = false
-#     network = "tumblr"
 [[params.social]]
 	title = "github"
 	url = "https://github.com/sorskoot"

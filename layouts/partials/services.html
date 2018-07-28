@@ -1,15 +1,30 @@
 <div class="row section featured topspace">
 
-    <h2 class="section-title"><span>Blog</span></h2>
+    <h2 class="section-title">
+        <span>Blog</span>
+    </h2>
 
     <div class="grid">
         {{ range first 12 (where .Data.Pages "Section" "post") }}
-            <div class="grid-item">
-                <h3 class="text-center">{{ .Title  | safeHTML  | truncate 50 }}</h3>
-                <p class="summary">{{ .Summary | truncate 150}}</p>
-                <p class="text-center"><a href="{{ .Permalink }}" class="btn btn-action">Read more</a></p>
-            </div>
+
+        <div class="grid-item">
+            <h3 class="text-center">{{ .Title | safeHTML | truncate 50 }}</h3>
+            <p class="summary">{{ .Summary | truncate 150}}</p>
+            <p class="text-center">
+                <a href="{{ .Permalink }}" class="btn btn-action">Read more</a>
+            </p>
+
+            <ul class="tags">
+                {{ range .Params.tags }}
+                <li class="tag">
+                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                </li>
+                {{ end }}
+            </ul>
+
+        </div>
         {{ end }}
     </div>
 
-</div> <!-- / section -->
+</div>
+<!-- / section -->
