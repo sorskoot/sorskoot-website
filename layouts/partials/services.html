@@ -7,13 +7,14 @@
     <div class="grid">
         {{ range first 8 (where .Data.Pages "Section" "post") }}
 
-        <div class="grid-item">
+        <div class="grid-item" style='background-image:url({{ .Site.BaseURL }}{{.Params.image }});background-size: cover;background-position: center;background-blend-mode: overlay;'>
+           
             <h3 class="text-center">{{ .Title | safeHTML | truncate 50 }}</h3>
             <p class="summary">{{ .Summary | truncate 150}}</p>
             <p class="text-center">
                 <a href="{{ .Permalink }}" class="btn btn-action">Read more</a>
             </p>
-
+            {{.Params.image }}
             <ul class="tags">
                 {{ range .Params.tags }}
                 <li class="tag">
