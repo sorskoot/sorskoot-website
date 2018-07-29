@@ -844,8 +844,8 @@ footer.entry-meta .meta-in {
   {
     display:flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .grid-item{
@@ -853,7 +853,8 @@ footer.entry-meta .meta-in {
     display: flex;  
     flex-direction: column;    
     border: 1px solid #ccc;
-    margin-bottom:15px;
+    margin: 0px 5px 15px 5px;
+
     padding:5px;
     box-shadow: #888 0px 2px 8px 1px;
     background-color: #eee;
