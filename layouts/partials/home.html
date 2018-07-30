@@ -7,21 +7,34 @@
         {{ end }}
 
         {{ if .Site.Params.showServices }}
-            {{ partial "services.html" . }}
+    </div>
+    <div class="fixed-section-title fixed-blog">
+        <div class="caption">
+            <span class="border">WEBLOG</span>
+          </div>        
+    </div>
+    <div class="container">
+            {{ partial "blog.html" . }}
         {{ end }}
         {{ if .Site.Params.showRecentWorks }}
     </div>
-    <div class="fixed-arvr">
+    <div class="fixed-section-title fixed-arvr">
         <div class="caption">
             <span class="border">RECENT WORKS</span>
           </div>        
     </div>
-    <div class="container">
-        
+    <div class="container">        
             {{ partial "recentworks.html" . }}
         {{ end }}
 
         {{ if .Site.Params.showAgenda }}
+    </div>
+    <div class="fixed-section-title fixed-agenda">
+        <div class="caption">
+            <span class="border">AGENDA</span>
+          </div>        
+    </div>
+    <div class="container">
            {{ partial "agenda.html" . }}
         {{ end }}
     
