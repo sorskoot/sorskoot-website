@@ -1,16 +1,26 @@
+$font-headings: "Bree Serif", Georgia, serif;
+$font-body: "Open sans", Helvetica, Arial, sans-serif;
+
 html {
   font-size: 100%;
 }
 body {
   font-size: 15px;
   font-size: 0.9375rem;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: $font-body;
   color: #666666;
   padding: 0;
+  margin:0;
 }
 .topspace {
   margin-top: 40px;
 }
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 /*********************************************************************
 
 
@@ -41,7 +51,7 @@ body {
   -moz-background-clip: padding;
   border-radius: 0;
   background-clip: padding-box;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: $font-body;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -167,7 +177,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: $font-body;
   font-weight: 400;
   color: #333333;
 }
@@ -226,7 +236,7 @@ a:hover {
 **********************************************************************/
 #head {
   background: #f4f4f4 url(../images/bg_head.jpg) top right;
-  
+  background-attachment: fixed;
   background-size: cover;
   color: #7C7C7C;
   padding: 30px 0 35px 0;
@@ -238,9 +248,12 @@ a:hover {
   overflow: hidden;
   border: 9px solid rgba(0, 0, 0, 0.05);
   margin: 0 auto;
+  border-radius: 50%;
 }
 #head .title {
-  font-family: "Bree Serif", Georgia, serif;
+  
+
+  font-family: $font-headings;
   font-size: 49px;
   font-size: 3.0625rem;
   color: #ccc;
@@ -360,6 +373,7 @@ img {
 }
 .panel-cta .panel-body {
   padding: 35px;
+  display: flex;
 }
 /* Section - Featured */
 .featured {
@@ -368,7 +382,7 @@ img {
 }
 .featured h3 {
   font-weight: bold;
-  font-family: "Bree Serif", Helvetica, Arial, sans-serif;
+  font-family: $font-headings;
   font-size: 24px;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -526,7 +540,7 @@ img {
 }
 .section-title a,
 .entry-title a {
-  color: #333333;
+  color: #EEE;
 }
 .section-title span,
 .entry-title span {
@@ -612,7 +626,7 @@ img {
   -moz-background-clip: padding;
   border-radius: 3px;
   background-clip: padding-box;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: $font-body;
   font-style: normal;
   font-weight: normal;
   text-decoration: none;
@@ -873,4 +887,92 @@ footer.entry-meta .meta-in {
   list-style: none;
   display: inline;
   
+}
+
+.text-center{
+  text-align: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none
+}
+
+.nav:before,.nav:after {
+  display: table;
+  content: " "
+}
+
+.nav:after {
+  clear: both
+}
+
+.nav:before,.nav:after {
+  display: table;
+  content: " "
+}
+
+.nav:after {
+  clear: both
+}
+
+.nav>li {
+  position: relative;
+  display: block
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px
+}
+
+.nav>li>a:hover,.nav>li>a:focus {
+  text-decoration: none;
+  background-color: #eee
+}
+
+.agenda-date{
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.agenda-title{
+  font-size: 1.2em;
+  font-family: $font-headings;
+}
+
+.fixed-arvr{
+  background-image: url('../images/arvr.jpg');
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+}
+
+.caption{
+  position: absolute;
+  left: 0;
+  top: 55px;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  & .border{
+    font-family: "bree serif",Georgia,serif;
+    font-size: 65px;
+    background-color: rgba(30,30,30,.9);
+    color: #f5f5f5;
+    padding: 15px 35px;
+  }
 }

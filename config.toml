@@ -20,6 +20,7 @@ paginate = 5
     showRecentWorks = true
     showDownload = false
     showClients = false
+    showAgenda = true
 
     footerEnableContact = false
     footerEnableFollowme = true
