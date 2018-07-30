@@ -1,24 +1,22 @@
 <div class="row section agenda topspace">
     {{ range $index, $area := .Site.Data.agenda }}
     <div class="panel panel-cta">
-        <div class="panel-body">
-
+        <div class="agenda-item">
             <div class="agenda-date">
                 {{ .date }}
             </div>
             <div class="agenda-title">{{ .title }}</div>
-            <div>
+            <div class="agenda-description">
                 {{ .description | markdownify}}
             </div>
             {{if .url}}
                 {{if .rsvp}}
-                <div>
+                <div  class="agenda-button">
                     <a href="{{.url}}" class="btn btn-primary btn-lg">RSVP</a>
                 </div>
-                {{else}}
-                
-                <div>
-                    <a href="{{.url}}" class="btn btn btn-lg">More info</a>
+                {{else}}                
+                <div  class="agenda-button">
+                    <a href="{{.url}}" class="btn btn-action btn-lg">More info</a>
                 </div>
                 {{end}}
             {{end}}

@@ -449,7 +449,6 @@ img {
 
 .panel-cta .panel-body {
     padding: 35px;
-    display: flex;
 }
 
 /* Section - Featured */
@@ -1107,14 +1106,53 @@ footer.entry-meta .meta-in {
     background-color: #eee
 }
 
-.agenda-date {
-    font-style: italic;
-    white-space: nowrap;
-}
+.agenda{
+    .agenda-item{
+        display: grid;
+        
+        grid-template-columns: 200px 190px auto;
+        grid-gap: 10px;
+        padding:36px;
 
-.agenda-title {
-    font-size: 1.2em;
-    font-family: $font-headings;
+        @media (max-width: 640px) {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 10px;
+        }
+        .agenda-date {
+            font-style: italic;
+            white-space: nowrap;
+            align-self: center;
+            text-align: center;
+        }
+
+        .agenda-title {
+            font-size: 1.4em;
+            font-family: $font-headings;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            @media (max-width: 640px) {
+                align-self: center;
+                text-align: center;
+            }
+        }
+        .agenda-description{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            @media (max-width: 640px) {
+                margin:10px 0;
+            }
+        }
+        .agenda-button{
+            grid-column-start: 2;
+            
+            align-self: center;
+            text-align: center;
+            .btn {
+                width:100%;
+            }
+        }
+    }
 }
 
 .fixed-section-title{
