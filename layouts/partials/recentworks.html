@@ -2,7 +2,7 @@
     <div class="thumbnails recentworks">
             {{ range $index, $area := .Site.Data.recentworks }}
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <a class="thumbnail" target="_blank" href="{{ .url }}">
+                <a class="thumbnail" target="_blank" href="{{ .url }}" rel="noopener">
                     <span class="img works-image" style="background-image:url({{ .image }})">
                         <span class="cover">
                             <span class="more">See more &rarr;</span>
@@ -12,7 +12,7 @@
                 </a>
                 <span class="details">
                     {{ $len := sub (len .items) 1 }} {{ range $i, $item := where .items "id" .index }}
-                    <a target="_blank" href="{{ .url }}">{{ .name }}</a>
+                    <a target="_blank" href="{{ .url }}" rel="noopener">{{ .name }}</a>
                     {{ if gt $len $i }} | {{ end }} {{ end }}
                 </span>
             </div>
