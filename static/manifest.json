@@ -3,7 +3,7 @@
     "lang": "en",
     "name": "Timmy Kokke",
     "scope": "/",
-    "display": "browser",
+    "display": "standalone",
     "start_url": "https://timmykokke.com/",
     "short_name": "TimmyKokke",
     "theme_color": "transparent",
