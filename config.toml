@@ -12,7 +12,7 @@ paginate = 5
     address = ""
     year = 2018
     background = ""
-    favicon = "images/gt_favicon.png"
+    favicon = "icons/gt_favicon.png"
     DateForm = "January 2, 2006"
 
     showSubheader = true
