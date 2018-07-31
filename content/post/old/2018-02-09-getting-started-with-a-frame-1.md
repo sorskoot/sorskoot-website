@@ -5,6 +5,8 @@ date: 2018-02-09T09:07:06+00:00
 author: Timmy
 layout: post
 reading-time: 500
+share: true
+comments: true
 guid: https://www.timmykokke.com/?p=1915
 permalink: /2018/02/getting-started-with-a-frame-1/
 wsw-settings:
@@ -37,7 +39,7 @@ A-Frame uses component you can build yourself or download from a <a href="https:
 
 In this first tutorial, we are just going to get our feet wet. Let's start by having a look at a piece of HTML.
   
-
+{{< gist sorskoot 08c0c314c602bd02fcd75eb3f21c12dc >}}
 
 On line 3 you can see the A-Frame framework scripts being loaded from their CDN. You can use npm or a local, offline copy of the framework, but I personally use the CDN most of the time.
 
