@@ -584,6 +584,7 @@ img {
 
 .thumbnail:hover img {
     -webkit-filter: saturate(0%);
+    filter: saturate(0%);
 }
 
 .thumbnail:hover .cover {
@@ -1106,23 +1107,27 @@ footer.entry-meta .meta-in {
 }
 
 .agenda{
+    
+
     .agenda-item{
         display: grid;
-        
+        @include shadow-box();
         grid-template-columns: 200px 190px auto;
-        grid-gap: 10px;
+        grid-gap: 9px;
         padding:36px;
+        margin-bottom: 18px;
 
         @media (max-width: 640px) {
             display: flex;
             flex-direction: column;
-            padding: 30px 10px;
+            padding: 30px 9px;
         }
         .agenda-date {
             font-style: italic;
             white-space: nowrap;
             align-self: center;
             text-align: center;
+            font-size: 1.1em;
         }
 
         .agenda-title {
@@ -1135,13 +1140,15 @@ footer.entry-meta .meta-in {
                 text-align: center;
             }
         }
+
         .agenda-description{
             grid-column-start: 2;
             grid-column-end: 4;
             @media (max-width: 640px) {
-                margin:10px 0;
+                margin:9px 0;
             }
         }
+
         .agenda-button{
             grid-column-start: 2;
             
@@ -1150,6 +1157,15 @@ footer.entry-meta .meta-in {
             .btn {
                 width:100%;
             }
+        }
+
+        .agenda-image{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: top;
         }
     }
 }
@@ -1188,9 +1204,9 @@ footer.entry-meta .meta-in {
         & .border {
             font-family: "bree serif", Georgia, serif;
             font-size: 65px;
-            padding: 15px 35px;
+            padding: 18px 36px;
             @media (max-width: 640px) {
-                font-size: 35px;
+                font-size: 36px;
             
             }
             background-color: rgba(30,30,30,.9);

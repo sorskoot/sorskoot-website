@@ -1,26 +1,28 @@
 <div class="row section agenda topspace">
     {{ range $index, $area := .Site.Data.agenda }}
-    <div class="panel panel-cta">
+    
         <div class="agenda-item">
             <div class="agenda-date">
-                {{ .date }}
+                {{ dateFormat "January 2, 2006" .date }}
             </div>
             <div class="agenda-title">{{ .title }}</div>
+            {{if .image}}
+            <div class="agenda-image" style="background-image: url('{{ .image }}')">&nbsp;</div>
+            {{end}}
             <div class="agenda-description">
                 {{ .description | markdownify}}
             </div>
-            {{if .url}}
-                {{if .rsvp}}
-                <div  class="agenda-button">
-                    <a href="{{.url}}" class="btn btn-primary btn-lg">RSVP</a>
-                </div>
-                {{else}}                
-                <div  class="agenda-button">
-                    <a href="{{.url}}" class="btn btn-action btn-lg">More info</a>
-                </div>
-                {{end}}
-            {{end}}
+            {{if .url}} {{if .rsvp}}
+            <div class="agenda-button">
+                <a href="{{.url}}" class="btn btn-primary btn-lg">RSVP</a>
+            </div>
+            {{else}}
+            <div class="agenda-button">
+                <a href="{{.url}}" class="btn btn-action btn-lg">More info</a>
+            </div>
+            {{end}} {{end}}
+
         </div>
-    </div>
+  
     {{end}}
 </div>
