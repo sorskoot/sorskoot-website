@@ -53,7 +53,7 @@ paginate = 5
     custom = true
 
 [params.google.analytics]
-    trackerID = "UA-11559922-3"
+    trackerID = "UA-11559922-2"
 
 [[params.social]]
 	title = "facebook"
