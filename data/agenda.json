@@ -3,7 +3,7 @@
         "title": "Progressive Web Apps",
         "description":"Is there a future for native apps? Lies their fate in the hands of the web? Other than with traditional applications, Progressive Web Apps offer a hybrid solution between ‘normal’ websites and mobile applications. In this online session we'll take a look at the tools available and what frameworks you can use to transform you existing website to a progressive web app.",
         "url": "",
-        "date":"2018-08-05",
+        "date":"2018-09-05",
         "rsvp":false,
         "image":"/images/logos/centric_logo.png"
     },
@@ -11,9 +11,17 @@
         "title": "Team Up IT - Pizza session WebVR",
         "description":"At Team Rockstars IT, I will be giving an introductory presentation about WebVR.  Followed by a short workshop where you can learn how to build a simple WebVR application with A-Frame.",
         "url": "https://www.teamupit.nl/event/timmy-kokke/",
-        "date":"2018-08-12",
+        "date":"2018-09-12",
         "rsvp":true,
         "image":"/images/logos/logo-rockstars@2x_2.png"
+    },
+    {
+        "title": "WebXR on AR, MR and VR Hardware",
+        "description":"This evening we will share experiences of building WebXR for XR Hardware. What is possible? And what are the limitations? How can you create something that runs on a Google DayDream, or on an Oculus Rift, or maybe on a HoloLens?",
+        "url": "https://www.meetup.com/webxrnl/events/253623055/",
+        "date":"2018-09-20",
+        "rsvp":true,
+        "image":"/images/logos/webxrnl.jpg"
     },
     {
         "title": "Progressive Web Apps",

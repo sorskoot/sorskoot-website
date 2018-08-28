@@ -12,11 +12,11 @@
 	<link rel="shortcut icon" href="{{ .Site.BaseURL }}/{{ .Site.Params.favicon }}">
 	<link rel="manifest" href="{{ .Site.BaseURL }}/manifest.json"></link>
 	<!-- Bootstrap -->
-	 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	 <link defer href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
 	<!-- Icons -->
-	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link defer href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<!-- Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,700">
+	<link defer rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,700">
 	<!-- Custom styles -->
 
 	{{ $style := resources.Get "css/styles.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
@@ -27,9 +27,9 @@
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
 
     {{ if .Site.Params.customsharethis }}
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
+        <script defer type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
     {{ else }}
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=inline-share-buttons"></script>
+        <script defer type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=inline-share-buttons"></script>
     {{ end }}
     <script type="text/javascript" src="{{ .Site.BaseURL }}/sw-register.js"></script>
 
