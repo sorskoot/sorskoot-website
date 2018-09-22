@@ -17,9 +17,11 @@ tags:
   - JS13KGames
   - webvr
 ---
-And another [JS13KGames](https://js13kgames.com) competition is over. This year's theme was 'Offline'. Since [BabylonJS](https://www.babylonjs.com/) was allowed too in the WebXR category this time and I had been looking into Babylon lately, I decided to go with that. 
+And another [JS13KGames](https://js13kgames.com) competition is over. This year's theme was 'Offline'. Since [BabylonJS](https://www.babylonjs.com/) was allowed too in the WebXR category this time and I had been looking into Babylon lately, I decided to go with that. At the JS13kGames website you can play my entry, [Lasergrid](http://js13kgames.com/entries/lasergrid).
 
-The first concept I had in mind was in a factory setting where the player gets an order on a display in the form of a selection of different colored objects. The player then has to look at the conveyor belt and push everything that's not in the order off. The problem that I ran into very quickly was that I couldn't use the default physics with Babylon. Although there's a library for physics available for Babylon, it's an external library that I couldn't fit into the allowed 13kB. So I went with my second idea, a laser grid in which the player has to turn object and make the laser get from the start to the finish.
+The first concept I had in mind was in a factory setting where the player gets an order on a display in the form of a selection of different colored objects. The player then has to look at the conveyor belt and push everything that's not in the order off. The problem that I ran into very quickly was that I couldn't use the default physics with Babylon. Although there's a library for physics available for Babylon, it's an external library that I couldn't fit into the allowed 13kB. So I went with my second idea, a laser grid in which the player has to turn object and make the laser get from the start to the finish. 
+
+![Lasergrid](/images/2018/09/Lasergrid.png)
 
 ## BabylonJS and Virtual Reality
 Setting BabylonJS up for Virtual Reality is very easy. It's not 'on' by default, but there's a helper function to add everything including the icon to switch to VR. It is usually called right after initializing the scene:
