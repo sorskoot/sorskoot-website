@@ -1,13 +1,5 @@
 [
     {
-        "title": "WebXR on AR, MR and VR Hardware",
-        "description":"This evening we will share experiences of building WebXR for XR Hardware. What is possible? And what are the limitations? How can you create something that runs on a Google DayDream, or on an Oculus Rift, or maybe on a HoloLens?",
-        "url": "https://www.meetup.com/webxrnl/events/253623055/",
-        "date":"2018-09-20",
-        "rsvp":true,
-        "image":"/images/logos/webxrnl.jpg"
-    },
-    {
         "title": "Progressive Web Apps",
         "description":"Is there a future for native apps? Lies their fate in the hands of the web? Other than with traditional applications, Progressive Web Apps offer a hybrid solution between ‘normal’ websites and mobile applications. This session, we’ll look at what progressive web apps are and how we can use modern web standards like the Service Worker and the W3C Manifest to bring an existing, responsive website out of the browser. We also have a look at what tools and frameworks there are and how we can use those.",
         "url": "",
