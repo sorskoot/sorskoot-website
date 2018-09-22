@@ -11,11 +11,13 @@ wsw-settings:
 image: /images/2017/09/js13kgames.jpg
 categories:
   - WebVR
+  - JS13KGames
 tags:
   - a-frame
   - JavaScript
   - webgl
   - webvr
+  - JS13KGames
 ---
 On the 13th of September, the JS13k Games jam 2017 has ended. The challenge in this contest is to build a game in JavaScript that fits in a .zip file of 13k in one month. New this year was the [A-Frame](https://aframe.io) category. A-Frame is a web framework for building virtual reality experiences on the web. I love 3D and VR, programming in JavaScript and a challenge, so I decided to participate (again) this year. Eventually, the biggest challenge turned out to be time. I ran out of time, with about 5kb left of the 13kb.
 
