@@ -1,3 +1,36 @@
 [
-
+{
+    "title": "VR & AR on the web? All about WebXR!",	
+    "description":"WebXR NL and VR010 will join forces to give you the opportunity to learn more about WebXR. I'll be giving an introduction to WebVR and A-Frame.",	
+    "url": "https://www.meetup.com/webxrnl/events/260532007",	
+    "date":"2019-04-18",	
+    "rsvp":true,	
+    "image":"/images/2019/04/Ready-Player-WebVR.jpg"
+},
+{
+    "title": "Intro to VR on the Web",	
+    "description":"The interest group architecture of the KNVI organizes a session about Virtual and Augmented Reality and Virtual Reality in practice and on the Web. I'll be giving an introduction to WebVR using web technology showing 360-tours, Unity3D and A-Frame.",	
+    "url": "https://www.knvi.nl/agenda/5cb071eed4123d01102134b2/Virtual-en-Augmented-Reality-in-de-praktijk-en-op-het-Web",	
+    "date":"2019-05-07",	
+    "rsvp":true,	
+    "image":"/images/logos/knvi-logo.png"
+},
+{
+    "title": "Mixed Reality User Group Evenement Mei 2019",	
+    "description":"During the monthly event of the Mixed Reality Usergroup, I'll be giving 2 talks. The first will be about Augmented Reality on the Web. In the second I'm going to show you how to build a WebVR application using A-Frame.",	
+    "url": "https://www.meetup.com/Mixed-Reality-User-Group/events/258813563/",	
+    "date":"2019-05-08",	
+    "rsvp":true,	
+    "image":"/images/logos/Mixug-logo.png"
+},
+{
+    "title": "Moving the web forward: Progressive and Serverless",	
+    "description":"Nowadays we don’t need an advanced infrastructure to publish an application on the internet. During this session we will build a high available serverless backend for a Progressive Web Application with Azure Static Website Hosting and Azure Functions. Our web application will demonstrate the use of native functionalities in an offline scenario. New technologies that will move the web forward to Modern Web.",	
+    "url": "https://www.meetup.com/Mixed-Reality-User-Group/events/258813563/",	
+    "date":"2019-05-21",	
+    "rsvp":false,	
+    "image":"/images/logos/techorama.svg"
+}
 ]
+
+
