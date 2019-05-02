@@ -5,7 +5,8 @@
     "url": "https://www.meetup.com/webxrnl/events/260532007",	
     "date":"2019-04-18",	
     "rsvp":true,	
-    "image":"/images/2019/04/Ready-Player-WebVR.jpg"
+    "image":"/images/2019/04/Ready-Player-WebVR.jpg",
+    "past":true
 },
 {
     "title": "Intro to VR on the Web",	

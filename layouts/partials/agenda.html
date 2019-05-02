@@ -1,6 +1,6 @@
 <div class="row section agenda topspace">
     {{ range $index, $area := .Site.Data.agenda }}
-    
+        {{ if not .past }}
         <div class="agenda-item">
             <div class="agenda-date">
                 {{ dateFormat "January 2, 2006" .date }}
@@ -21,8 +21,7 @@
                 <a href="{{.url}}" class="btn btn-action btn-lg">More info</a>
             </div>
             {{end}} {{end}}
-
         </div>
-  
+        {{ end }}
     {{end}}
 </div>
