@@ -1,0 +1,23 @@
+{
+  "name": "sorskoot.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass assets/css/styles.scss static/css/styles.css",
+    "sass-watch": "sass --watch assets/css/styles.scss static/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorskoot/sorskoot.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sorskoot/sorskoot.github.io/issues"
+  },
+  "homepage": "https://github.com/sorskoot/sorskoot.github.io#readme",
+  "devDependencies": {
+    "sass": "^1.20.1"
+  }
+}

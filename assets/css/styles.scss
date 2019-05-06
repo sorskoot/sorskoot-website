@@ -30,6 +30,12 @@ body {
     margin-left: 0;
 }
 
+.slides{
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px;
+    display: grid;
+    width: 100%;
+}
 /*********************************************************************
 
 

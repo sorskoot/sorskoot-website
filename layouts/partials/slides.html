@@ -1,0 +1,17 @@
+<div>
+    <div class="slides">
+        {{ range $index, $area := .Site.Data.slides }}
+        <div class="slide">
+            <iframe src="{{ .iframe }}" width="298" height="243" frameborder="0" marginwidth="0" marginheight="0"
+                scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
+                allowfullscreen>
+            </iframe>
+            <div style="margin-bottom:5px"> <strong>
+                    <a href="{{ .link }}" title="{{ .title }}" target="_blank">
+                        {{ .title }}</a> </strong>
+                </strong> </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+</div>

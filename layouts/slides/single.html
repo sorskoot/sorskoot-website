@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+
+<main id="main">
+
+    <div class="container">
+
+        <div class="row topspace">
+
+            <h2>{{ .Title }}</h2>
+
+            <!-- Article main content -->
+            <article>
+                {{ .Content }}
+                <div>
+                    {{ partial "slides.html" . }}
+                </div>
+            </article>
+            <!-- /Article -->
+
+
+        </div>
+    </div> <!-- /container -->
+
+</main>
+
+{{ partial "footer.html" . }}

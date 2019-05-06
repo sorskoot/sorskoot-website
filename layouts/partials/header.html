@@ -19,10 +19,7 @@
 	<link defer rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,700">
 	<!-- Custom styles -->
 
-	{{ $style := resources.Get "css/styles.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-	
-	<link rel="stylesheet" href="{{ $style.Permalink }}">
-	<!-- <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/styles.css">
 
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
 
