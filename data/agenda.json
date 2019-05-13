@@ -14,7 +14,8 @@
     "url": "https://www.knvi.nl/agenda/5cb071eed4123d01102134b2/Virtual-en-Augmented-Reality-in-de-praktijk-en-op-het-Web",	
     "date":"2019-05-07",	
     "rsvp":true,	
-    "image":"/images/logos/knvi-logo.png"
+    "image":"/images/logos/knvi-logo.png",
+    "past":true
 },
 {
     "title": "Mixed Reality User Group Evenement May 2019",	
@@ -22,12 +23,13 @@
     "url": "https://www.meetup.com/Mixed-Reality-User-Group/events/258813563/",	
     "date":"2019-05-08",	
     "rsvp":true,	
-    "image":"/images/logos/Mixug-logo.png"
+    "image":"/images/logos/Mixug-logo.png",
+    "past":true
 },
 {
     "title": "Moving the web forward: Progressive and Serverless",	
     "description":"Nowadays we don’t need an advanced infrastructure to publish an application on the internet. During this session we will build a high available serverless backend for a Progressive Web Application with Azure Static Website Hosting and Azure Functions. Our web application will demonstrate the use of native functionalities in an offline scenario. New technologies that will move the web forward to Modern Web.",	
-    "url": "https://www.meetup.com/Mixed-Reality-User-Group/events/258813563/",	
+    "url": "https://sched.co/NK8W",	
     "date":"2019-05-21",	
     "rsvp":false,	
     "image":"/images/logos/techorama.svg"
