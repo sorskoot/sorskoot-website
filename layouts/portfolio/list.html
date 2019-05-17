@@ -11,7 +11,7 @@
         <div class="row topspace">
             <div class="col-sm-8 col-sm-offset-2">
 
-                {{ range .Paginator.Pages }}
+                {{ range .Pages.ByParam "id" }}
                 <article class="post">
                     <header class="entry-header">
                         <div class="entry-meta">
@@ -20,7 +20,13 @@
                         </div>
                         <h1 class="entry-title">{{ .Title | safeHTML   }}</h1>
                     </header>
-
+                    <ul class="tags">
+                            {{ range .Params.tools }}
+                            <li class="tag">
+                                {{ . }}
+                            </li>
+                            {{ end }}
+                        </ul>
                     <div class="entry-content {{ .Params.format }}">
                         <div class="portfolio-media">
                             {{ if .Params.video }}
@@ -33,19 +39,14 @@
                             {{ .Content }}
                         </div>
 
+                       
                     </div>
+                    
                 </article>
                 {{ end }}
 
             </div>
         </div>
-
-        <center class="">
-            <ul class="pagination">
-                {{ template "_internal/pagination.html" . }}
-            </ul>
-        </center>
-
 
     </div> <!-- /container -->
 

@@ -1222,12 +1222,18 @@ footer.entry-meta .meta-in {
 }
 
 .portfolio {
+    .entry-title{
+        font-size: 3em;
+    }
   .entry-content {
     display: flex;
     &.sidebyside {
       flex-direction: row;
       align-items: flex-start;
       align-content: center;
+      video {
+        max-width: 250px;
+      }
     }
     &.stacked {
       flex-direction: column;
@@ -1238,6 +1244,7 @@ footer.entry-meta .meta-in {
       flex-grow: 0.8;
       flex-shrink: 0.2;
       padding: 16px;
+     
     }
 
     .portfolio-content {

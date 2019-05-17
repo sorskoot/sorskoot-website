@@ -1202,6 +1202,9 @@ footer.entry-meta .meta-in {
   }
 }
 
+.portfolio .entry-title {
+  font-size: 3em;
+}
 .portfolio .entry-content {
   display: flex;
 }
@@ -1209,6 +1212,9 @@ footer.entry-meta .meta-in {
   flex-direction: row;
   align-items: flex-start;
   align-content: center;
+}
+.portfolio .entry-content.sidebyside video {
+  max-width: 250px;
 }
 .portfolio .entry-content.stacked {
   flex-direction: column;
