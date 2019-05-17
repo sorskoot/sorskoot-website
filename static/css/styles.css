@@ -1217,6 +1217,7 @@ footer.entry-meta .meta-in {
 }
 .portfolio .entry-content .portfolio-media {
   flex-grow: 0.8;
+  flex-shrink: 0.2;
   padding: 16px;
 }
 
