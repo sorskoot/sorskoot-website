@@ -283,7 +283,7 @@ a:hover {
   background: #f4f4f4 url(../images/bg_head.jpg) top right;
   background-attachment: fixed;
   background-size: cover;
-  color: #7C7C7C;
+  color: #7c7c7c;
   padding: 30px 0 35px 0;
 }
 @media (max-width: 640px) {
@@ -1170,6 +1170,9 @@ footer.entry-meta .meta-in {
 .fixed-section-title.fixed-blog {
   background-image: url("../images/blog.jpg");
 }
+.fixed-section-title.fixed-webxr {
+  background-image: url("../images/webxr.png");
+}
 .fixed-section-title.fixed-agenda {
   background-image: url("../images/agenda.jpg");
 }
@@ -1197,6 +1200,24 @@ footer.entry-meta .meta-in {
   .fixed-section-title .caption .border {
     font-size: 36px;
   }
+}
+
+.portfolio .entry-content {
+  display: flex;
+}
+.portfolio .entry-content.sidebyside {
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: center;
+}
+.portfolio .entry-content.stacked {
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+}
+.portfolio .entry-content .portfolio-media {
+  flex-grow: 0.8;
+  padding: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */

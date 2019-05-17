@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start":"hugo serve --buildDrafts --buildFuture --watch --verbose",
     "sass": "sass assets/css/styles.scss static/css/styles.css",
     "sass-watch": "sass --watch assets/css/styles.scss static/css/styles.css"
   },

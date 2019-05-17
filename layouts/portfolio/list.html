@@ -1,0 +1,54 @@
+{{ partial "header.html" . }}
+
+<main id="main" class="portfolio">
+    <div class="fixed-section-title fixed-webxr">
+        <div class="caption">
+            <span class="border">Portfolio</span>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row topspace">
+            <div class="col-sm-8 col-sm-offset-2">
+
+                {{ range .Paginator.Pages }}
+                <article class="post">
+                    <header class="entry-header">
+                        <div class="entry-meta">
+                            <span class="posted-on"><time class="entry-date published"
+                                    date="{{ .Date }}">{{ dateFormat .Site.Params.DateForm .Date }}</time></span>
+                        </div>
+                        <h1 class="entry-title">{{ .Title | safeHTML   }}</h1>
+                    </header>
+
+                    <div class="entry-content {{ .Params.format }}">
+                        <div class="portfolio-media">
+                            {{ if .Params.video }}
+                            <video width="100%" controls poster="{{ .Params.poster }}">
+                                <source src="{{ .Params.video }}" type="video/mp4">
+                            </video>
+                            {{ end }}
+                        </div>
+                        <div class="portfolio-content">
+                            {{ .Content }}
+                        </div>
+
+                    </div>
+                </article>
+                {{ end }}
+
+            </div>
+        </div>
+
+        <center class="">
+            <ul class="pagination">
+                {{ template "_internal/pagination.html" . }}
+            </ul>
+        </center>
+
+
+    </div> <!-- /container -->
+
+</main>
+
+{{ partial "footer.html" . }}
