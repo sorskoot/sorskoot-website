@@ -1202,6 +1202,9 @@ footer.entry-meta .meta-in {
   }
 }
 
+.portfolio .tags {
+  color: #bd1550;
+}
 .portfolio .entry-title {
   font-size: 3em;
 }

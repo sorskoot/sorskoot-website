@@ -14,7 +14,9 @@ paginate = 5
     background = ""
     favicon = "icons/gt_favicon.png"
     DateForm = "January 2, 2006"
-
+    
+    pluralizeListTitles = false
+    
     showSubheader = true
     showServices = true
     showRecentWorks = true
