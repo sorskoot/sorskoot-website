@@ -42,6 +42,11 @@ paginate = 5
     url = "/post/"
     weight = 5
 
+# [[menu.main]]
+#     name = "twitch"
+#     url = "/twitch/"
+#     weight = 6
+
 [[menu.main]]
     name = "portfolio"
     url = "/portfolio/"

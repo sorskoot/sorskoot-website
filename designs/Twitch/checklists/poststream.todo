@@ -1,0 +1,55 @@
+Post-stream checklist:
+
+    ☐ Export video to YouTube
+        update the text for Rosie the Chatbot:
+            ☐ YouTube Title: 
+                April 3, 2019 - Building Rosie the Chat bot [JavaScript/Node.js]
+            ☐ YouTube Description:
+                During the stream, we worked on building a Twitch bot using Node JS.
+                {EXTEND}
+                Watch live at https://www.twitch.tv/sorskoot
+                Code Rosie: https://github.com/sorskoot/RosieBot
+                Code Overlays: https://github.com/sorskoot/Twitch.Sorskoot
+
+                --------------------------------
+                Twitter: https://twitter.com/sorskoot
+                Merch: https://shop.spreadshirt.net/sorskoot
+                Blog: https://timmykokke.com
+            ☐ YouTube Tags:
+                twitch,javascript,node.js,bot,visual studio code,custom commands,chat
+            ☐ Create Thumbnail:
+                Thumbnail Overlay text color: #00ceff
+                Thumbnail Overlay Text: Rosie The Chatbot
+        update the text for Offline VR Game:
+            ☐ YouTube Title: 
+                May 16, 2019 - Working on my WebVR Game 🥽  [JavaScript/A-Frame]
+            ☐ YouTube Description:
+                During the stream, we worked on building a WebVR Game using A-Frame. During the stream, we added a few placeholder textures so we can see the difference between the laser emitter, the receiver, the walls, and mirrors. We added them to the scene and added a way to create puzzles from code.
+                {EXTEND}
+                Watch live at https://www.twitch.tv/sorskoot
+                Code: https://github.com/sorskoot/OfflineVR
+                --------------------------------
+                Twitter: https://twitter.com/sorskoot
+                Merch: https://shop.spreadshirt.net/sorskoot
+                Blog: https://timmykokke.com
+            ☐ YouTube Tags:
+                twitch,games,JavaScript,Twitch,Aframe,A-Frame. WebVR,WebXR,VR,Virtual Reality,Game development
+            ☐ Create Thumbnail:
+                Youtube overlay text: WebVR Game with A-frame
+                Youtube color: #ff00f2
+        share highlights on Youtube (WebVR):
+            ☐ Tags:
+                twitch,games,webvr,webxr,aframe,a-frame
+            ☐ Title:
+                Twitch Highlight: {something something}
+            ☐ Description:
+Twitch Highlight: {something something}
+
+Watch live at https://www.twitch.tv/sorskoot
+Code: https://github.com/sorskoot
+
+Twitter: https://twitter.com/sorskoot
+Merch: https://shop.spreadshirt.net/sorskoot
+Blog: https://timmykokke.com
+
+

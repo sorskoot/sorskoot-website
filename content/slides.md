@@ -2,7 +2,7 @@
 menu = "main"
 title = "slides"
 type = "slides"
-weight = 6
+weight = 8
 date = "25-2-2010"
 +++
 

@@ -1,0 +1,33 @@
+Post-stream checklist:
+    ☐ Turn on lights
+
+    (most of below can be done using Stream Deck Multitrigger, still check if it worked)
+    ☐ Open Twitch Dashboard
+    ☐ Open Stream Plan on Google Docs
+    ☐ Change title
+
+    Start:
+        ☐ Streamdeck
+        ☐ OBS
+        ☐ Spotify 
+            Volume 50%
+            Playlist NCS
+        ☐ Chatty
+        ☐ Muxy Ticker @depricated
+        ☐ LoopBe1 Midi
+        ☐ Soundbyte
+
+    ☐ Create stream notes markdown file and update as much as possible
+
+    Chat commands:
+        ☐ send !light purple
+        ☐ send !project { project title }
+        ☐ send !beer {today's beer} {untappd link}
+
+    Check:
+        ☐ Lights
+        ☐ Audio
+        ☐ Music Level
+        ☐ Camera
+        ☐ Overlays
+        ☐ Stream Deck Commands to chat
