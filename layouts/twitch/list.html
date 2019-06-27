@@ -1,22 +1,31 @@
 {{ partial "header.html" . }}
 
-<main id="main">
+<main id="main" class="twitch">
+    <div class="fixed-section-title fixed-twitch">
+        <div class="caption">
+            <span class="border">Twitch</span>
+        </div>
+    </div>
     <div class="container">
         <div class="row topspace">
             <div class="col-sm-8 col-sm-offset-2">
                 {{ range .Paginator.Pages }}
                 <article class="post">
                     <header class="entry-header">
+                        <h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title | safeHTML   }}</a>
+                        </h1>
                         <div class="entry-meta">
                             <span class="posted-on"><time class="entry-date published"
                                     date="{{ .Date }}">{{ dateFormat .Site.Params.DateForm .Date }}</time></span>
                         </div>
-                        <h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title | safeHTML   }}</a>
-                        </h1>
                     </header>
                     <div class="entry-content">
                         {{ .Summary }}
+                        <div>
+                            <a href="{{ .Permalink }}" rel="bookmark">more…</a>
+                        </div>
                     </div>
+
                 </article>
                 {{ end }}
             </div>

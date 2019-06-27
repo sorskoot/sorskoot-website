@@ -1173,6 +1173,9 @@ footer.entry-meta .meta-in {
 .fixed-section-title.fixed-webxr {
   background-image: url("../images/webxr.png");
 }
+.fixed-section-title.fixed-twitch {
+  background-image: url("../images/twitchbanner.jpg");
+}
 .fixed-section-title.fixed-agenda {
   background-image: url("../images/agenda.jpg");
 }
@@ -1228,6 +1231,9 @@ footer.entry-meta .meta-in {
   flex-grow: 0.8;
   flex-shrink: 0.2;
   padding: 16px;
+}
+.twitch .entry-title {
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */

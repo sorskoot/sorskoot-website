@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Timmy Kokke"
 theme = "initio"
 paginate = 5
+pluralizeListTitles = false
 
 [params]
     name = "Timmy Kokke"
@@ -15,8 +16,8 @@ paginate = 5
     favicon = "icons/gt_favicon.png"
     DateForm = "January 2, 2006"
     
-    pluralizeListTitles = false
     
+
     showSubheader = true
     showServices = true
     showRecentWorks = true

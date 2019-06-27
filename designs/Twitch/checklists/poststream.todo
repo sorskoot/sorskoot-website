@@ -3,18 +3,8 @@ Post-stream checklist:
     ☐ Export video to YouTube
         update the text for Rosie the Chatbot:
             ☐ YouTube Title: 
-                April 3, 2019 - Building Rosie the Chat bot [JavaScript/Node.js]
+                {MMMM DD, YYYY} - {Title}
             ☐ YouTube Description:
-                During the stream, we worked on building a Twitch bot using Node JS.
-                {EXTEND}
-                Watch live at https://www.twitch.tv/sorskoot
-                Code Rosie: https://github.com/sorskoot/RosieBot
-                Code Overlays: https://github.com/sorskoot/Twitch.Sorskoot
-
-                --------------------------------
-                Twitter: https://twitter.com/sorskoot
-                Merch: https://shop.spreadshirt.net/sorskoot
-                Blog: https://timmykokke.com
             ☐ YouTube Tags:
                 twitch,javascript,node.js,bot,visual studio code,custom commands,chat
             ☐ Create Thumbnail:
@@ -28,15 +18,23 @@ Post-stream checklist:
                 {EXTEND}
                 Watch live at https://www.twitch.tv/sorskoot
                 Code: https://github.com/sorskoot/OfflineVR
-                --------------------------------
-                Twitter: https://twitter.com/sorskoot
-                Merch: https://shop.spreadshirt.net/sorskoot
-                Blog: https://timmykokke.com
+--------------------------------
+Twitter: https://twitter.com/sorskoot
+Merch: https://shop.spreadshirt.net/sorskoot
+Blog: https://timmykokke.com
             ☐ YouTube Tags:
                 twitch,games,JavaScript,Twitch,Aframe,A-Frame. WebVR,WebXR,VR,Virtual Reality,Game development
             ☐ Create Thumbnail:
                 Youtube overlay text: WebVR Game with A-frame
                 Youtube color: #ff00f2
+        update text for Web DAW:
+                Watch live at https://www.twitch.tv/sorskoot
+                Code: https://github.com/sorskoot/ultraviolentjunglist
+            ☐ Youtube Tags:
+                twitch,games,JavaScript,Twitch,Web Audio,Vue.js.Vue,Vuejs,Storybook,VSCode,Audio, Music, WebAudo
+            ☐ Create Thumbnail:
+                Youtube overlay text: Building a Web DAW
+                Youtube color: #ea00ff
         share highlights on Youtube (WebVR):
             ☐ Tags:
                 twitch,games,webvr,webxr,aframe,a-frame
@@ -51,5 +49,5 @@ Code: https://github.com/sorskoot
 Twitter: https://twitter.com/sorskoot
 Merch: https://shop.spreadshirt.net/sorskoot
 Blog: https://timmykokke.com
-
+        
 

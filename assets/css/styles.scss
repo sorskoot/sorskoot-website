@@ -1194,6 +1194,9 @@ footer.entry-meta .meta-in {
   &.fixed-webxr {
     background-image: url("../images/webxr.png");
   }
+  &.fixed-twitch {
+    background-image: url("../images/twitchbanner.jpg");
+  }
   &.fixed-agenda {
     background-image: url("../images/agenda.jpg");
   }
@@ -1253,4 +1256,12 @@ footer.entry-meta .meta-in {
     .portfolio-content {
     }
   }
+}
+
+
+.twitch{
+
+    & .entry-title{
+        text-align: left;
+    }
 }
