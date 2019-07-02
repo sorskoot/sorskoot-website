@@ -30,7 +30,7 @@ pluralizeListTitles = false
     footerEnableTextWidget = false
     footerEnableFormWidget = false
 
-    comments = true
+    comments = false
     share = true
 
 [[menu.main]]
