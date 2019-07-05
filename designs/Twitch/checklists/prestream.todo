@@ -9,11 +9,7 @@ Post-stream checklist:
     Start:
         ☐ Streamdeck
         ☐ OBS
-        ✘ Spotify @cancelled(19-07-01 19:24)
-            ✘ Volume 50% @cancelled(19-07-01 19:24)
-            ✘ Playlist NCS @cancelled(19-07-01 19:24)
         ☐ Chatty
-        ✘ Muxy Ticker @depricated @cancelled(19-07-01 19:24)
         ☐ LoopBe1 Midi
         ☐ Soundbyte
 
@@ -32,3 +28,9 @@ Post-stream checklist:
         ☐ Overlays
         ☐ Stream Deck Commands to chat
         ☐ Quality on https://r-1.ch/analyzer/
+
+Archive:
+  ✘ Spotify @cancelled(19-07-01 19:24) @project(Post-stream checklist.Start)
+  ✘ Volume 50% @cancelled(19-07-01 19:24) @project(Post-stream checklist.Start)
+  ✘ Playlist NCS @cancelled(19-07-01 19:24) @project(Post-stream checklist.Start)
+  ✘ Muxy Ticker @depricated @cancelled(19-07-01 19:24) @project(Post-stream checklist.Start)

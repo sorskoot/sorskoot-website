@@ -2,7 +2,7 @@
 id: 1996
 draft: true
 title: Twitch Stream Setup
-date: 2019-07-027T16:23:11+00:00
+date: 2019-07-02T16:23:11+00:00
 author: Timmy
 layout: post
 share: true
@@ -16,7 +16,22 @@ tags:
   - Twitch
 ---
 
-I was working with on a WebVR project the other day and was trying to get a model rendered with the correct textures. I was creating the textures in Substance Painter. I was doing a back and forth between various tools to get the textured model to render correctly. At first, I was using a .obj model. But I rather would have used a .glTF model.
-Luckily, there's actually a very nice way to get directly to .glTF  from Substance Painter.
+<!--  Intro -->
+What is the article about?
+Why do I stream?
 
-When you are done painting your textures, got to the file menu and look for _Export Textures…_.
+## Audio
+
+Audio Setup - Voice Meeter, OBS, Music, SFX, Mic
+Filters
+
+## Video
+WebCam, OBS Fiters
+
+### Lights
+
+## OBS
+
+## Control
+
+## Bot
