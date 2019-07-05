@@ -30,7 +30,6 @@ pluralizeListTitles = false
     footerEnableTextWidget = false
     footerEnableFormWidget = false
 
-    comments = false
     share = true
 
 [[menu.main]]
@@ -59,8 +58,8 @@ pluralizeListTitles = false
     weight = 10
     target = "_blank"
 
-[params.disqus]
-    site = "sorskoot.disqus.com"
+# [params.disqus]
+#     site = "sorskoot.disqus.com"
 
 [params.sharethis]
     property = "5b5ce62a4970c900111bbb9b"
