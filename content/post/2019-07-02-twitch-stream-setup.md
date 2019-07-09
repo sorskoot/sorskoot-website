@@ -145,7 +145,35 @@ I bought the IKEA light just to try them and see how they look. I've got a coupl
 
 ## OBS
 
+The application I use from the stream itself is [Open Broadcast Software, or OBS](https://obsproject.com/). This program let's you create scenes, configure what you want to capture and cast it to various sources, like Twitch or YouTube.
+
+I've never used any other program for streaming. I'm using it to stream to Twitch, but I've also used it to stream to YouTube or record videos. You can have different setups stored and it is easy to switch between them.
+
+{{< img-link "/images/2019/07/OBSTotal.jpg" "OBS Total" >}}
+
 ### Scenes
+
+OBS makes use of scenes. Scenes are what you see when watching the stream. They build out of various sources like the webcam, desktop capture, animations, texts, and browser windows.
+
+***Prestream***
+
+A few minutes before I go live I already start the stream. I send a tweet out at the same time. At this moment my followers are informed that I went live. Having a count down or waiting room gives everyone a few minutes to come in before I start.
+
+I don't always use the timer. If it's very short or a weird number of minutes before I go live I hide the timer. I added a ticker that shows random texts, just for fun. This is actually a browser window that's coming from my layouts application.
+
+{{< img-link "/images/2019/07/OBSPreStream.jpg" "OBS Prestream" >}}
+
+***Prestream - Webcam***
+
+***Regular Stream***
+
+***Regular Stream - Webcam***
+
+***Be Right Back***
+
+***Post Stream - Webcam***
+
+***Post Stream***
 
 ### Settings
 
