@@ -155,29 +155,64 @@ I've never used any other program for streaming. I'm using it to stream to Twitc
 
 OBS makes use of scenes. Scenes are what you see when watching the stream. They build out of various sources like the webcam, desktop capture, animations, texts, and browser windows.
 
+I recently cleaned up the scenes and the sources. It was a mess with all kinds of old, unused and hidden sources. I created 2 scenes that are reused in various other scenes, _alerts_ and _texts_. I also added color so I can quickly see what sources is where in the seen. To be sure I don't accidentily move a source,I locked everything.
+
+![OBS Scenes detail](/images/2019/07/OBSScenesDetail.jpg)
+
 ***Prestream***
 
 A few minutes before I go live I already start the stream. I send a tweet out at the same time. At this moment my followers are informed that I went live. Having a count down or waiting room gives everyone a few minutes to come in before I start.
 
 I don't always use the timer. If it's very short or a weird number of minutes before I go live I hide the timer. I added a ticker that shows random texts, just for fun. This is actually a browser window that's coming from my layouts application.
 
+The chat is an overlay coming from StreamLabs. I styled it to look similar to the theme I'm using in VSCode.
+
 {{< img-link "/images/2019/07/OBSPreStream.jpg" "OBS Prestream" >}}
 
 ***Prestream - Webcam***
 
+When I start the stream I welcome everyone to the stream using this scene. It has chat and big webcam view.
+I kept the 'almost there' text in there so when people pass by the stream the know I'm about to start.
+
+{{< img-link "/images/2019/07/OBSPreStream-Webcam.jpg" "OBS Prestream Webcam" >}}
+
 ***Regular Stream***
+
+This scene is what is used most during the stream. It has chat, webcam and a view of the desktop. The background animation in this scene has a mask and is actually on top of the webcam and the desktop view. I want to cut off my Windows taskbar and the easiest way of doing that is just hiding it. I tried using an transparant animation but that was way to CPU intensive, so I used the same MP4 but added a mask filter to it with a black and white image.
+
+This scene has everything else going as well, the exploding emotes, alerts and the music player.
+
+{{< img-link "/images/2019/07/OBSRegularStream.jpg" "OBS Regular Stream" >}}
 
 ***Regular Stream - Webcam***
 
+This scene is the same as the previous one, but has the webcam and desktop views switched. 
+
+{{< img-link "/images/2019/07/OBSRegularStream-Webcam.jpg" "OBS Regular Stream Webcam" >}}
+
 ***Be Right Back***
+
+Sometimes I'm interupted and need to leave the computer for a few minutes. It rarely happens, but I it does I use the Be Right Back scene. I've got chat in here and the alerts. 
+
+{{< img-link "/images/2019/07/OBSAFK.jpg" "OBS AFK" >}}
 
 ***Post Stream - Webcam***
 
+When the stream ends I switch to this scene. It has a big webcam view and the end credits to the side. The end credits are coming from my own layouts. It doesn't have a chat, but still has alerts.
+
+{{< img-link "/images/2019/07/OBSPostStream-Webcam.jpg" "OBS Post stream Webcam" >}}
+
 ***Post Stream***
 
-### Settings
+The last scene is similar to the previous but without the webcam. Sometime I want to have the stream running a little bit longer, for example when I raid someone. When the raid happens I switch to this scene. The raid is not recorded by Twitch, but the normal stream is. This way you won't see my moving around but still have a few seconds extra when watching the VOD.
 
-6000kbps
+{{< img-link "/images/2019/07/OBSPostStream.jpg" "OBS Post Stream" >}}
+
+### Settings and such
+
+6000Kbps
+500Mb up/down
+160 for audio
 
 ## Control
 
