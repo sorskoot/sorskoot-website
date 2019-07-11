@@ -208,17 +208,25 @@ The last scene is similar to the previous but without the webcam. Sometime I wan
 
 {{< img-link "/images/2019/07/OBSPostStream.jpg" "OBS Post Stream" >}}
 
-### Settings and such
+<!-- ### Settings and such
 
 6000Kbps
 500Mb up/down
-160 for audio
+160 for audio -->
 
 ## Control
 
-Stream deck
+***StreamDeck***
 
-## Bot
+One of the most used pieces of hardware among streamers is the [Elgato Stream Deck](https://www.elgato.com/en/gaming/stream-deck). This is a device with programmable buttons. Each button is a small display that can show information. The device is really powerfull. I can't live without it anymore.
+
+![Stream Deck](/images/2019/07/StreamDeck.jpg)
+
+The Stream Deck has a couple of great feature I use very often. The first one is the ability to trigger multiple things with 1 button, a _Multi Action_. I use this for example to start all applications I need for streaming, or to change a scene in OBS and mute the Mic at the same time. I also have a couple of Multi Actions that that I use when I go live. These send out tweets, set the title of the stream on Twitch, select the right scene in OBS and trigger OBS to start the stream.
+
+{{< img-link "/images/2019/07/StreamDeckGoLive.jpg" "Stream Deck go Live" >}}
+
+## Bot & Tools
 
 Rosie + overlays
 
