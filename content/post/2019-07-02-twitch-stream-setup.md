@@ -1,8 +1,8 @@
 ---
 id: 1996
-draft: true
+draft: false
 title: Twitch Stream Setup
-date: 2019-07-02T16:23:11+00:00
+date: 2019-07-17T17:13:11+00:00
 author: Timmy
 layout: post
 share: true
@@ -228,6 +228,16 @@ The Stream Deck has a couple of great feature I use very often. The first one is
 
 ## Bot & Tools
 
-Rosie + overlays
+To have a little automated help (and fun) I created my own personal stream maid, [Rosie the Chatbot](https://github.com/sorskoot/RosieBot/) in Node.js. She is inspired by the maid in the old cartoon The Jetsons. During the steam and in between I add commands and features to this bot.
 
-## Alerts
+To give an example, I created the !light commands. These commands use the Phillips Hue api on my local network to change the color of the light behind me. This light is also triggered when events happen during the stream.
+
+Also the sound effects are a lot of fun. These use Midi notes to trigger the effects in SoundByte. I also use Midi to lower the volume of the music during events.
+
+I integrated Rosie with the [Microsoft QnA platform](https://www.qnamaker.ai/). When a question is asked in chat, Rosie does a call to this service to see if there's an answer to frequently asked questions. For example what theme I'm using in VSCode or when my next stream is.
+
+During the stream, I also run another Node.js applicition that is responsible of the overlays in OBS. The exploding emotes and even the music is run from here. For the music I create a player without controlls that just plays a random song from a folder. I have another page that is connected through websockets to control the music. I use the webaudio api to create the visuals of the audio.
+
+## Closing
+
+I think that's about it. If I forgot something I'll add it. Feel free to ask any questions about the setup, Rosie or layouts during my streams. I'm happy to help. So come and visit me at [twitch.tv/sorskoot](https://twitch.tv/sorskoot) or join [the discord](https://discord.gg/J3j43p8).
