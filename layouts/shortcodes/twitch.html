@@ -1,4 +1,4 @@
 {{ $name := index .Params 0 }}
 {{ $dataJ := getJSON "https://twitchsorskoot.azurewebsites.net/api/GetTwitchProfileImage?login="  $name }}
 
-<span style="margin-right:40px"><a href="https://twitch.tv/{{ $dataJ.button }}"><img src="{{ $dataJ.profile_image_url }}" width="30" title="{{ $dataJ.display_name }}"> {{ $dataJ.display_name }} </h3></a></span>
+<span style="margin-right:40px"><a href="https://twitch.tv/{{ $dataJ.login }}"><img src="{{ $dataJ.profile_image_url }}" width="30" title="{{ $dataJ.display_name }}"> {{ $dataJ.display_name }} </h3></a></span>

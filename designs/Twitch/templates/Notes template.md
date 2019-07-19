@@ -16,7 +16,7 @@ github: https://github.com/sorskoot/ultraviolentjunglist
 
 | Timestamp | Topic             |
 | ---       | ---               |
-| 00:00     | Kick it off       |
+
 
 ---
 
