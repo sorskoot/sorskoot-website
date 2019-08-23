@@ -32,7 +32,8 @@
     "url": "https://sched.co/NK8W",	
     "date":"2019-05-21",	
     "rsvp":false,	
-    "image":"/images/logos/techorama.svg"
+    "image":"/images/logos/techorama.svg",
+    "past":true
 }
 ]
 
