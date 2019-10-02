@@ -30,8 +30,6 @@ pluralizeListTitles = false
     footerEnableTextWidget = false
     footerEnableFormWidget = false
 
-    share = true
-
 [[menu.main]]
     name = "home"
     url = "/"

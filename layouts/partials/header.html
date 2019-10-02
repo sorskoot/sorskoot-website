@@ -23,11 +23,11 @@
 
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
 
-    {{ if .Site.Params.customsharethis }}
+    <!-- {{ if .Site.Params.customsharethis }}
         <script defer type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
     {{ else }}
         <script defer type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=inline-share-buttons"></script>
-    {{ end }}
+    {{ end }} -->
     <script type="text/javascript" src="{{ .Site.BaseURL }}/sw-register.js"></script>
 
 </head>
