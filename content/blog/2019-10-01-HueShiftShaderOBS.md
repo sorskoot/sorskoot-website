@@ -24,7 +24,7 @@ A few weeks ago I was watching [Gael Level](https://www.twitch.tv/Geallevel) on 
 
 ## The Shader
 
-In [OBS](https://obsproject.com/) you can install plugins to help with various things. There is an extension to add shaders to various elements. It's called the [OBS ShaderFilter](https://github.com/nleseul/obs-shaderfilter). You use this to load and execute shaders written in the HLSL language. I wrote the following shader:
+In [OBS](https://obsproject.com/) you can install plugins to help with various things. There is an extension to add shaders to various elements. It's called the [OBS ShaderFilter](https://obsproject.com/forum/resources/obs-shaderfilter-v1-0-update.775/). You use this to load and execute shaders written in the HLSL language. I wrote the following shader:
 
 {{< gist c839e21282ac24a864199bd18f838dbe >}}
 
