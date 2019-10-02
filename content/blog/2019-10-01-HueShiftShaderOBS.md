@@ -16,11 +16,11 @@ tags:
   - Twitch
 ---
 
-A few weeks ago I was watching [Gael Level](https://www.twitch.tv/Geallevel) on Twitch. And during his stream he had this fun effect going on where he shifted the hue of the camera. I later spoke with him about this and asked what the plugin was that he was using. It turned out there wasn't any and he was creating the effect by hand... Since I'm a developer and don't like repeating things, like clicking, I decided to automate this.
+A few weeks ago I was watching [Gael Level](https://www.twitch.tv/Geallevel) on Twitch. And during his stream he had this fun effect going on where he shifted the hue of the camera. I later spoke with him about this and asked what the plugin was that he was using. It turned out there wasn't any and he was creating the effect by hand. Since I'm a developer and don't like repeating things, like clicking, I decided to automate this.
 
 <!--  Intro -->
 
-<!-- {{< clip ConcernedUnusualWatermelonCopyThis >}} -->
+{{< clip ConcernedUnusualWatermelonCopyThis >}}
 
 ## The Shader
 
