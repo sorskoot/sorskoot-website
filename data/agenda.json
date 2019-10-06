@@ -34,6 +34,14 @@
     "rsvp":false,	
     "image":"/images/logos/techorama.svg",
     "past":true
+},
+{
+    "title": "Building a WebVR game in 13KB",	
+    "description":"Building VR games is a challenge in itself. But what if you would add a 1-month time limit and a 13KB size restriction? That's what the JS13K Games competition is about. For this competition, I build a fun little JavaScript game in A-Frame complete with sound effects, music, and retro-style graphics. In this session, I show you how this game was built and what challenges I had to overcome to get it done in time.",	
+    "url": "https://www.globalmrbootcamp.com/event/netherlands/",	
+    "date":"2019-11-16",	
+    "rsvp":false,	
+    "image":"/images/logos/Mixug-logo.png"
 }
 ]
 
