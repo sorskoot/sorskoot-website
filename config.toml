@@ -7,17 +7,15 @@ pluralizeListTitles = false
 
 [params]
     name = "Timmy Kokke"
-    description = "Web - Games - VR/AR/XR"
+    description = "Web - Games - VR/AR/XR - Live Coding"
     email = "info@timmykokke.com"
     phone = ""
     address = ""
-    year = 2018
+    year = 2019
     background = ""
     favicon = "icons/gt_favicon.png"
     DateForm = "January 2, 2006"
     
-    
-
     showSubheader = true
     showServices = true
     showRecentWorks = true
@@ -37,7 +35,7 @@ pluralizeListTitles = false
 
 [[menu.main]]
     name = "blog"
-    url = "/post/"
+    url = "/blog/"
     weight = 5
 
 [[menu.main]]
