@@ -34,13 +34,13 @@ To make the combination of animations reusable, I created a new _scene_ in OBS. 
 
 Then, in every other scene, I wanted to have the smoke and particles, I could just add a _scene source_ and reference that scene. This way, whenever I need to make changes to the Halloween scene, I could just change it in one place and everywhere it was used the reference would update.
 
-At some point, I noticed a higher than usual CPU usage in OBS. I turned out to be the chroma keying of the particle animation. I had to remove it to prevent possible issues while streaming.
+At some point, I noticed a higher than usual CPU usage in OBS. It turned out to be the chroma keying of the particle animation. I had to remove it to prevent possible issues while streaming.
 
 ### Camera
 
 In normal streams, I've configured the colors of my camera to be vivid with the default lighting set to blue and purple. This didn't fit the theme for Halloween and wasn't spooky enough.
 
-I changed two things with regards to the camera. First, I had only the lights in front of my turned on. I made sure the lights stayed this way, I disabled the light commands in the chat (you can type !light with a color to change the color name during the streams). I place the main light on the floor next to me angled upwards. The other one is set to light my face a little bit from the other side.
+I changed two things with regards to the camera. First, I had only the lights in front of me turned on. I made sure the lights stayed this way, I disabled the light commands in the chat (you can type !light with a color to change the color name during the streams). I place the main light on the floor next to me angled upwards. The other one is set to light my face a little bit from the other side.
 
 Second, I added a color LUT (lookup table) filter to the camera. Normally this is used to change the colors a bit and make the color pop just a little more, but in this case, I dramatically changed it and added a lot more blues while lowering the saturation. This created the look I wanted for the camera.
 
