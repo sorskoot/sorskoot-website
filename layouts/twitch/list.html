@@ -15,8 +15,10 @@
                         <h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title | safeHTML   }}</a>
                         </h1>
                         <div class="entry-meta">
-                            <span class="posted-on"><time class="entry-date published"
-                                    date="{{ .Date }}">{{ dateFormat .Site.Params.DateForm .Date }}</time></span>
+                            <span class="posted-on">
+                                <time class="entry-date published" date="{{ .Date }}">{{ dateFormat .Site.Params.DateForm .Date }}</time>
+                                <span> - #{{ .Params.episode}} </span>
+                            </span>
                         </div>
                     </header>
                     <div class="entry-content">
