@@ -18,7 +18,7 @@ tags:
 
 This week was Halloween 🎃 and I wanted to do something special for the stream this time. I wanted to make everything a bit more spooky. So, I added some simple effects to the stream, created some spooky music and eventually added a few new shaders and wrote a horror script to end the stream with. This is what was added and how it was done. I hope this post will give you some ideas for your own streams. I might create some detailed tutorials on how to create the effects used in the future.
 
-<!--  Intro -->
+<!-- Intro -->
 
 ## Look and feel
 
