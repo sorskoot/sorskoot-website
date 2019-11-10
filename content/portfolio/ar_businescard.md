@@ -3,7 +3,7 @@ id: 1
 title: WebAR Business card
 date: 2019-05-02
 layout: portfolio
-video: /media/WebARCard.mp4
+#video: /media/WebARCard.mp4
 poster: /media/WebARCard.png
 format: stacked
 tools: 

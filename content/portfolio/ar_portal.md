@@ -3,7 +3,7 @@ id: 3
 title: WebAR Portal
 date: 2018-08-02
 layout: portfolio
-video: /media/WebARPortal.mp4
+#video: /media/WebARPortal.mp4
 format: sidebyside
 poster: /media/WebARPortal.jpg
 tools: 

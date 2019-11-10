@@ -3,7 +3,7 @@ id: 2
 title: WebAR Map
 date: 2018-10-20
 layout: portfolio
-video: /media/WebARMap.mp4
+#video: /media/WebARMap.mp4
 format: sidebyside
 poster: /media/WebARMap.jpg
 tools: 
