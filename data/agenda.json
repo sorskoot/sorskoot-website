@@ -41,7 +41,16 @@
     "url": "https://www.globalmrbootcamp.com/event/netherlands/",	
     "date":"2019-11-16",	
     "rsvp":false,	
-    "image":"/images/logos/Mixug-logo.png"
+    "image":"/images/logos/Mixug-logo.png",
+    "past":true
+},
+    {
+    "title": "The state of WebXR - WebXR NL Meetup",	
+    "description":"What is the current state of WebXR? Is it ready for prime time? Can we use AR on the web?",	
+    "url": "https://www.meetup.com/webxrnl/events/266366897",	
+    "date":"2019-11-28",	
+    "rsvp":true,	
+    "image":"/images/2019/04/Ready-Player-WebVR.jpg"
 }
 ]
 
