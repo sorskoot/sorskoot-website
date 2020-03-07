@@ -50,7 +50,24 @@
     "url": "https://www.meetup.com/webxrnl/events/266366897",	
     "date":"2019-11-28",	
     "rsvp":true,	
+    "image":"/images/2019/04/Ready-Player-WebVR.jpg",
+    "past":true
+},
+{
+    "title": "WebXR NL Meetup",	
+    "description":"It's time for another WebXR NL Meetup.",	
+    "url": "https://www.meetup.com/webxrnl/events/254819059",	
+    "date":"2020-04-14",	
+    "rsvp":true,	
     "image":"/images/2019/04/Ready-Player-WebVR.jpg"
+},
+{
+    "title": "Codemotion Amsterdam",	
+    "description":"I'll be speaking at Codemotion Amsterdam this your about Augmented Reality on the web. Use this link to get 30% discount on tickets!",	
+    "url": "https://www.eventbrite.co.uk/e/codemotion-amsterdam-2020-tech-conference-tickets-59101946513?discount=SPDAM20",	
+    "date":"2020-05-27",	
+    "rsvp":true,	
+    "image":"/images/logos/codemotion.svg"
 }
 ]
 
