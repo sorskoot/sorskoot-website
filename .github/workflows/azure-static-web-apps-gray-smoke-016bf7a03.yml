@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy Job
     steps:
     - uses: actions/checkout@v2
-    - name: npm install, hugo
+    - name: npm install, build
       run: |
         # Build and test the project, then
         # deploy to Azure Web App.
