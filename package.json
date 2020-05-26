@@ -6,7 +6,7 @@
   "scripts": {
     
     "start": "hugo serve --buildDrafts --buildFuture --watch --verbose",
-    "build": "hugo",
+    "build": "hugo -b https://timmykokke.com",
 
     "sass": "sass assets/css/styles.scss static/css/styles.css",
     "sass-watch": "sass --watch assets/css/styles.scss static/css/styles.css"
