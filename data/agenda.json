@@ -59,7 +59,8 @@
     "url": "https://www.meetup.com/webxrnl/events/254819059",	
     "date":"2020-04-14",	
     "rsvp":true,	
-    "image":"/images/2019/04/Ready-Player-WebVR.jpg"
+    "image":"/images/2019/04/Ready-Player-WebVR.jpg",
+    "past":true
 },
 {
     "title": "Codemotion Amsterdam",	
@@ -67,7 +68,8 @@
     "url": "https://www.eventbrite.co.uk/e/codemotion-amsterdam-2020-tech-conference-tickets-59101946513?discount=SPDAM20",	
     "date":"2020-05-27",	
     "rsvp":true,	
-    "image":"/images/logos/codemotion.svg"
+    "image":"/images/logos/codemotion.svg",
+    "past":true
 }
 ]
 

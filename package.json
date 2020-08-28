@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
     "start": "hugo serve --buildDrafts --buildFuture --watch --verbose",
     "build": "hugo -b https://timmykokke.com",
-
     "sass": "sass assets/css/styles.scss static/css/styles.css",
     "sass-watch": "sass --watch assets/css/styles.scss static/css/styles.css"
   },
@@ -22,7 +20,7 @@
   },
   "homepage": "https://github.com/sorskoot/sorskoot.github.io#readme",
   "devDependencies": {
-    "sass": "^1.20.1"
+    "sass": "^1.26.10"
   },
   "dependencies": {}
 }
