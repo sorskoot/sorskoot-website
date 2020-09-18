@@ -1,6 +1,6 @@
 ---
 id: 20200918
-draft: true
+draft: false
 title: How to debug Microsoft Edge on the HoloLens
 date: 2020-09-19T08:00:00+00:00
 author: Sorskoot
@@ -29,3 +29,4 @@ This is where [Vorlon.JS](http://vorlonjs.com/) comes in. This niftly little too
 
 To get this to work you have to find where Vorlon is installed on your machine. In my case it's `%AppData%\npm\node_modules\vorlon\Server`. You'll have to edit the `config.json` file there. Basically it comes down to changing `"useSSL": true`. When you want to run SSL on Localhost this is enough. In my case I wanted to use my own certificate. To get this to work I copied the `.crt` and the `.key` files to the `/cert` folder. I also updated the config to use these. Don't forget to update the script tag in your .html file to use the domain name if that's different now.
 
+After this you just open the Vorlon URL on your desktop and the WebXR app on the HoloLens. Anything that is written to the console will show up on the desktop. But you can explore a lot more on the remote location from your desktop machine. 
