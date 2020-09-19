@@ -38,10 +38,10 @@ pluralizeListTitles = false
     url = "/blog/"
     weight = 5
 
-[[menu.main]]
-    name = "twitch"
-    url = "/twitch/"
-    weight = 6
+#[[menu.main]]
+#    name = "twitch"
+#    url = "/twitch/"
+#    weight = 6
 
 [[menu.main]]
     name = "portfolio"
