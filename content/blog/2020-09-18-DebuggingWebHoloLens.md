@@ -31,4 +31,4 @@ When you want to run SSL on LocalHost this is enough. In my case, I wanted to us
 
 After this, you just open the Vorlon URL (`https://{YOUR-IP}:1337`) on your desktop and the WebXR app on the HoloLens. Anything that is written to the console will show up on the desktop. But you can explore a lot more on the remote location from your desktop machine.
 
-{{< img-link "/images/2020/09/Vorlonjs.jpg" "Vorlon.js" >}}
+{{< img-link "/images/2020/09/Vorlonjs.png" "Vorlon.js" >}}
