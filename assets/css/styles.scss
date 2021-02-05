@@ -526,6 +526,7 @@ img {
   margin: 0 2em;
   display: block;
   text-indent: 0;
+  min-height: 3em;
 }
 
 .thumbnail .cover {
@@ -1265,3 +1266,4 @@ footer.entry-meta .meta-in {
         text-align: left;
     }
 }
+

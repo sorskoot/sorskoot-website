@@ -57,9 +57,9 @@ pluralizeListTitles = false
 # [params.disqus]
 #     site = "sorskoot.disqus.com"
 
-[params.sharethis]
-    property = "5b5ce62a4970c900111bbb9b"
-    custom = true
+# [params.sharethis]
+# property = "5b5ce62a4970c900111bbb9b"
+#    custom = true
 
 [params.google.analytics]
     trackerID = "UA-11559922-2"
@@ -69,28 +69,28 @@ pluralizeListTitles = false
 	url = "https://www.facebook.com/sorskoot"
     icon = "fa-facebook-square"
     footer = true
-    sharethis = true
+#    sharethis = true
     network = "facebook"
 [[params.social]]
 	title = "twitter"
 	url = "https://twitter.com/sorskoot"
     icon = "fa-twitter-square"
     footer = true
-    sharethis = true
+# sharethis = true
     network = "twitter"
 [[params.social]]
 	title = "instagram"
 	url = "https://www.instagram.com/sorskoot360"
     icon = "fa-instagram"
     footer = true
-    sharethis = false
+#    sharethis = false
     network = ""
 [[params.social]]
 	title = "google+"
 	url = "https://plus.google.com/+sorskoot"
     icon = "fa-google-plus-square"
     footer = false
-    sharethis = true
+#    sharethis = true
     network = "googleplus"
 [[params.social]]
 	title = "linkedin"
@@ -104,14 +104,14 @@ pluralizeListTitles = false
 	url = "https://github.com/sorskoot"
     icon = "fa-github"
     footer = true
-    sharethis = false
+#    sharethis = false
     network = ""
 [[params.social]]
 	title = "email"
 	url = "mailto:info@timmykokke.com"
     icon = "fa-envelope"
     footer = false
-    sharethis = true
+#    sharethis = true
     network = "email"
 
 [privacy]

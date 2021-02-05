@@ -1,6 +1,30 @@
 [
     {
-        "id": 3,
+        "id": 6,
+        "name": "WebGPU Live Stream",
+        "image": "https://i3.ytimg.com/vi/rLlUh1WtWh0/hqdefault.jpg",
+        "url": "https://youtu.be/rLlUh1WtWh0",
+        "items": [
+            {
+                "name": "YouTube",
+                "url": "https://youtu.be/rLlUh1WtWh0"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "WebXR on the HoloLens",
+        "image": "https://i3.ytimg.com/vi/5hlYROeE9LY/hqdefault.jpg",
+        "url": "https://youtu.be/5hlYROeE9LY",
+        "items": [
+            {
+                "name": "YouTube",
+                "url": "https://youtu.be/5hlYROeE9LY"
+            }
+        ]
+    },
+    {
+        "id": 5,
         "name": "Centric Webcast - PWA",
         "image": "https://i3.ytimg.com/vi/FGLNeimRbbk/hqdefault.jpg",
         "url": "https://youtu.be/FGLNeimRbbk",
@@ -16,7 +40,7 @@
         ]
     },
     {
-        "id": 0,
+        "id": 4,
         "name": " WebXR - Intro & Workshop",
         "image": "https://image.slidesharecdn.com/webxr-clean-180922170740/95/webxr-introduction-and-workshop-1-638.jpg?cb=1537637975",
         "url": "https://www.slideshare.net/TimmyKokke/webxr-introduction-and-workshop",
@@ -28,7 +52,7 @@
         ]
     },
     {
-        "id": 1,
+        "id": 3,
         "name": "YouTube - Livestream",
         "image": "https://i.ytimg.com/vi/Hq-p9EqhaWE/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAI5CGAE=&rs=AOn4CLDc0D127tQfvaFK-J7dxsGTibDZcw",
         "url": "https://www.youtube.com/watch?v=Hq-p9EqhaWE0",
@@ -56,7 +80,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 1,
         "name": "Microsoft Techdays - VR in a box",
         "image": "https://i3.ytimg.com/vi/WAzcOp8c66M/hqdefault.jpg",
         "url": "https://youtu.be/WAzcOp8c66M",
