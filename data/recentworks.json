@@ -1,5 +1,21 @@
 [
     {
+        "id": 8,
+        "name": "WebXR with Wonderland",
+        "image": "https://i3.ytimg.com/vi/jXzI7PovhSA/hqdefault.jpg",
+        "url": "https://youtu.be/jXzI7PovhSA",
+        "items": [
+            {
+                "name": "YouTube",
+                "url": "https://youtu.be/jXzI7PovhSA"
+            },
+            {
+                "name": "Wonderland Engine",
+                "url": "https://wonderlandengine.com/"
+            }
+        ]
+    },
+    {
         "id": 6,
         "name": "WebGPU Live Stream",
         "image": "https://i3.ytimg.com/vi/rLlUh1WtWh0/hqdefault.jpg",
