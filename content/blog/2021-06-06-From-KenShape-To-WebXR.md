@@ -1,14 +1,14 @@
 ---
-id: 20210606
+id: 20210613
 draft: false
 title: From KenShape To WebXR
-date: 2021-06-13T20:51:00+00:00
+date: 2021-06-13T18:51:00+00:00
 author: Sorskoot
 layout: post
 share: true
 comments: true
-guid: https://www.timmykokke.com/?p=20210606
-permalink: /2021/03/KenShape-To-WebXR
+guid: https://www.timmykokke.com/?p=20210613
+permalink: /2021/06/KenShape-To-WebXR
 categories:
   - WebXR
   - Content
