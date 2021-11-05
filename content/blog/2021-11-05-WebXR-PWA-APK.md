@@ -1,6 +1,6 @@
 ---
 id: 20211105
-draft: true
+draft: false
 title: Creating an APK from a WebXR app
 date: 2021-11-05T18:51:00+00:00
 author: Sorskoot
