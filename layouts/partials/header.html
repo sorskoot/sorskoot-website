@@ -30,7 +30,9 @@
         <script defer type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=inline-share-buttons"></script>
     {{ end }} -->
     <script type="text/javascript" src="{{ .Site.BaseURL }}/sw-register.js"></script>
-
+	{{ range .AlternativeOutputFormats -}}
+    	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ end -}}
 </head>
 <body class="home">
 
