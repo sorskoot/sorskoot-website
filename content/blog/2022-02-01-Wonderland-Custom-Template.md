@@ -1,6 +1,6 @@
 ---
 id: 20220201
-draft: true
+draft: false
 title: Custom templates for Wonderland Editor
 date: 2022-02-01T17:00:00+00:00
 author: Sorskoot
