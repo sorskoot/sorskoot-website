@@ -38,7 +38,7 @@ function fromCache(request) {
 function update(request){
   return new Promise((fulfill, reject)=>
       caches.open(CACHE).then(
-          (cache)=> fetch(request).then(
+          (cache)=> fetch(request.clone()).then(
               (response)=> cache.put(request, response).then(fulfill),
               reject
           ))
