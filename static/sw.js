@@ -1,36 +1,46 @@
 
-var cacheName = 'TimmyKokke-Offline';
+var CACHE = 'TimmyKokke-Offline';
 
-self.addEventListener('install', function(event) {
-  var indexPage = new Request('index.html');
-  event.waitUntil(
-    fetch(indexPage).then(function(response) {
-      return caches.open(cacheName).then(function(cache) {
-        return cache.put(indexPage, response);
-      });
-    })
-  );
+
+self.addEventListener('fetch', evt => {        
+  evt.respondWith(fromNetwork(evt.request, 400).catch(() => {
+      return fromCache(evt.request);
+  }));
+
+  evt.waitUntil(update(evt.request));
 });
 
-self.addEventListener('fetch', function(event) {
-  var updateCache = function(request){
-    return caches.open(cacheName).then(function (cache) {
-      return fetch(request.clone()).then(function (response) {
-        return cache.put(request, response);
-      });
+function precache() {
+  return caches.open(CACHE).then(cache => {
+      return cache.addAll(files);
+  });
+}
+
+function fromNetwork(request, timeout) {
+
+  return new Promise(function (fulfill, reject) {
+      var timeoutId = setTimeout(reject, timeout);
+      fetch(request).then(function (response) {
+          clearTimeout(timeoutId);
+          fulfill(response);
+      }, reject);
+  });
+}
+
+function fromCache(request) {
+  return caches.open(CACHE).then(function (cache) {
+    return cache.match(request).then(function (matching) {
+      return matching || Promise.reject('no-match');
     });
-  };
+  });
+}
 
-  event.waitUntil(updateCache(event.request));
-
-  event.respondWith(
-    fetch(event.request).catch(function(error) {
-      return caches.open(cacheName).then(function(cache) {
-        return cache.match(event.request).then(function(matching) {
-          var report =  !matching || matching.status == 404?Promise.reject('no-match'): matching;
-          return report;
-        });
-      });
-    })
-  );
-});
+function update(request){
+  return new Promise((fulfill, reject)=>
+      caches.open(CACHE).then(
+          (cache)=> fetch(request).then(
+              (response)=> cache.put(request, response).then(fulfill),
+              reject
+          ))
+      )
+}

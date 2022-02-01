@@ -514,6 +514,7 @@ img {
   margin: 0 2em;
   display: block;
   text-indent: 0;
+  min-height: 3em;
 }
 
 .thumbnail .cover {
@@ -1234,6 +1235,10 @@ footer.entry-meta .meta-in {
 }
 .twitch .entry-title {
   text-align: left;
+}
+
+.social-link:hover {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

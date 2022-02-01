@@ -6,10 +6,10 @@
     "display": "standalone",
     "start_url": "https://timmykokke.com/",
     "short_name": "TimmyKokke",
-    "theme_color": "transparent",
+    "theme_color": "#a32e02",
     "description": "Weblog of Timmy Kokke on Web design, javascript game development, and virtual/augmented/mixed reality.",
     "orientation": "any",
-    "background_color": "transparent",
+    "background_color": "#a32e02",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
