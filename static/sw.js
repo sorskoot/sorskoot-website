@@ -20,7 +20,7 @@ function fromNetwork(request, timeout) {
 
   return new Promise(function (fulfill, reject) {
       var timeoutId = setTimeout(reject, timeout);
-      fetch(request).then(function (response) {
+      fetch(request.clone()).then(function (response) {
           clearTimeout(timeoutId);
           fulfill(response);
       }, reject);
