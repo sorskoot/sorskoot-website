@@ -39,6 +39,7 @@ To add the asset we want in a WebXR project, we need to go back to the Epic Game
 
 ##### Export Models
 Now that the assets are in the project you need to open it again and look for them in the content browser, usually at the bottom of the screen. Once you've found the folder containing the models or meshes, you need to select them all. This can be done by hitting `CTRL+A`. Then you `Right Click` and from the context menu select `Asset Actions` -> `Bulk Export`. You need to select a folder you want to export the assets to. Keep in mind that you can only export one folder at a time. You need to repeat the process for every folder. 
+There are a few options you need to disable in the export. You don't need `Level of Detail`, `Collision` and `Preview Mesh` as these will add geometry you probably don't need.
 {{< img-link "/images/2022/02/UnrealBulkExportModels.png" "Bulk export models" >}}
 
 ##### Export Textures 
