@@ -2,7 +2,7 @@
 id: 20220205
 draft: false
 title: Assets from Unreal in WebXR
-date: 2022-02-05T22:00:00+00:00
+date: 2022-02-05T20:00:00+00:00
 author: Sorskoot
 layout: post
 share: true
