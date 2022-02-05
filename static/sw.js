@@ -1,6 +1,7 @@
 
 var CACHE = 'TimmyKokke-Offline';
 
+const files = [];
 
 self.addEventListener('fetch', evt => {        
   evt.respondWith(fromNetwork(evt.request, 400).catch(() => {
