@@ -18,7 +18,7 @@ tags:
 ---
 
 ## Intro
-Although it's not possible to export from Unreal to WebXR, there are a lot of very nice assets available in the Unreal Marketplace that could be useful for your WebXR game. The license allows you to use these assets in your game, except for products that [have not been created by Epic Games](https://marketplacehelp.epicgames.com/s/article/Can-I-use-these-products-in-other-gaming-engines-like-Source-or-Unity?language=en_US) themselves. But, since Unreal Engine uses its own format for assets it's not straightforward.
+Although it's not possible to export from Unreal to WebXR, there are a lot of very nice assets available in the Unreal Marketplace that could be useful for your WebXR game. The license allows you to use these assets in your game, except for products that [have been created by Epic Games](https://marketplacehelp.epicgames.com/s/article/Can-I-use-these-products-in-other-gaming-engines-like-Source-or-Unity?language=en_US) themselves. But, since Unreal Engine uses its own format for assets it's not straightforward.
 
 ## Assets
 There are a lot of great free assets in the Unreal Marketplace. But, they can even get better. Every first Tuesday of the month, there's a new set of assets available for free that would normally cost money: [Free for the month](https://www.unrealengine.com/marketplace/en-US/assets?tag=4910). Even if you don't need the assets right now, they might become handy at a later moment. If you've bought them for free they stay yours after the month is over and they return back to their normal price. 
