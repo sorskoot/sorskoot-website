@@ -2,7 +2,7 @@
 id: 20220314
 draft: false
 title: VR Controller Haptics in WebXR
-date: 2022-03-14T23:00:00+00:00
+date: 2022-03-14T20:00:00+00:00
 author: Sorskoot
 layout: post
 share: true
