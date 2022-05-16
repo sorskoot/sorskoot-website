@@ -43,10 +43,10 @@ pluralizeListTitles = false
 #    url = "/twitch/"
 #    weight = 6
 
-[[menu.main]]
-    name = "portfolio"
-    url = "/portfolio/"
-    weight = 7
+#[[menu.main]]
+#    name = "portfolio"
+#    url = "/portfolio/"
+#    weight = 7
 
 [[menu.main]]
     name = "WebXR NL"
