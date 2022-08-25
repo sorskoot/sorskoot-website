@@ -3,7 +3,10 @@ var CACHE = 'TimmyKokke-Offline';
 
 const files = [];
 
-self.addEventListener('fetch', evt => {        
+self.addEventListener('fetch', evt => {      
+  if ( evt.request.url.match(/^.*(\?nocache)$/ )) {
+    return false;
+}
   evt.respondWith(fromNetwork(evt.request, 400).catch(() => {
       return fromCache(evt.request);
   }));

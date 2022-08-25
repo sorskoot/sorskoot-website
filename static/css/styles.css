@@ -239,6 +239,9 @@ h4 {
 h5 {
   font-size: 20px;
   font-size: 1.25rem;
+  font-weight: 500;
+  font-style: italic;
+  color:#780d33;    
 }
 
 a {
