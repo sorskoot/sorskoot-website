@@ -20,5 +20,11 @@
 		"description": "Adds the custom image link",
 		"prefix": "img-link",
 		"scope": "markdown"
+	},
+	"Video":{
+		"body": "{{< video-link \"${1:URL}?nocache\" >}}",
+		"description": "Adds a custom video link (not cached by PWA)",
+		"prefix": "vid-link",
+		"scope": "markdown"
 	}
 }
