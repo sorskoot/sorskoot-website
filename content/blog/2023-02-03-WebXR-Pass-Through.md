@@ -27,12 +27,15 @@ When creating a WebXR VR session in your JavaScript app, you'd normally call the
 ``` 
 let xrSession = await navigator.xr.requestSession("immersive-ar");
 ```
-Because you are running this on a website, you'd never know who and what device is trying to enter AR mode. To check if it is supported, validate if `xrSession` is set after requesting the session:
+Because you are running this on a website, you'd never know who and what device is trying to enter AR mode. To check if it is supported, you can call `isSessionSupported` before requesting it. 
 ``` 
-let xrSession = await navigator.xr.requestSession("immersive-ar");
-if(!xrSession){
-  // show a message to the user that their device is not supported.
+if (await navigator.xr.isSessionSupported("immersive-ar")) {
+  let xrSession = await navigator.xr.requestSession("immersive-ar");
+  // do XR stuff
+} else {
+  // show a message
 }
+
 ```
 Here's a nice example of this feature running: https://cabanier.github.io/webxr-samples-1/immersive-ar-session.html
 
