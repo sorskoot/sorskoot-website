@@ -57,7 +57,7 @@ The first one is to enable the AR mode. This can be done in the `VR & AR` sectio
 
 Having this set enables the AR button when running if your device supports it. By default, the scene has a grey background. To see the real world you'll have to make it transparent. To do this look in the `Rendering` section and change the `A` (alpha channel) of the clearColor to 0.
 
-{{< img-link "/images/2023/02/PassThroughWLESettingColor.png" "Setting up Pass-Through in WLE" >}}
+{{< img-link "/images/2023/02/PassThroughWLESettingsColor.png" "Setting up Pass-Through in WLE" >}}
 
 When you run the application on the Quest it looks something like this:
 
