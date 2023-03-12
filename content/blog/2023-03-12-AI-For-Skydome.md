@@ -50,6 +50,6 @@ Here's an example of how to set an equirectangular image as a skydome in A-Frame
 </html>
 ```
 
-In this example, we're using the `<a-sky>` primitive to create a skydome. The src attribute is set to the path of our equirectangular image file, and the rotation attribute is set to "0 -90 0" to rotate the image correctly. To try the example for yourself, head over to this [Glitch](https://glitch.com/edit/#!/skybox-a-frame-example) and to see it run go [here](https://skybox-a-frame-example-.glitch.me/).
+In this example, we're using the `<a-sky>` primitive to create a skydome. The src attribute is set to the path of our equirectangular image file, and the rotation attribute is set to "0 -90 0" to rotate the image correctly. To try the example for yourself, head over to this [Glitch](https://glitch.com/edit/#!/skybox-a-frame-example) and to see it run go [here](https://skybox-a-frame-example.glitch.me/).
 
 Of course this might work a bit different in other engines, but all of them support using an image as a skydome.
