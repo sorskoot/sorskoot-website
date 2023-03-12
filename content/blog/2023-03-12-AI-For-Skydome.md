@@ -22,9 +22,9 @@ In VR, it's common to add a texture all around the player so there's not a black
 
 If you have a 360 camera you can use your own pictures. Another way of creating these is by rendering them in Blender for example (see my post on that [here](https://timmykokke.com/blog/2022-05-14-3d-skydomes/)). I recently started using another way of creating these images, using AI.
 
-## Skybox Labs
+## Skybox Lab
 
-[Skybox Labs by Blockade Labs](https://skybox.blockadelabs.com/) is a powerful and easy to use tool that allows users to generate equirectangular images using AI, using similar techniques as Stable Diffusion or Midjourney. The tool is free (at the moment of writing) very easy to use. Just head over to Skybox Lab (blockadelabs.com) and enter a short description of what you want your skydome to look like. You can use the list next to the text entry to specify the style you want for your image. Do you want a realistic image? Or is it more suitable for your game to use a more painterly style? When you've made your choice hit generate to get your image.
+[Skybox Lab by Blockade Labs](https://skybox.blockadelabs.com/) is a powerful and easy to use tool that allows users to generate equirectangular images using AI, using similar techniques as Stable Diffusion or Midjourney. The tool is free (at the moment of writing) very easy to use. Just head over to Skybox Lab and enter a short description of what you want your skydome to look like. You can use the list next to the text entry to specify the style you want for your image. Do you want a realistic image? Or is it more suitable for your game to use a more painterly style? When you've made your choice hit generate to get your image.
 
 You can go to https://skybox.blockadelabs.com/ to try it for yourself.
 
