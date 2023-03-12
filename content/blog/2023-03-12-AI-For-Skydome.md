@@ -1,6 +1,6 @@
 ---
 id: 20230201
-draft: true
+draft: false
 title: AI for Skydome
 date: 2023-03-12T00:00:00+00:00
 author: Sorskoot
