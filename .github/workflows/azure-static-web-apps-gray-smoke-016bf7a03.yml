@@ -19,10 +19,10 @@ jobs:
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: '0.91.2'
+        hugo-version: '0.110.0'
         # extended: true
     - name: Run Hugo
-      run: hugo -b https://timmykokke.com
+      run: hugo -b https://timmykokke.com --minify
        # - name: npm install, build
     #   run: |
     #     # Build and test the project, then
