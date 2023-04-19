@@ -1,7 +1,7 @@
 ---
 id: 20230419
 draft: false
-title: Writing better prompts
+title: Making AI-Generated Text More Natural: Tips and Tricks
 date: 2023-05-19T00:00:00+00:00
 author: Sorskoot
 layout: post
@@ -14,7 +14,6 @@ categories:
 tags:
   - AI
 ---
-## Making AI-Generated Text More Natural: Tips and Tricks
 
 As someone who often works with AI-generated text, I've discovered a few handy strategies for making it appear more natural and less obviously computer-generated. Here's what I've learned:
 
