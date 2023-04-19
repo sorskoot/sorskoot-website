@@ -2,7 +2,7 @@
 id: 20230419
 draft: false
 title: "Making AI-Generated Text More Natural: Tips and Tricks"
-date: 2023-05-19T00:00:00+00:00
+date: 2023-04-19T00:00:00+00:00
 author: Sorskoot
 layout: post
 share: true
