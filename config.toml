@@ -2,7 +2,7 @@ baseURL = "localhost"
 languageCode = "en-us"
 title = "Timmy Kokke"
 theme = "initio"
-paginate = 5
+paginate = 10
 pluralizeListTitles = false
 
 [params]
@@ -54,23 +54,24 @@ pluralizeListTitles = false
     weight = 10
     target = "_blank"
 
-# [params.disqus]
-#     site = "sorskoot.disqus.com"
+[params.disqus]
+    site = "sorskoot.disqus.com"
 
-# [params.sharethis]
-# property = "5b5ce62a4970c900111bbb9b"
-#    custom = true
+[params.sharethis]
+    property = "5b5ce62a4970c900111bbb9b"
+    custom = false
 
 [params.google.analytics]
     trackerID = "UA-11559922-2"
 
-[[params.social]]
-	title = "facebook"
-	url = "https://www.facebook.com/sorskoot"
-    icon = "fa-facebook-square"
-    footer = true
+#[[params.social]]
+#	title = "facebook"
+#	url = "https://www.facebook.com/sorskoot"
+#    icon = "fa-facebook-square"
+#    footer = true
 #    sharethis = true
-    network = "facebook"
+#    network = "facebook"
+
 [[params.social]]
 	title = "twitter"
 	url = "https://twitter.com/sorskoot"

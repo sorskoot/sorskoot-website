@@ -1025,23 +1025,27 @@ footer.entry-meta .meta-in {
 .summary {
   flex-grow: 2;
 }
+.categories {
+  font-size: 1.5em;
+  font-weight: bold;
+}
 
-.tags {
+.tags, .categories {
   padding: 0px;
   text-align: center;
   margin-bottom: 0px;
-  height: 40px;
+  height: 30px;
 }
 
-.tag {
+.tag, .category {
   list-style: none;
   display: inline;
   white-space: nowrap;
 }
-.tag:after {
+.tag:after, .category:after {
   content: " ·";
 }
-.tag:last-child:after {
+.tag:last-child:after, .category:last-child:after {
   content: none;
 }
 

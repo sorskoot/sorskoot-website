@@ -9,14 +9,28 @@
                 {{ range .Paginator.Pages }}
 				<article class="post">
 					<header class="entry-header">
+						<h1 class="entry-title" style="margin:0"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title | safeHTML   }}</a></h1>
 						<div class="entry-meta">
 							<span class="posted-on"><time class="entry-date published" date="{{ .Date }}">{{ dateFormat .Site.Params.DateForm .Date }}</time></span>
 						</div>
-						<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title | safeHTML   }}</a></h1>
+						<ul class="categories">
+							{{ range .Params.categories }}
+							<li class="category">
+								<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+							</li>
+							{{ end }}
+						</ul>
+						<ul class="tags">
+							{{ range .Params.tags }}
+							<li class="tag">
+								<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+							</li>
+							{{ end }}
+						</ul>
+					
 					</header>
-					<div class="entry-content">
-						{{ .Content }}
-					</div>
+					
+					<hr />
 				</article>
                 {{ end }}
 
