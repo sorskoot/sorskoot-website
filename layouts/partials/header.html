@@ -8,6 +8,13 @@
 	<meta name="theme-color" content="#bd1550">
 	<meta name="monetization" content="$coil.xrptipbot.com/B6BW9YpKR22WWbQOJ4GsPg">
 	
+	<meta property='og:title' content='{{ .Title }}'/>
+	{{ if .Params.image }}
+	<meta property='og:image' content='{{ .Image }}'/>
+	{{ end }}
+	<meta property='og:description' content='{{ .Description }}'/>
+	<meta property='og:url' content='{{ .Permalink }}' />
+
 	<title>{{ .Title }}</title>
 
 	<link rel="shortcut icon" href="{{ .Site.BaseURL }}/{{ .Site.Params.favicon }}">
@@ -24,11 +31,8 @@
 
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
 
-    <!-- {{ if .Site.Params.customsharethis }}
-        <script defer type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
-    {{ else }}
-        <script defer type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=inline-share-buttons"></script>
-    {{ end }} -->
+	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5b5ce62a4970c900111bbb9b&product=sop' async='async'></script>
+	
     <script type="text/javascript" src="{{ .Site.BaseURL }}/sw-register.js"></script>
 	{{ range .AlternativeOutputFormats -}}
     	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
