@@ -3,3 +3,4 @@
 /themes/hugo-initio/exampleSite
 /resources
 /node_modules
+**/*.backup
