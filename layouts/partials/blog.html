@@ -1,6 +1,6 @@
 <div class="row section featured topspace">
     <div class="grid">
-        {{ range first 8 (where (where .Site.Pages "Section" "blog") ".Params.layout" "==" "post") }}
+        {{ range first 12 (where (where .Site.Pages "Section" "blog") ".Params.layout" "==" "post") }}
         <div class="grid-item">        
             <h3 class="text-center">{{ .Title | safeHTML | truncate 50 }}</h3>
             <p class="summary">{{ .Summary | truncate 150 }}</p>
@@ -18,6 +18,9 @@
         </div>
         {{ end }}
     </div>
-
+    <br/>
+    <p class="text-center">
+        <a class="btn btn-action" style="font-size:large" href="/blog">More blogs...</a>
+    </p>
 </div>
 <!-- / section -->
