@@ -1,5 +1,5 @@
 ---
-id: 20230523
+id: 20230530
 draft: true
 title: VR Game Design Principles
 date: 2023-05-30T00:00:00+00:00
