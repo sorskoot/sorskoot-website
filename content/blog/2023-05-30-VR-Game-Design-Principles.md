@@ -2,7 +2,7 @@
 id: 20230530
 draft: false
 title: VR Game Design Principles
-date: 2023-05-30T15:30:00+00:00
+date: 2023-05-30T14:30:00+00:00
 author: Sorskoot
 layout: post
 share: true
