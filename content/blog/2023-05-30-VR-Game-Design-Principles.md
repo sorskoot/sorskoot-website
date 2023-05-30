@@ -1,8 +1,8 @@
 ---
 id: 20230530
-draft: true
+draft: false
 title: VR Game Design Principles
-date: 2023-05-30T00:00:00+00:00
+date: 2023-05-30T15:30:00+00:00
 author: Sorskoot
 layout: post
 share: true
@@ -17,9 +17,11 @@ tags:
 ---
 
 # VR Game Design Principles
-## Crafting Engaging and Immersive Gameplay Experiences 🎮
+## Creating Engaging and Immersive Gameplay Experiences that players love
 
-Hello Coders! 👩‍💻 Today, I want to share some essential design principles that are specifically tailored for virtual reality games. As you probably know, VR has become increasingly popular in recent years, bringing a whole new level of immersion to gaming. But with that added dimension comes a unique set of challenges for game designers. So let's dive into the key areas to consider when creating a captivating VR experience: spatial navigation, interaction mechanics, and comfort considerations.
+Hello Coders! 👩‍💻 Today, I want to share some design principles that are specifically useful when creating virtual reality games. VR has become more and more popular in recent years, literaly bringing a whole new level of immersion to gaming. But with that added dimension comes a unique set of challenges for game designers. So let's dive into the key areas to consider when creating a captivating VR experience: spatial navigation, interaction mechanics, and comfort considerations.
+
+![Alt text](/images/2023/05/girlcreatingvr.jpeg)
 
 ## Spatial Navigation: Guiding Players Through the Virtual World 🗺️
 
@@ -49,7 +51,7 @@ Lastly, it's essential to consider how movement mechanics and controls can impac
 
 To counteract this potential issue, you could incorporate elements like momentum or inertia into your teleportation mechanic so that players still have a sense of direction when they're zipping around the virtual space.
 
-## Interaction Mechanics: Making Players Feel in Control 🎮
+## Interaction Mechanics: Making Players Feel in Control
 
 
 One of the most critical aspects of a great virtual reality gaming experience is making players feel like they're in control of their virtual environment. Lets talk a about how to achieve this highly sought-after feeling of immersion and control in your VR games.
@@ -77,12 +79,6 @@ Using gestures like swiping through menus or pinching objects to resize them can
 Respect your players' personal space by designing interactions that don't require them to uncomfortably reach too far away or invade their own physical space. The last thing you want is for players to get frustrated because they can't interact with an object just out of reach or accidentally bump into something in their real environment.
 
 Design interactions that accommodate different play spaces and allow players to stay within their comfort zone while still feeling fully immersed in the game world.
-
-***5. Customization Options ⚙️***
-
-Finally, giving players the ability to customize their interaction settings can be a great way to make them feel more in control. Offer options such as adjusting controller sensitivity, swapping button mappings or enabling/disabling certain gesture controls.
-
-This not only caters to different player preferences but also helps accommodate those with accessibility needs, making your game more inclusive and enjoyable for everyone.
 
 ## Keeping Players Happy and Healthy in VR Game Development
 
@@ -128,3 +124,5 @@ By providing customizable options, you empower your players to tailor their VR e
 By considering these design principles when crafting your next VR game, you'll be well on your way to creating an engaging and immersive gameplay experience that keeps players coming back for more. 
 
 Happy Coding! 🚀
+
+![Alt text](/images/2023/05/vr%20interaction.jpeg)
