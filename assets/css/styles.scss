@@ -1037,6 +1037,16 @@ footer.entry-meta .meta-in {
   background-color: #eee;
 }
 
+.grid-item-big {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  @include shadow-box();
+  margin: 0 5px 15px;
+  padding: 5px;
+  background-color: #eee;
+}
+
 .summary {
   flex-grow: 2;
 }

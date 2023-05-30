@@ -1,0 +1,24 @@
+<div class="row section featured topspace">
+    <div class="grid">
+        {{ range first 12 (where (where .Site.Pages "Section" "games") ".Params.layout" "==" "post") }}
+        <div class="grid-item-big">
+            <h3 class="text-center">{{ .Title | safeHTML | truncate 50 }}</h3>
+            <a class="thumbnail" href="{{ .Permalink }}" >
+                <span class="img works-image" style="background-image:url({{ .Params.Image }})">
+                    <span class="cover">
+                        <span class="more">See more &rarr;</span>
+                    </span>
+                </span>
+            </a> 
+            <ul class="tags">
+                {{ range .Params.types }}
+                <li class="tag">
+                    {{ . }}
+                </li>
+                {{ end }}
+            </ul>
+        </div>        
+        {{ end }}
+    </div>
+</div>
+</div>

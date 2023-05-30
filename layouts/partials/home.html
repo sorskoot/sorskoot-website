@@ -1,51 +1,64 @@
 <main id="main">
 
-	<div class="container">
-
+    <div class="container">
         {{ if .Site.Params.showSubheader }}
-            {{ partial "subheader.html" . }}
+        {{ partial "subheader.html" . }}
         {{ end }}
-
-        {{ if .Site.Params.showServices }}
     </div>
+    <!-- ******************************************************** -->
+    {{ if .Site.Params.showServices }}
     <div class="fixed-section-title fixed-blog">
         <div class="caption">
             <span class="border">WRITINGS</span>
-          </div>        
+        </div>
     </div>
     <div class="container">
-            {{ partial "blog.html" . }}
-        {{ end }}
-        {{ if .Site.Params.showRecentWorks }}
+        {{ partial "blog.html" . }}
     </div>
+    {{ end }}
+    <!-- ******************************************************** -->
+    {{ if .Site.Params.showRecentWorks }}
     <div class="fixed-section-title fixed-arvr">
         <div class="caption">
             <span class="border">RECENT WORKS</span>
-          </div>        
+        </div>
     </div>
-    <div class="container">        
-            {{ partial "recentworks.html" . }}
-        {{ end }}
+    <div class="container">
+        {{ partial "recentworks.html" . }}
+    </div>
+    {{ end }}
+    <!-- ******************************************************** -->
+    {{ if .Site.Params.showAgenda }}
 
-        {{ if .Site.Params.showAgenda }}
-    </div>
     <div class="fixed-section-title fixed-agenda">
         <div class="caption">
             <span class="border">AGENDA</span>
-          </div>        
+        </div>
     </div>
+
     <div class="container">
-           {{ partial "agenda.html" . }}
+        {{ partial "agenda.html" . }}
         {{ end }}
-    
+
         {{ if .Site.Params.showDownload }}
-            {{ partial "download.html" . }}
+        {{ partial "download.html" . }}
         {{ end }}
 
         {{ if .Site.Params.showClients }}
-            {{ partial "clients.html" . }}
+        {{ partial "clients.html" . }}
         {{ end }}
 
-	</div>	<!-- /container -->
+    </div> <!-- /container -->
+    <!-- ******************************************************** -->
+    {{ if .Site.Params.showGames }}
 
+    <div class="fixed-section-title fixed-arvr">
+        <div class="caption">
+            <span class="border">GAMES</span>
+        </div>
+    </div>
+    <div class="container">
+        {{ partial "games.html" . }}
+    </div>
+    {{ end }}
 </main>

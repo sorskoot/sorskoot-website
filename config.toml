@@ -11,17 +11,18 @@ pluralizeListTitles = false
     email = "info@timmykokke.com"
     phone = ""
     address = ""
-    year = 2021
+    year = 2023
     background = ""
     favicon = "icons/gt_favicon.png"
     DateForm = "January 2, 2006"
     
     showSubheader = true
     showServices = true
-    showRecentWorks = true
+    showRecentWorks = false
     showDownload = false
     showClients = false
-    showAgenda = true
+    showAgenda = false
+    showGames = true
 
     footerEnableContact = false
     footerEnableFollowme = true
