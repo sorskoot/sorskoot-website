@@ -1,7 +1,6 @@
 # Timmy Kokke
 
-> Email: [info@TimmyKokke.com](mailto:info@timmykokke.com)  
-> Telephone: +31 6 49940002  
+> Email: [info (at) TimmyKokke.com](mailto:info (at) timmykokke.com)  
 > LinkedIn: [linkedin.com/in/timmykokke](https://www.linkedin.com/in/timmykokke)  
 > GitHub: [github.com/sorskoot](https://github.com/sorskoot)
 
