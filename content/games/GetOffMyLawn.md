@@ -17,6 +17,7 @@ types:
 ---
 
 # Get off my lawn!
+Get off my lawn! is a fun game where you play as the grumpy old neighbor. You have to use your hose to shoot water at the bad kids that throw litter on you beautiful lawn. 
 
 Play the game at: 
 - https://heyvr.io/game/get-off-my-lawn

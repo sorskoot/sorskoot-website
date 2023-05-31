@@ -17,6 +17,7 @@ types:
 ---
 
 # Keep'em 404
+This game was build for the JS13KGames game jam. It is build with A-Frame. I tried to experiment with a base defender game, while trying to follow the theme of 404. 
 
 Play the game at: 
 - https://js13kgames.com/entries/keepem-404
