@@ -10,7 +10,7 @@ comments: true
 guid: https://www.timmykokke.com/?p=20230523
 permalink: /2023/05/VRUIInUnity/
 categories:
-  - Unity  
+  - WebXR  
 tags:
   - VR
 
