@@ -18,7 +18,7 @@ tags:
 
 # The Art of Crafting Engaging Tutorials in VR
 
-Hello Coders! 👾 Today, we're going to talk about one of the most crucial aspects of designing a successful VR game: creating engaging tutorial scenes. As you know, tutorials are often the first interaction players have with your game, so it's essential to make them informative and captivating.
+Hello Coders! 👾 Today, I want to talk about one of the most crucial aspects of designing a successful VR game: creating engaging tutorial scenes. Tutorials are often the first interaction players have with your game, so it's essential to make them informative and captivating.
 
 ## Why Are Tutorial Scenes Important? 🎮
 
