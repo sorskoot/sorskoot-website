@@ -115,6 +115,6 @@ Analyzing your WebXR app with Spector.JS can reveal several opportunities for op
 
 ## Wrapping Up 
 
-Spector.JS is an invaluable tool for analyzing WebXR performance, helping you identify bottlenecks in your application and providing insights on how to optimize it for a smooth user experience. So go ahead and give it a try – your users will thank you! Happy debugging! 😊 
+Spector.JS is an invaluable tool for analyzing WebXR performance, helping you identify bottlenecks in your application and providing insights on how to optimize it for a smooth user experience. So go ahead and give it a try – your users will thank you!
 
 Happy Coding! 🚀
