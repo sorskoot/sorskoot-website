@@ -1,6 +1,6 @@
 ---
 id: 20230617
-draft: true
+draft: false
 title: Dependency Injection in TypeScript
 date: 2023-06-17T00:00:00+00:00
 author: Sorskoot
@@ -16,13 +16,13 @@ tags:
   
 ---
 
-# Mastering Dependency Injection in TypeScript Games with @service Decorator 🎮
+## Dependency Injection in TypeScript Games
 
-Hello Coders! 👾 Today, we're going to take a deep dive into the world of dependency injection in TypeScript games, using the magical `@service` decorator. Trust me, this is going to be a game-changer!
+Hello Coders! 👾 Today, we're going to take a deep dive into the world of dependency injection in TypeScript games, using the magical `@service` and `@inhect` decorators. Dependency Injection is something I always used in my C# code. But, since I'm diving deeper into TypeScript now I wanted to see if it could be done in TypeScript as well.
 
 ## What's the Deal with Dependency Injection? 🤷
 
-First things first – what exactly is dependency injection? In simple terms, it's a design pattern that makes our code more flexible, maintainable and testable by reducing direct dependencies between classes. And, it's the 'D' of the SOLID principles I talked about in a previous blogpost.
+First things first – what exactly is dependency injection? In simple terms, it's a design pattern that makes our code more flexible, maintainable and testable by reducing direct dependencies between classes. And, it's a way to achieve the Depency Inversion Principle, the 'D' of the SOLID principles I talked about in my [previous blogpost](/blog/2023-06-16-solid-in-typescript/).
 
 Imagine you're building a game and you have two classes: `Player` and `Weapon`. The traditional way to create a relationship between these two would be by instantiating a `Weapon` object inside the `Player` class:
 
@@ -62,7 +62,7 @@ class Player {
 
 Now we can easily replace the weapon or test our player without it. Great! But... how do we manage all those dependencies across our entire game? 🤔
 
-## Enter the @service Decorator 🚪
+## Enter the @service Decorator
 
 That's where the `@service` decorator comes into play. With it, you can create a shared instance of your services (like `Weapon`) and automatically inject them into your classes. Let me show you how.
 
@@ -109,9 +109,9 @@ class Weapon {
 }
 ```
 
-And there you have it – now each player will have their very own instance of our trusty `Weapon`. 🗡️
+And there you have it – now each player will have their very own instance of our trusty `Weapon`. 
 
-## Wrap Up 🎁
+## Wrap Up
 
 So there you have it – dependency injection made easy with TypeScript and decorators. No more messy constructors and passing objects around manually! Now go forth and conquer your game development adventures with cleaner, more manageable code!
 
