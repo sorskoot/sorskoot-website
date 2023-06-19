@@ -18,7 +18,7 @@ tags:
 
 ## Dependency Injection in TypeScript Games
 
-Hello Coders! 👾 Today, I want to take you on small journey into the magical world of Dependency Injection (DI) in TypeScript games. I'm excited to learn how to use [Microsoft's `tsyringe`](https://github.com/microsoft/tsyringe) library to make my projects more efficient and easy to manage. So, let's get started!
+Hello Coders! 👾 Today, I want to take you on small journey into the magical world of Dependency Injection (DI) in TypeScript games. I'm excited to learn how to use [Microsoft's tsyringe](https://github.com/microsoft/tsyringe) library to make my projects more efficient and easy to manage. So, let's get started!
 
 
 ## What's Dependency Injection? 🤷
