@@ -13,6 +13,15 @@
 						<div class="entry-meta">
 							<span class="posted-on"><time class="entry-date published" date="{{ .Date }}">{{ dateFormat .Site.Params.DateForm .Date }}</time></span>
 						</div>
+						{{ if .Params.Image }} 
+						<a class="thumbnail" href="{{ .Permalink }}" >
+							<span class="img works-image" style="background-image:url({{ .Params.Image }})">
+								<span class="cover">
+									<span class="more">See more &rarr;</span>
+								</span>
+							</span>
+						</a> 
+						{{ end }}
 						<ul class="categories">
 							{{ range .Params.categories }}
 							<li class="category">

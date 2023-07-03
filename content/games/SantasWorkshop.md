@@ -3,7 +3,7 @@ id: 20230526
 draft: false
 title: "Santa's Workshop"
 description: "Devlog for 'Life at Pixel Farm', my entry for GameDev.tv Game Jam"
-date: 2023-05-26T20:00:00+00:00
+date: 2023-01-01T20:00:00+00:00
 author: Sorskoot
 layout: post
 share: true
