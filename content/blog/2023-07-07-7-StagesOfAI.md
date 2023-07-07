@@ -2,7 +2,7 @@
 id: 20230707
 draft: false
 title: 7 Stages of AI
-date: 2023-07-07T22:00:00+00:00
+date: 2023-07-07T20:00:00+00:00
 author: Sorskoot
 layout: post
 share: true
