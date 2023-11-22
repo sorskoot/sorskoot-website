@@ -10,7 +10,7 @@ share: true
 comments: true
 guid: https://www.timmykokke.com/?p=santasworkshop
 permalink: /Games/santasworkshop
-image: https://constructarcade.com/game/santas-workshop/santas-workshop.webp
+image: https://heyvr.io/media/user/thumbnails/f6f95e514da42a289c80c6c02088b9f1-lg.jpg
 types: 
 - Full Game
 ---

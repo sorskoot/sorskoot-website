@@ -10,7 +10,7 @@ share: true
 comments: true
 guid: https://www.timmykokke.com/?p=storagespace13
 permalink: /Games/storagespace13
-image: https://constructarcade.com/game/house-of-the-dead/house-of-the-dead.webp
+image: https://heyvr.io/media/user/thumbnails/472dd05c38e0510c8fe8cb5c66ee0ca5-lg.jpg
 types: 
 - Preview
 

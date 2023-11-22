@@ -10,7 +10,7 @@ share: true
 comments: true
 guid: https://www.timmykokke.com/?p=BackToSpace
 permalink: /Games/BackToSpace
-image: https://constructarcade.com/game/back-to-space/back-to-space.webp
+image: https://heyvr.io/media/user/thumbnails/d8b22aedab44e2299ad1bec1eb713695-lg.jpg
 types: 
 - GameJam
 - Full Game

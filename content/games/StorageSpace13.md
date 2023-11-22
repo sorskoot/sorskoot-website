@@ -10,7 +10,7 @@ share: true
 comments: true
 guid: https://www.timmykokke.com/?p=storagespace13
 permalink: /Games/storagespace13
-image: https://constructarcade.com/game/storage-space-13/storage-space-13.webp
+image: https://heyvr.io/media/user/thumbnails/1c8c588342afb8f88d02422e2934c3d8-lg.jpg
 types: 
 - GameJam
 - Full Game

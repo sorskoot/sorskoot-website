@@ -10,7 +10,7 @@ share: true
 comments: true
 guid: https://www.timmykokke.com/?p=Getoffmylawn
 permalink: /Games/Getoffmylawn
-image: https://constructarcade.com/game/get-off-my-lawn/get-off-my-lawn.webp
+image: https://heyvr.io/media/user/thumbnails/4e6aacae30865498016d717d2b1ca05c-lg.jpg
 types: 
 - Full Game
 
