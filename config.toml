@@ -6,7 +6,7 @@ paginate = 10
 pluralizeListTitles = false
 
 [params]
-    name = "Timmy Kokke"
+    name = "Timmy Kokke / Sorskoot"
     description = "Web - Games - VR/AR/XR - Live Coding"
     email = "info@timmykokke.com"
     phone = ""
@@ -39,10 +39,10 @@ pluralizeListTitles = false
     url = "/blog/"
     weight = 5
 
-#[[menu.main]]
-#    name = "twitch"
-#    url = "/twitch/"
-#    weight = 6
+[[menu.main]]
+   name = "youtube"
+   url = "/youtube/"
+   weight = 6
 
 #[[menu.main]]
 #    name = "portfolio"

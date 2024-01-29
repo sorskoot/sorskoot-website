@@ -12,7 +12,7 @@ html {
 
 body {
   font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 1.1rem;
   font-family: $font-body;
   color: #666666;
   padding: 0;
@@ -1208,6 +1208,9 @@ footer.entry-meta .meta-in {
   &.fixed-twitch {
     background-image: url("../images/twitchbanner.jpg");
   }
+  &.fixed-youtube {
+    background-image: url("../images/youtubebanner.jpg");
+  }
   &.fixed-agenda {
     background-image: url("../images/agenda.jpg");
   }
@@ -1270,7 +1273,7 @@ footer.entry-meta .meta-in {
 }
 
 
-.twitch{
+.twitch, .youtube{
 
     & .entry-title{
         text-align: left;

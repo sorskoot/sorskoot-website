@@ -7,13 +7,13 @@ weight = 10
 
 Timmy has been described as an expert in C#, JavaScript and web technologies. He is a senior developer, technical lead with a lot of knowledge about architecture. He has been building software, primarily for the web, for over 2 decades ranging from large web portals and mobile apps to creating 3D artist impressions and virtual reality. 
 
-Timmy currently works at Senior Mixed Reality Developer at Velicus. He founded the [WebXR NL meetup](https://webxr.nl) and is recognized as a [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/4029159?fullName=Timmy%20%20Kokke) for Developer Technologies. He is on twitter at [@sorskoot](https://twitter.com/sorskoot), blogs regularly on https://timmykokke.com and you can find him coding live at https://twitch.tv/sorskoot.
+Timmy currently works at Senior WebXR Solutions Architect at [Wonderland GmbH](https://wonderlandengine.com). He founded the [WebXR NL meetup](https://webxr.nl) and is recognized as a [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/4029159?fullName=Timmy%20%20Kokke) for Developer Technologies. He is on twitter at [@sorskoot](https://twitter.com/sorskoot), blogs regularly on https://timmykokke.com and you can find him coding live at https://youtube.com/sorskoot.
 
 ![about](../images/mac.jpg)
 
 ## DISCLAIMER
 
-Last updated: **February 04, 2021**
+Last updated: **December, 2023**
 
 ### WEBSITE DISCLAIMER
 

@@ -1,7 +1,7 @@
 ---
 id: 20230920
 draft: true
-title: JS13KGames Devlog 1
+title: Wonderland Engine Blending Modes
 date: 2023-09-20T00:00:00+00:00
 author: Sorskoot
 layout: post

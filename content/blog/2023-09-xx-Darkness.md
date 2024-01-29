@@ -1,18 +1,18 @@
 ---
-id: 20240920
+id: 20230920
 draft: true
 title: Darkness
-date: 2024-09-20T00:00:00+00:00
+date: 2023-09-20T00:00:00+00:00
 author: Sorskoot
 layout: post
 share: true
 comments: true
-guid: https://www.timmykokke.com/?p=20240920
+guid: https://www.timmykokke.com/?p=20230920
 permalink: /2023/09/Darkness/
 categories:
   - WebXR
 tags:
-  - Wonderland
+  - Wonderland Engine
 
 ---
 # Spooky 3D WebGL Game Crafting: A Chill-Down-the-Spine Tutorial 🎮
@@ -54,3 +54,4 @@ Finally, remember that less is often more. Leave some details up to players' ima
 Wrapping up, crafting darkness in horror 3D WebGL games hinges on getting adept at lighting, thwarting banding artifacts and setting up the spooky ambiance. Give these techniques a whirl in your next project and watch your players twitch in their seats!
 
 Happy Coding! 🚀
+

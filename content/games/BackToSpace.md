@@ -2,7 +2,6 @@
 id: 20230526
 draft: false
 title: "Back To Space"
-description: "Devlog for 'Life at Pixel Farm', my entry for GameDev.tv Game Jam"
 date: 2023-01-01T20:00:00+00:00
 author: Sorskoot
 layout: post
@@ -10,7 +9,7 @@ share: true
 comments: true
 guid: https://www.timmykokke.com/?p=BackToSpace
 permalink: /Games/BackToSpace
-image: https://heyvr.io/media/user/thumbnails/d8b22aedab44e2299ad1bec1eb713695-lg.jpg
+image: /images/backtospace.webp
 types: 
 - GameJam
 - Full Game

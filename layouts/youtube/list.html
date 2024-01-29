@@ -1,0 +1,47 @@
+{{ partial "header.html" . }}
+
+<main id="main" class="youtube">
+    <div class="fixed-section-title fixed-youtube">
+        <div class="caption">
+            <span class="border">YouTube</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row topspace">
+            <div class="col-sm-8 col-sm-offset-2">
+                {{ range .Paginator.Pages }}
+                <article class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title | safeHTML   }}</a>
+                        </h1>
+                        <div class="entry-meta">
+                            <span class="posted-on">
+                                <time class="entry-date published" date="{{ .Date }}">{{ dateFormat .Site.Params.DateForm .Date }}</time>
+                                <span> - #{{ .Params.episode}} </span>
+                            </span>
+                        </div>
+                    </header>
+                    <div class="entry-content">
+                        {{ .Summary }}
+                        <div>
+                            <a href="{{ .Permalink }}" rel="bookmark">more…</a>
+                        </div>
+                    </div>
+
+                </article>
+                {{ end }}
+            </div>
+        </div>
+
+        <center class="">
+            <ul class="pagination">
+                {{ template "_internal/pagination.html" . }}
+            </ul>
+        </center>
+
+
+    </div> <!-- /container -->
+
+</main>
+
+{{ partial "footer.html" . }}

@@ -10,7 +10,7 @@ share: true
 comments: true
 guid: https://www.timmykokke.com/?p=storagespace13
 permalink: /Games/storagespace13
-image: https://heyvr.io/media/user/thumbnails/1c8c588342afb8f88d02422e2934c3d8-lg.jpg
+image: /images/storagespace.webp
 types: 
 - GameJam
 - Full Game

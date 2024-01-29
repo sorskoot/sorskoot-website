@@ -8,9 +8,11 @@
 A highly-skilled and enthusiastic professional seeking a position as {Job Title} at {Company}, where I can apply my expertise in {key skills or technologies} to contribute to the success of the organization.
 
 ## 💼 Experience
+### Senior Mixed Reality Software Developer
+**Wonderland GmbH** - Remote *(Aug 2020 - Aug 2023)*
 
 ### Senior Mixed Reality Software Developer
-**Velicus B.V** - Remote *(Aug 2020 - Present)*
+**Velicus B.V** - Remote *(Aug 2020 - Aug 2023)*
 - Key accomplishment or responsibility #1
 - Key accomplishment or responsibility #2
 - Key accomplishment or responsibility #3

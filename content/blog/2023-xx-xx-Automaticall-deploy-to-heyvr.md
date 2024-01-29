@@ -12,7 +12,7 @@ permalink: /2023/10/deploytoHeyVR/
 categories:
   - WebXR
 tags:
-  - Wonderland
+  - Wonderland Engine
   - HeyVR
 ---
 

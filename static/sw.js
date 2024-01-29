@@ -3,12 +3,12 @@ var CACHE = 'TimmyKokke-Offline';
 
 const files = [];
 
-self.addEventListener('fetch', evt => {      
-  if ( evt.request.url.match(/^.*(\?nocache)$/ )) {
+self.addEventListener('fetch', evt => {
+  if (evt.request.url.match(/^.*(\?nocache)$/)) {
     return false;
-}
+  }
   evt.respondWith(fromNetwork(evt.request, 400).catch(() => {
-      return fromCache(evt.request);
+    return fromCache(evt.request);
   }));
 
   evt.waitUntil(update(evt.request));
@@ -16,35 +16,30 @@ self.addEventListener('fetch', evt => {
 
 function precache() {
   return caches.open(CACHE).then(cache => {
-      return cache.addAll(files);
+    return cache.addAll(files);
   });
 }
 
 function fromNetwork(request, timeout) {
 
   return new Promise(function (fulfill, reject) {
-      var timeoutId = setTimeout(reject, timeout);
-      fetch(request.clone()).then(function (response) {
-          clearTimeout(timeoutId);
-          fulfill(response);
-      }, reject);
+    var timeoutId = setTimeout(reject, timeout);
+    fetch(request.clone()).then(function (response) {
+      clearTimeout(timeoutId);
+      fulfill(response);
+    }, reject);
   });
 }
 
 function fromCache(request) {
-  return caches.open(CACHE).then(function (cache) {
-    return cache.match(request).then(function (matching) {
-      return matching || Promise.reject('no-match');
-    });
-  });
+  return caches.open(CACHE).then((cache) =>
+    cache.match(request).then((matching) =>
+      matching || Promise.reject('no-match')));
 }
 
-function update(request){
-  return new Promise((fulfill, reject)=>
-      caches.open(CACHE).then(
-          (cache)=> fetch(request.clone()).then(
-              (response)=> cache.put(request, response).then(fulfill),
-              reject
-          ))
-      )
+function update(request) {
+  return caches.open(CACHE).then(
+    (cache) => fetch(request.clone()).then(
+      (response) => cache.put(request, response)
+    ))
 }

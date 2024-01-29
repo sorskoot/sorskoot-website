@@ -13,6 +13,7 @@ categories:
   - TypeScript  
 tags:
   - Architecture
+  - TypeScript
   
 ---
 # 5 Code Patterns for Your TypeScript Games

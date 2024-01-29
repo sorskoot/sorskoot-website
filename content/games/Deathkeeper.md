@@ -9,7 +9,7 @@ share: true
 comments: true
 guid: https://www.timmykokke.com/?p=Deathkeeper
 permalink: /Games/Deathkeeper
-image: https://js13kgames.com/games/deathkeeper/__big.jpg
+image: /images/deathkeeper.jpg
 types: 
 - GameJam
 

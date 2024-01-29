@@ -12,7 +12,7 @@ permalink: /2023/05/RxJSandWonderlandEngine/
 categories:
   - WebXR  
 tags:
-  - Wonderland
+  - Wonderland Engine
 
 ---
 # Reacting to State Changes in My Games

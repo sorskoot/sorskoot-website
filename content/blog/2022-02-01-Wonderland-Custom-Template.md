@@ -11,10 +11,8 @@ guid: https://www.timmykokke.com/?p=20220201
 permalink: /2022/02/Wonderland-Custom-Template
 categories:
   - WebXR
-  - Content
-  - Wonderland
 tags:
-  - WebXR
+  - Wonderland Engine
 
 ---
 
