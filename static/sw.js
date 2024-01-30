@@ -1,45 +1,75 @@
-
-var CACHE = 'TimmyKokke-Offline';
+var CacheName = 'TimmyKokke-Offline';
 
 const files = [];
 
-self.addEventListener('fetch', evt => {
-  if (evt.request.url.match(/^.*(\?nocache)$/)) {
-    return false;
-  }
-  evt.respondWith(fromNetwork(evt.request, 400).catch(() => {
-    return fromCache(evt.request);
-  }));
-
-  evt.waitUntil(update(evt.request));
+/**
+ * On install, pre-cache provided resources.
+ */
+self.addEventListener('install', event => {
+  // Ask the service worker to keep installing until the returning promise
+  // resolves.
+  event.waitUntil(caches.open(CacheName)
+      .then(cache => cache.addAll(files))
+      .then(self.skipWaiting()));
 });
 
-function precache() {
-  return caches.open(CACHE).then(cache => {
-    return cache.addAll(files);
-  });
+/** 
+* On activate, continue immediately. This way you don't have to wait until 
+* the next reload for the page.
+*/
+self.addEventListener('activate', (event) => {
+  event.waitUntil(self.clients.claim());
+});
+
+/** 
+* On fetch, return from cache; if there's nothing in the cache, try the network. 
+* Afterwards, update the cache.
+*/
+self.addEventListener('fetch', (evt) => {
+  if (evt.request.method === 'POST') {
+    return;
+  }
+  // This promise resolves with either the cached response or a network response
+  evt.respondWith(fromCache(evt.request).catch(() =>
+      //Request is not in the cache, so fetch it from the network 
+      fetch(evt.request.clone())
+  ));
+
+  // Wait until the cache is updated.
+  evt.waitUntil(
+      updateCache(evt.request)
+  );
+});
+
+/**
+* get the response from the cache, or throw an error if it's not there
+* @param {Request} request The request to get from the cache
+* @returns {Promise<Response>} The response from the cache
+*/
+async function fromCache(request) {
+  const cache = await caches.open(CacheName);
+  const matching = await cache.match(request, { ignoreSearch: true });
+  if (!matching) {
+      // throwing the error will cause the promise to reject
+      throw new Error('No match found in cache')
+  };
+  return matching;
 }
 
-function fromNetwork(request, timeout) {
-
-  return new Promise(function (fulfill, reject) {
-    var timeoutId = setTimeout(reject, timeout);
-    fetch(request.clone()).then(function (response) {
-      clearTimeout(timeoutId);
-      fulfill(response);
-    }, reject);
-  });
-}
-
-function fromCache(request) {
-  return caches.open(CACHE).then((cache) =>
-    cache.match(request).then((matching) =>
-      matching || Promise.reject('no-match')));
-}
-
-function update(request) {
-  return caches.open(CACHE).then(
-    (cache) => fetch(request.clone()).then(
-      (response) => cache.put(request, response)
-    ))
+/**
+* Update the cache with the response from the network 
+* @param {Request} request 
+* @returns {Promise<Response>} The response fetched from the network
+*/
+async function updateCache(request) {
+  const cache = await caches.open(CacheName);
+  try {
+      const response = await fetch(request);
+      await cache.put(request, response.clone());
+      return response;
+  } catch (e) {
+      // if the fetch fails, just log it and continue.
+      // no need to stall the request
+      console.warn('failed to update cache for ' + request.url);
+  }
 }
