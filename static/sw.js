@@ -9,8 +9,8 @@ self.addEventListener('install', event => {
   // Ask the service worker to keep installing until the returning promise
   // resolves.
   event.waitUntil(caches.open(CacheName)
-      .then(cache => cache.addAll(files))
-      .then(self.skipWaiting()));
+    .then(cache => cache.addAll(files))
+    .then(self.skipWaiting()));
 });
 
 /** 
@@ -29,16 +29,20 @@ self.addEventListener('fetch', (evt) => {
   if (evt.request.method === 'POST') {
     return;
   }
-  // This promise resolves with either the cached response or a network response
-  evt.respondWith(fromCache(evt.request).catch(() =>
+
+  // only handle requests from my domain.
+  if (new URL(evt.request.url).origin === location.origin) {
+    // This promise resolves with either the cached response or a network response
+    evt.respondWith(fromCache(evt.request).catch(() =>
       //Request is not in the cache, so fetch it from the network 
       fetch(evt.request.clone())
-  ));
+    ));
 
-  // Wait until the cache is updated.
-  evt.waitUntil(
+    // Wait until the cache is updated.
+    evt.waitUntil(
       updateCache(evt.request)
-  );
+    );
+  } 
 });
 
 /**
@@ -50,8 +54,8 @@ async function fromCache(request) {
   const cache = await caches.open(CacheName);
   const matching = await cache.match(request, { ignoreSearch: true });
   if (!matching) {
-      // throwing the error will cause the promise to reject
-      throw new Error('No match found in cache')
+    // throwing the error will cause the promise to reject
+    throw new Error('No match found in cache')
   };
   return matching;
 }
@@ -64,12 +68,12 @@ async function fromCache(request) {
 async function updateCache(request) {
   const cache = await caches.open(CacheName);
   try {
-      const response = await fetch(request);
-      await cache.put(request, response.clone());
-      return response;
+    const response = await fetch(request);
+    await cache.put(request, response.clone());
+    return response;
   } catch (e) {
-      // if the fetch fails, just log it and continue.
-      // no need to stall the request
-      console.warn('failed to update cache for ' + request.url);
+    // if the fetch fails, just log it and continue.
+    // no need to stall the request
+    console.warn('failed to update cache for ' + request.url);
   }
 }
