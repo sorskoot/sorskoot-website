@@ -34,7 +34,7 @@ Let's go over them and talk about their key functions and when you should (and s
 
 ### onRegister
 
-The first method that is called in the life cycle of a component is the `onRegister` method. This immediately is a special one, since it is _static_. It is callen when the component is registered with Wonderland Engine. This is before the component is instantiated. The common thing you can do here is register other components this component depends on. You can add a little bit of logic to have a [specific component registered in specific cases](https://wonderlandengine.com/jsapi/component/#onRegister). The instance of the engine is passed a parameter.
+The first method that is called in the life cycle of a component is the `onRegister` method. This immediately is a special one, since it is _static_. It is called when the component is registered with Wonderland Engine. This is before the component is instantiated. The common thing you can do here is register other components this component depends on. You can add a little bit of logic to have a [specific component registered in specific cases](https://wonderlandengine.com/jsapi/component/#onRegister). The instance of the engine is passed a parameter.
 
 ### init
 
@@ -55,7 +55,7 @@ Now we're getting to the methods that can be called more than once in the life c
 
 ### update
 
-The `update` method is called every frame. As a parameter, it gets the time that has passed since the previous frame in seconds. This can be used to calculate constant changes over time. `Update` would be the right place to do the business logic of your game. 
+The `update` method is called every frame. As a parameter, it gets the time that has passed since the previous frame in seconds. This can be used to calculate constant changes over time. `Update` would be the right place to do the business logic of your game.
 
 ### onDeactivate
 
@@ -114,7 +114,7 @@ After which it stops and waits until it is activated. To activate the component:
 this.object.getComponent(Test).active = true;
 ```
 
-At that point the sequence continues.
+At that point, the sequence continues.
 
 `validateProperties → start → onActivate → update`
 
