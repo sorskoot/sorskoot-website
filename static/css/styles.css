@@ -7,7 +7,7 @@ body {
   font-size: 15px;
   font-size: 1.1rem;
   font-family: "Open sans", Helvetica, Arial, sans-serif;
-  color: #666666;
+  color: #333;
   padding: 0;
   margin: 0;
 }
@@ -239,9 +239,6 @@ h4 {
 h5 {
   font-size: 20px;
   font-size: 1.25rem;
-  font-weight: 500;
-  font-style: italic;
-  color:#780d33;    
 }
 
 a {
@@ -285,10 +282,12 @@ a:hover {
 #head {
   background: #f4f4f4 url(../images/bg_head.png) top right;
   background-attachment: fixed;
-  background-size: contain;
   background-repeat: no-repeat;
   color: #7c7c7c;
   padding: 30px 0 35px 0;
+  background-position-x: center;
+  background-size: contain;
+  background-color: #32313b;
 }
 @media (max-width: 640px) {
   #head {
@@ -692,6 +691,7 @@ img {
   font-size: 1.875rem;
   padding-top: 20px;
   margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 .meta-nav,
@@ -1021,6 +1021,7 @@ footer.entry-meta .meta-in {
   padding: 5px;
   background-color: #eee;
 }
+
 .grid-item-big {
   width: 500px;
   display: flex;
@@ -1031,30 +1032,27 @@ footer.entry-meta .meta-in {
   padding: 5px;
   background-color: #eee;
 }
+
 .summary {
   flex-grow: 2;
 }
-.categories {
-  font-size: 1.5em;
-  font-weight: bold;
-}
 
-.tags, .categories {
+.tags {
   padding: 0px;
   text-align: center;
   margin-bottom: 0px;
-  height: 30px;
+  height: 40px;
 }
 
-.tag, .category {
+.tag {
   list-style: none;
   display: inline;
   white-space: nowrap;
 }
-.tag:after, .category:after {
+.tag:after {
   content: " ·";
 }
-.tag:last-child:after, .category:last-child:after {
+.tag:last-child:after {
   content: none;
 }
 
@@ -1194,6 +1192,9 @@ footer.entry-meta .meta-in {
 .fixed-section-title.fixed-twitch {
   background-image: url("../images/twitchbanner.jpg");
 }
+.fixed-section-title.fixed-youtube {
+  background-image: url("../images/youtubebanner.jpg");
+}
 .fixed-section-title.fixed-agenda {
   background-image: url("../images/agenda.jpg");
 }
@@ -1250,7 +1251,7 @@ footer.entry-meta .meta-in {
   flex-shrink: 0.2;
   padding: 16px;
 }
-.twitch .entry-title {
+.twitch .entry-title, .youtube .entry-title {
   text-align: left;
 }
 
