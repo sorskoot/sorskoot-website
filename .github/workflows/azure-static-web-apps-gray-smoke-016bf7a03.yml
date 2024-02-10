@@ -20,7 +20,7 @@ jobs:
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: '0.122.0'
-        # extended: true
+        extended: true
     - name: Run Hugo
       run: hugo -b https://timmykokke.com --minify
        # - name: npm install, build
