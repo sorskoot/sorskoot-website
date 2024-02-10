@@ -5,6 +5,13 @@ theme = "initio"
 paginate = 10
 pluralizeListTitles = false
 
+[outputs]
+  home = ['html']
+  section = ['html','rss']
+  taxonomy = ['html']
+  term = ['html']
+  
+
 [params]
     name = "Timmy Kokke / Sorskoot"
     description = "Web - Games - VR/AR/XR - Live Coding"
