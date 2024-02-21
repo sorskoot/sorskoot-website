@@ -15,6 +15,8 @@ tags:
   - Rosie
   - Semantic Kernel
   - Azure
+images:
+  - /images/2024/02/Ai-in-the-library.jpeg
 ---
 
 Hello Coders! 👾
@@ -160,3 +162,5 @@ Last thing to note is that Microsoft is working on [Kernel Memory](https://micro
 And that's a wrap for today's update! I hope you're as excited about Rosie's new capabilities as I am. If you've got any thoughts or questions. Let me know down below. As always, make sure to [follow me](https://twitter.com/sorskoot) and subscribe to my [YouTube Channel](https://youtube.com/sorskoot) for updates on that side.
 
 Happy Coding! 🚀
+
+{{<img-link "/images/2024/02/Ai-in-the-library.jpeg" "A female AI strolling through a large ancient library" >}}
