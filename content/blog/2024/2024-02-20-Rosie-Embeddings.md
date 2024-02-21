@@ -25,6 +25,8 @@ In the ongoing series about my AI Assistant Rosie, I'd like to shed some light o
 
 Equipped with Azure AI Search and Azure OpenAI Services, I gave Rosie access to the latest information on WebXR (mainly Wonderland Engine), parts of Azure, Semantic Kernel, and Web Development. To provide me with not just answers, but the right answers, exactly when needed. By embedding data and adding it to Azure to be semantically searched in Azure AI Search (formally Azure Cognitive Search) she has less chance of 'hallucinating'. 
 
+{{<img-link "/images/2024/02/Ai-in-the-library.jpeg" "A female AI strolling through a large ancient library" >}}
+
 ## Memory in Semantic Kernel
 
 In the world of AI, memories are what keep things relevant by 'remembering' certain data and context. In Semantic Kernel, there are three primary ways to access and utilize memory: conventional key-value pairs, conventional local-storage, and semantic memory search (*embeddings*). When incorporating these memory types into your Semantic Kernel project, you would define your key-value pairs for quick data references, use local-storage files for larger, persistent data, and generate and store embeddings for complex texts requiring semantic search capabilities. 
@@ -162,5 +164,3 @@ Last thing to note is that Microsoft is working on [Kernel Memory](https://micro
 And that's a wrap for today's update! I hope you're as excited about Rosie's new capabilities as I am. If you've got any thoughts or questions. Let me know down below. As always, make sure to [follow me](https://twitter.com/sorskoot) and subscribe to my [YouTube Channel](https://youtube.com/sorskoot) for updates on that side.
 
 Happy Coding! 🚀
-
-{{<img-link "/images/2024/02/Ai-in-the-library.jpeg" "A female AI strolling through a large ancient library" >}}
