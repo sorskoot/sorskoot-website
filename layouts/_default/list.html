@@ -13,9 +13,9 @@
 						<div class="entry-meta">
 							<span class="posted-on"><time class="entry-date published" date="{{ .Date }}">{{ dateFormat .Site.Params.DateForm .Date }}</time></span>
 						</div>
-						{{ if .Params.Image }} 
+						{{ if .Params.Images }} 
 						<a class="thumbnail" href="{{ .Permalink }}" >
-							<span class="img works-image" style="background-image:url({{ .Params.Image }})">
+							<span class="img works-image" style="background-position-y: 30%;background-image:url({{ (index .Params.Images 0) }})">
 								<span class="cover">
 									<span class="more">See more &rarr;</span>
 								</span>
@@ -25,7 +25,7 @@
 						<ul class="categories">
 							{{ range .Params.categories }}
 							<li class="category">
-								<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+								<a class="category-badge" href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
 							</li>
 							{{ end }}
 						</ul>

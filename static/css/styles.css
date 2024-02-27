@@ -1259,4 +1259,29 @@ footer.entry-meta .meta-in {
   text-decoration: none;
 }
 
+.categories {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #AAA;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 0.9em;
+  width: 150px;
+}
+
+.category-badge:hover {
+  background-color: #333;
+  color: #aaa;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
