@@ -57,10 +57,15 @@ pluralizeListTitles = false
 #    weight = 7
 
 [[menu.main]]
-    name = "WebXR NL"
-    url = "https://webxr.nl"
-    weight = 10
-    target = "_blank"
+    name = "Devlogs"
+    url = "/devlogs/"
+    weight = 7
+
+# [[menu.main]]
+#     name = "WebXR NL"
+#     url = "https://webxr.nl"
+#     weight = 10
+#     target = "_blank"
 
 [params.disqus]
     site = "sorskoot.disqus.com"
