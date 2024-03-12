@@ -21,7 +21,7 @@ Welcome back to another devlog! After a short hiatus, I jumped back into the cre
 ## The Old Becomes New
 The initial iteration of the farming game was quite simple yet engaging, allowing players to till the ground, plant crops, and, well, farm casually. But as with all creations, there comes a time for evolution, and this game's moment has arrived.
 
-{{< img-link "/images/stills/fv_videoframe_455867.png" "Old Game" >}}
+{{< img-link "/images/devlogStills/fv_videoframe_455867.png" "Old Game" >}}
 
 ## Inspiration Strikes
 My eureka moment came when I encountered another farming game that incorporated a roguelike mechanic, an idea I’ve toyed with before. Combining that with VR? Now, that sparked my imagination! A VR farming game that could be a quick play or an immersive casual experience—this concept truly excites me.
@@ -38,7 +38,7 @@ During the stream, we encountered our fair share of coding challenges. Switching
 ## Visuals and VR Experiments
 Diving into VR, we tested the game environment, fixing the orientation of GUI elements and ensuring a smooth teleportation experience. Visual development included experimenting with materials and shaders, and I aim to add a rich skybox texture to elevate the game's atmosphere.
 
-{{< img-link "/images/stills/fv_videoframe_3895397.png" "VR Still" >}}
+{{< img-link "/images/devlogStills/fv_videoframe_3895397.png" "VR Still" >}}
 
 ## Wrapping Up
 The stream concluded with some trial and error in texture application and environment settings—sometimes, the creative process is about experimenting and troubleshooting on the fly. With a refreshed vision for the game and some technical groundwork laid, I'm excited to continue developing this experience in the next session.
