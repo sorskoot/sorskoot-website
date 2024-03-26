@@ -1,16 +1,31 @@
 ---
-draft: true
+id: 20240326
+draft: false
+title: Escape from tutorial hell
+date: 2024-03-26T00:00:00+00:00
+author: Sorskoot
+layout: post
+share: true
+comments: true
+guid: https://www.timmykokke.com/?p=20240326
+permalink: /2024/03/TutorialHell
+categories:
+  - AI
+tags:
+  - Rosie
+images:
+  - /images/2024/03/TutorialHell.png
 ---
 
----
+Hello Coders! 👾
 
-# Escaping Tutorial Hell
-
-In the journey of learning to code and develop software, many of us fall into a seductive trap known as 'tutorial hell.' It's a place where the comfort of guided instructions creates an illusion of progress, but in reality, it can hinder growth and the development of problem-solving skills. Tutorial hell is characterized by an endless cycle of hopping from one tutorial to another without ever taking the leap into building your own independent projects. 
+In the journey of learning to develop games, many of us fall into a seductive trap known as *'tutorial hell'*. It's a place where the comfort of guided instructions creates an illusion of progress, but in reality, it can hinder growth and the development of problem-solving skills. Tutorial hell is characterized by an endless cycle of hopping from one tutorial to another without ever leaping into building your own independent projects. 
 
 Why is it important to escape this loop? Because true learning and understanding come from applying knowledge, not just acquiring it. When you break free from tutorial hell, you become not just a consumer of information but a creator, capable of innovating and building solutions. You transition from following roadmaps to drawing your own, and in doing so, you sharpen your skills and confidence as a developer.
 
 This blog post aims to provide you with actionable strategies to break free from the shackles of continuous tutorial consumption. We'll delve into the signs that you might be stuck, the pitfalls of over-reliance on tutorials, and the steps you can take to start forging your own path in the coding world. So let's embark on this journey together and turn the page from passive learning to active doing.
+
+{{<img-link "/images/2024/03/TutorialHell.png" "Tutorial Hell" >}}
 
 ## Recognizing Tutorial Hell
 
@@ -64,7 +79,7 @@ Consider building a simple game, a personal website, a to-do list application, o
 Divide your project into smaller, achievable tasks. Use techniques like Agile or Kanban to manage and prioritize your work. This can prevent feeling overwhelmed and helps to track your progress.
 
 **Tools That Can Help with Task Breakdown**  
-Make use of tools like Trello, Asana, or GitHub Projects to organize your tasks and keep track of your progress. These tools can provide structure and visual representation of your project's development.
+Make use of tools like [Trello](https://trello.com/), [Asana](https://asana.com/), or [GitHub Projects](https://github.com/) to organize your tasks and keep track of your progress. These tools can provide structure and visual representation of your project's development.
 
 ### Understand, Don’t Memorize
 
@@ -88,7 +103,7 @@ Start with the overview to get a general sense of the technology or framework. T
 Not all tutorials are created equal. Focus on high-quality tutorials that encourage understanding and critical thinking. A few well-chosen tutorials are better than dozens of quick-fix, copy-paste lessons.
 
 **Recommended Resources for High-Quality Tutorials**  
-Research and find resources that are widely recommended by the community. Platforms like Coursera, Udemy, and freeCodeCamp offer courses that are well-structured and reviewed by a large number of learners.
+Research and find resources that are widely recommended by the community. Platforms like [Zenva](https://academy.zenva.com/), [Udemy](https://www.udemy.com/), and [freeCodeCamp](https://www.freecodecamp.org/) offer game development courses that are well-structured and reviewed by a large number of learners.
 
 ### Join a Developer Community
 
@@ -109,7 +124,7 @@ Start a blog, create YouTube tutorials, or present at meetups. Sharing your lear
 ### Take on Challenges
 
 **Websites and Platforms for Coding Challenges**  
-Sites like CodeWars, HackerRank, and LeetCode offer coding challenges that can help sharpen your skills. They provide problems that range from easy to very challenging, suitable for all levels of experience.
+Sites like [CodeWars](https://www.codewars.com/), [HackerRank](https://www.hackerrank.com/), and [LeetCode](https://leetcode.com/) offer coding challenges that can help sharpen your skills. They provide problems that range from easy to very challenging, suitable for all levels of experience.
 
 **The Role of Challenges in Skill Development**  
 By taking on coding challenges, you practice problem-solving and algorithmic thinking, both of which are crucial for successful software development.
@@ -124,65 +139,12 @@ Keep a learning diary, use a digital portfolio, or maintain a GitHub repository 
 
 By implementing these strategies, you can navigate your way out of tutorial hell and into a more productive and fulfilling coding journey. It's not just about escaping a loop; it's about entering a cycle of continuous growth and improvement as a developer.
 
----
-
----
-
-# Outline: Escaping Tutorial Hell: A Guide for Aspiring Developers
-
-## Introduction
-- Brief explanation of what tutorial hell is
-- Why it's important to escape it to grow as a developer
-
-## Recognizing Tutorial Hell
-- Signs you might be stuck in tutorial hell
-- The pitfalls of relying too heavily on tutorials
-
-## Strategies to Break Free
-### Apply Your Knowledge
-- The importance of applying concepts from tutorials
-- Tips for creating your own projects
-
-### Set Personal Projects
-- How personal projects can drive your learning
-- Examples of project ideas
-
-### Break Projects into Manageable Tasks
-- Techniques for project management
-- Tools that can help with task breakdown
-
-### Understand, Don’t Memorize
-- The difference between understanding and memorization
-- Strategies to ensure you're comprehending material
-
-### Dive into Documentation
-- Advantages of using official documentation
-- How to read and understand documentation effectively
-
-### Be Selective with Tutorials
-- Choosing quality over quantity
-- Recommended resources for high-quality tutorials
-
-### Join a Developer Community
-- The benefits of joining a developer community
-- Suggestions for finding the right community for you
-
-### Teach What You Learn
-- How teaching reinforces learning
-- Platforms to share your knowledge with others
-
-### Take on Challenges
-- Websites and platforms for coding challenges
-- The role of challenges in skill development
-
-### Reflect on Your Learning Journey
-- The importance of self-reflection in learning
-- Tools and methods to track your progress
-
 ## Conclusion
-- Recap of the key points
-- Encouragement to take the leap into independent development
 
-## Call to Action
-- Invite readers to share their experiences
-- Encourage readers to commit to a project and share updates
+In conclusion, the journey out of tutorial hell is not just about recognizing the pitfalls but actively seeking experiences that challenge your skills and understanding. That's where I think live coding streams like mine on [YouTube](https://youtube.com/sorskoot), or others on YouTube and Twitch can make a difference. It's a real-time environment that encourages experimentation, learning from mistakes, and most importantly, applying the concepts discussed in this blog post.
+
+So if you're eager to leave behind the endless loop of tutorials and step into a space where you can grow as a developer, join our live coding community. Together, we'll tackle real-world problems, share insights, and build projects that go beyond what any tutorial can teach. Let's continue the learning journey live, where the code comes to life and your skills truly flourish. Tune in, and let's code our way to success!
+
+Happy Coding! 🚀
+
+{{<img-link "/images/2024/03/TheEndOfTutorialHell.jpg" "The end of tutorial Hell" >}}
