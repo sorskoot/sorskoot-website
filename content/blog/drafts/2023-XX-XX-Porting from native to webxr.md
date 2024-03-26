@@ -203,3 +203,18 @@ In conclusion, this project served as both a technical achievement in demonstrat
 After countless cups of coffee and numerous long nights devoted to coding, we finally achieved our goal! Our native Meta Quest 2 game is now fully functional on the web.
 
 And thus concludes our journey of porting a native Quest game into WebXR!
+
+---
+The video you provided features a presentation on WebXR and its benefits. The speaker, Jonathan Hale, CEO and founder of Wonderland, along with Timmy Kok, detail the process of porting a native Meta Quest 2 game, `Dead Secret Circle`, onto the web using WebXR technology. 
+
+Jonathan starts by discussing what WebXR is and its advantages, such as ease of publishing, accessibility without the need for downloads, and cross-platform support. He highlights that, unlike traditional native apps that require repackaging for different systems, WebXR applications can run on any device that supports web browsers without needing separate versions.
+
+Next, Timmy takes over to explain the technical aspects and development process. He shares that they converted assets from Unity to Blender and then to the Wonderland engine. They optimized the original game assets for the web, resulting in the game's size reducing from over a gigabyte to just 150 megabytes. Timmy also covers specific development strategies, like how they used Unity to pre-calculate lighting, known as lightmapping, to enhance game atmosphere while maintaining performance.
+
+For coding, they used TypeScript because it aids in early bug detection and ensures a smoother development process. Timmy also speaks about the real-time update feature during coding and packaging, and mentions the continuous integration pipeline that automates the build and deploy process for each update on their platform.
+
+The speakers conclude by encouraging the use of WebXR for its ease and broad compatibility and invite the audience to try out new experiences at their booth, including `The Escape Artist` by Parowski Creative.
+
+Throughout the presentation, questions from the audience are addressed, covering topics such as real-time data fetching, control methods for different platforms, performance differences between Unity web exports and Wonderland, and the potential of targeting big PC VR games with WebXR.
+
+In sum, the presentation at the heart of the video demonstrates the feasibility and advantages of converting native VR experiences to WebXR, showcasing how WebXR can achieve similar performance to native apps while expanding the reach of VR through cross-platform support and web accessibility.
