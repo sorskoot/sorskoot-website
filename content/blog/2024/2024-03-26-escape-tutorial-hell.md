@@ -10,9 +10,9 @@ comments: true
 guid: https://www.timmykokke.com/?p=20240326
 permalink: /2024/03/TutorialHell
 categories:
-  - AI
+  - Game Design
 tags:
-  - Rosie
+  - Game Design
 images:
   - /images/2024/03/TutorialHell.png
 ---

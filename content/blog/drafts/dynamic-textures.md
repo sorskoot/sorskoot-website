@@ -22,16 +22,19 @@ export class DynamicTextureLoader extends Component {
         canvas.height = 256; // Set desired height
         const ctx = canvas.getContext('2d');
 
-        // Your drawing code here
-        // Example: fill the canvas with red color
-        ctx.fillStyle = 'red';
+        // Create gradient
+        const grd = ctx.createLinearGradient(0, 0, 256, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+
+        ctx.fillStyle = grd
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // Create a Wonderland Engine texture from the canvas
         const dynamicTexture = new Texture(this.engine, canvas);
 
         // Find the material to which you want to apply the texture
-        const material = this.object.getComponent('MeshRenderer').material;
+        const material = this.object.getComponent(MeshComponent).material;
 
         // Apply the texture to the material's diffuse slot
         material.diffuseTexture = dynamicTexture;
@@ -48,5 +51,3 @@ export class DynamicTextureLoader extends Component {
 Remember that the specific slot (`diffuseTexture` in the example) might be different depending on your shading model and what the texture represents (e.g., normal map, specular map, etc.).
 
 Additionally, ensure that the material is set up correctly in Wonderland Engine to receive the texture; configure shader properties as needed to display the texture properly on your object.
-
-Please adapt the example code to fit the actual API of Wonderland Engine at the time you're writing your code, as APIs may evolve over time.
