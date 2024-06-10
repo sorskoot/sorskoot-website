@@ -17,7 +17,9 @@ images:
 
 Hello Coders! 👾
 
-This blog post details my journey through the development process of a small WebXR game for the [GameDev.TV game jam](https://itch.io/jam/gamedevtv-jam-2024). I wanted to create a simple proof of concept, with a nostalgic style of PSX/PS1 games. A project aimed to combine retro aesthetics with modern game development techniques.
+This blog post details my journey through the development process of a small WebXR game for the GameDev.TV game jam called [Last Stand!](https://sorskoot.itch.io/last-stand). I wanted to create a simple proof of concept, with a nostalgic style of PSX/PS1 games. A project aimed to combine retro aesthetics with modern game development techniques.
+
+{{< youtube OpFQ3efKfxo >}}
 
 ## Idea and Inspiration
 
@@ -62,7 +64,7 @@ But now that I'm reflecting on what I created in 1 week I think I should apply t
 
 ## Conclusion
 
-Participating in the GameDev.TV game jam was a short, but exciting journey, pushing my boundaries of creativity and technical skill in WebXR game design and development. Stay tuned for more on this...
+Participating in the GameDev.TV game jam was a short, but exciting journey, pushing my boundaries of creativity and technical skill in WebXR game design and development. Stay tuned for more on this...In the meantime, you can play this game here => [Last Stand!](https://sorskoot.itch.io/last-stand)
 
 Happy Coding! 🚀
 
