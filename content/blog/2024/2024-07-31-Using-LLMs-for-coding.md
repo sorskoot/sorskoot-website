@@ -14,7 +14,7 @@ categories:
 tags:
   - Rosie
 images:
-  - /images/2024/06/Rosie-Title.png
+  - /images/2024/07/AIDuck.jpg
 ---
 
 Hello Coders! 👾
@@ -67,3 +67,5 @@ I don't place much value in examples people post about how good or bad their exp
 While I respect the counterarguments, I believe they misunderstand the real value of LLMs. They are incredibly useful tools, especially when used as replacements for searching the internet or StackOverflow and for Rubber Duck Programming. Let's continue to explore their potential while remaining critical and cautious in their application.
 
 Happy Coding! 🚀
+
+{{< img-link "/images/2024/07/AIDuck.jpg" "AI Rubber Duck">}}
