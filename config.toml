@@ -14,11 +14,11 @@ pluralizeListTitles = false
 
 [params]
     name = "Timmy Kokke / Sorskoot"
-    description = "Web - Games - VR/AR/XR - Live Coding"
+    description = "Web - Games - VR/AR/XR - AI - Live Coding"
     email = "info@timmykokke.com"
     phone = ""
     address = ""
-    year = 2023
+    year = 2024
     background = ""
     favicon = "icons/gt_favicon.png"
     DateForm = "January 2, 2006"
