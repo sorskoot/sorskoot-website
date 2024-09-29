@@ -70,4 +70,4 @@ I did a bit of experimenting to see if I can get the visualization to run inside
 
 Happy Coding! 🚀
 
-{{< tweet 1805483013624467855 >}}
+{{<  twitter user="Sorskoot" id="1805483013624467855" >}}
