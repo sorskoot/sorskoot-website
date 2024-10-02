@@ -1,30 +1,55 @@
 {
-	// Place your sorskoot-website workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-	// Placeholders with the same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"scope": "javascript,typescript",
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-	"Image":{
-		"body": "{{< img-link \"${1:URL}\" \"${2:Title}\" >}}",
-		"description": "Adds the custom image link",
-		"prefix": "img-link",
-		"scope": "markdown"
-	},
-	"Video":{
-		"body": "{{< video-link \"${1:URL}?nocache\" >}}",
-		"description": "Adds a custom video link (not cached by PWA)",
-		"prefix": "vid-link",
-		"scope": "markdown"
-	}
+    // Place your sorskoot-website workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+    // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+    // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+    // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+    // Placeholders with the same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"scope": "javascript,typescript",
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    "FrontMatter": {
+        "prefix": "frontmatter",
+        "body": [
+            "---",
+            "id: $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE",
+            "draft: true",
+            "title: ${TM_FILENAME_BASE/(\\d{4}-\\d{2}-\\d{2}-)|([^-]+)(-*)/${2:/capitalize}${3:+ }/g}",
+            "date: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T01:00:00+00:00",
+            "author: Sorskoot",
+            "layout: post",
+            "share: true",
+            "comments: true",
+            "guid: https://www.timmykokke.com/?p=$CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE",
+            "permalink: /$CURRENT_YEAR/$CURRENT_MONTH/${TM_FILENAME_BASE/^(\\d{4}-\\d{2}-\\d{2}-)|([^-]+)(-*)/$2/g}/",
+            "categories:",
+            "  - ",
+            "tags:",
+            "  - ",
+            "images:",
+            "  - /images/$CURRENT_YEAR/$CURRENT_MONTH/??.png",
+            "---"
+        ],
+        "scope": "markdown"
+    },
+
+    "Image": {
+        "body": "{{< img-link \"${1:URL}\" \"${2:Title}\" >}}",
+        "description": "Adds the custom image link",
+        "prefix": "img-link",
+        "scope": "markdown"
+    },
+    "Video": {
+        "body": "{{< video-link \"${1:URL}?nocache\" >}}",
+        "description": "Adds a custom video link (not cached by PWA)",
+        "prefix": "vid-link",
+        "scope": "markdown"
+    }
 }
