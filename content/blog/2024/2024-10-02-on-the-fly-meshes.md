@@ -20,7 +20,7 @@ images:
 
 Hello Coders! 👾
 
-I was working on a project in Wonderland Engine today and wanted to create a mesh at runtime. It's a very powerfull feature, but might seem a bit complicated at first. So, let me walk you through a simple example of creating a mesh. Generating geometry on the fly is incredibly useful for all kinds of effects.
+I was working on a project in Wonderland Engine today and wanted to create a mesh at runtime. It's a very powerful feature, but might seem a bit complicated at first. So, let me walk you through a simple example of creating a mesh. Generating geometry on the fly is incredibly useful for all kinds of effects.
 
 Here’s the code and a breakdown of what it does:
 
@@ -39,7 +39,7 @@ export class OnTheFlyMeshTest extends Component {
 
     @property.material()
     material?: Material;
-    
+
     private _meshComp: MeshComponent;
 
     start() {
