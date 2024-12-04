@@ -311,8 +311,8 @@ a:hover {
   font-family: "Bree Serif", Georgia, serif;
   font-size: 49px;
   font-size: 3.0625rem;
-  color: #ccc;
-  text-shadow: 0px 0px 15px #000;
+  color: #85daeb;
+  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000, -2px -2px 0 #cc60af, 2px -2px 0 #cc60af, -2px 2px 0 #cc60af, 2px 2px 0 #cc60af;
 }
 
 #head .title a {

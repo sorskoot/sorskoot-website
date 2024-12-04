@@ -1,16 +1,76 @@
-[ 
-{
-"id": 15,
-"name": "Deathkeeper",
-"image": "https://js13kgames.com/games/deathkeeper/__big.jpg",
-"url": "https://js13kgames.com/entries/deathkeeper",
-"items": [
+[
     {
-        "name": "Game",
-        "url": "https://js13kgames.com/entries/deathkeeper"
-    }
-]
-},
+        "id": 17,
+        "name": "Wonderland VSCode Snippets + Extension ",
+        "image": "/images/wonderlandsnippets.png",
+        "url": "https://marketplace.visualstudio.com/items?itemName=Sorskoot.wonderlandsnippets",
+        "items": [
+            {
+                "name": "Tools",
+                "url": "https://marketplace.visualstudio.com/items?itemName=Sorskoot.wonderlandsnippets"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "WebXR Frameworks Presentation at XRCC",
+        "image": "/images/WebXR-XRCC.jpg",
+        "url": "https://www.slideshare.net/slideshow/webxr-frameworks-xrcc-5-different-webxr-frameworks-compared-based-on-personal-experience/273840164",
+        "items": [
+            {
+                "name": "Slides",
+                "url": "https://www.slideshare.net/slideshow/webxr-frameworks-xrcc-5-different-webxr-frameworks-compared-based-on-personal-experience/273840164"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "HAUN13D HOTEL",
+        "image": "/images/games/haun13d-hotel/800x500.png",
+        "url": "/games/haun13d-hotel/",
+        "items": [
+            {
+                "name": "Game",
+                "url": "https://js13kgames.com/entries/deathkeeper"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "How We Ported a Native Quest Game to WebXR @AWE XR 2023 ",
+        "image": "https://i3.ytimg.com/vi/6feGRWcpZEc/hqdefault.jpg",
+        "url": "https://www.youtube.com/watch?v=6feGRWcpZEc",
+        "items": [
+            {
+                "name": "YouTube",
+                "url": "https://www.youtube.com/watch?v=6feGRWcpZEc"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Storage Space 13",
+        "image": "/images/storagespace.webp",
+        "url": "https://heyvr.io/game/storage-space-13",
+        "items": [
+            {
+                "name": "Game",
+                "url": "https://heyvr.io/game/storage-space-13"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Deathkeeper",
+        "image": "/images/deathkeeper.jpg",
+        "url": "https://js13kgames.com/entries/deathkeeper",
+        "items": [
+            {
+                "name": "Game",
+                "url": "https://js13kgames.com/entries/deathkeeper"
+            }
+        ]
+    },
     {
         "id": 14,
         "name": "Fire! Fire!",
@@ -24,17 +84,17 @@
         ]
     },
     {
-    "id": 13,
-    "name": "Get off my lawn!",
-    "image": "https://constructarcade.com/game/get-off-my-lawn/get-off-my-lawn.webp",
-    "url": "https://constructarcade.com/game/get-off-my-lawn/",
-    "items": [
-        {
-            "name": "Game",
-            "url": "https://constructarcade.com/game/get-off-my-lawn/"
-        }
-    ]
-},
+        "id": 13,
+        "name": "Get off my lawn!",
+        "image": "https://constructarcade.com/game/get-off-my-lawn/get-off-my-lawn.webp",
+        "url": "https://constructarcade.com/game/get-off-my-lawn/",
+        "items": [
+            {
+                "name": "Game",
+                "url": "https://constructarcade.com/game/get-off-my-lawn/"
+            }
+        ]
+    },
     {
         "id": 12,
         "name": "Santa's Workshop",
@@ -48,40 +108,42 @@
         ]
     },
     {
-    "id": 11,
-    "name": "Storage Space 13",
-    "image": "https://constructarcade.com/game/storage-space-13/storage-space-13.webp",
-    "url": "https://constructarcade.com/game/storage-space-13/",
-    "items": [
-        {
-            "name": "Game",
-            "url": "https://constructarcade.com/game/storage-space-13/"
-        }
-    ]
-},{
-    "id": 10,
-    "name": "Sorskoot's House of the Dead",
-    "image": "https://constructarcade.com/game/house-of-the-dead/house-of-the-dead.webp",
-    "url": "https://constructarcade.com/game/house-of-the-dead/",
-    "items": [
-        {
-            "name": "Game",
-            "url": "https://constructarcade.com/game/house-of-the-dead/"
-        }
-    ]
-},{
-    "id": 9,
-    "name": "Back to Space",
-    "image": "https://constructarcade.com/game/back-to-space/back-to-space.webp",
-    "url": "https://constructarcade.com/game/back-to-space/",
-    "items": [
-        {
-            "name": "Game",
-            "url": "https://constructarcade.com/game/back-to-space/"
-        }
-    ]
-},
-{
+        "id": 11,
+        "name": "Storage Space 13",
+        "image": "https://constructarcade.com/game/storage-space-13/storage-space-13.webp",
+        "url": "https://constructarcade.com/game/storage-space-13/",
+        "items": [
+            {
+                "name": "Game",
+                "url": "https://constructarcade.com/game/storage-space-13/"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Sorskoot's House of the Dead",
+        "image": "https://constructarcade.com/game/house-of-the-dead/house-of-the-dead.webp",
+        "url": "https://constructarcade.com/game/house-of-the-dead/",
+        "items": [
+            {
+                "name": "Game",
+                "url": "https://constructarcade.com/game/house-of-the-dead/"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Back to Space",
+        "image": "https://constructarcade.com/game/back-to-space/back-to-space.webp",
+        "url": "https://constructarcade.com/game/back-to-space/",
+        "items": [
+            {
+                "name": "Game",
+                "url": "https://constructarcade.com/game/back-to-space/"
+            }
+        ]
+    },
+    {
         "id": 8,
         "name": "Getting Started with VR in Wonderland",
         "image": "https://i3.ytimg.com/vi/6McFrnFyARQ/hqdefault.jpg",
@@ -116,8 +178,7 @@
                 "url": "https://youtu.be/Xm-rNc9tXU8"
             }
         ]
-    }
-    ,
+    },
     {
         "id": 4,
         "name": "Taking web based XR to the HoloLens",
@@ -130,6 +191,4 @@
             }
         ]
     }
-    
 ]
-

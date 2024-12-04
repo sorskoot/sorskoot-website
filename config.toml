@@ -25,7 +25,7 @@ pluralizeListTitles = false
     
     showSubheader = true
     showServices = true
-    showRecentWorks = false
+    showRecentWorks = true
     showDownload = false
     showClients = false
     showAgenda = false
