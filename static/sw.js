@@ -33,7 +33,7 @@ self.addEventListener('fetch', (evt) => {
     const requestUrl = new URL(evt.request.url);
     // only handle requests from my domain.
     if (requestUrl.origin === location.origin &&
-        ~requestUrl.origin.match(/localhost/)) {
+        !requestUrl.origin.includes('localhost')) {
         // This promise resolves with either the cached response or a network response
         evt.respondWith(fromCache(evt.request).catch(() =>
             //Request is not in the cache, so fetch it from the network 
