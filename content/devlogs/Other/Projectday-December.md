@@ -1,6 +1,6 @@
 ---
 id: 20241206
-draft: true
+draft: false
 title: Wonderland Project Day - December
 date: 2024-12-06T01:00:00+00:00
 author: Sorskoot
