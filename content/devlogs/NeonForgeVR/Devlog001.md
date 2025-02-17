@@ -12,7 +12,7 @@ permalink: /2025/02/NeonForge/Devlog001/
 categories:
   - NeonForgeVR
 images:
-  - /images/devlogStills/neonForge/neonforgevr.png
+  - /images/devlogStills/neonForge/NeonForgeVR.png
 ---
 
 Hello Coders! 👾
