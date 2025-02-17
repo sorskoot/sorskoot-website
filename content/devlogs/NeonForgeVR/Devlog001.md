@@ -1,6 +1,6 @@
 ---
 id: 20250217
-draft: true
+draft: false
 title: Devlog 1 - Introducing Neonforge - A Cyberpunk Factory Game in VR
 date: 2025-02-17T01:00:00+00:00
 author: Sorskoot
