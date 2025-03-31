@@ -1,6 +1,6 @@
 ---
 id: 20250331
-draft: true
+draft: false
 title: Supercharging Game Development with GitHub Copilot
 date: 2025-03-31T01:00:00+00:00
 author: Sorskoot
