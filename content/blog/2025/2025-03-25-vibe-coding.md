@@ -9,6 +9,7 @@ share: true
 comments: true
 guid: https://www.timmykokke.com/?p=20250324
 permalink: /2025/03/vibecoding-illusion/
+aliases: ["/blog/2025/2025-05-25-vibe-coding/"]
 categories:
   - AI
 tags:
