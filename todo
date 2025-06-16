@@ -1,6 +1,12 @@
 a list of everything I want to add to the site.
 
 ✔ Portfolio @done(19-05-17 11:32)
-☐ portfolio content
+✔ portfolio content @done(25-05-01 07:52)
 ✔ link to twitch @done(19-06-30 22:47)
-☐ twitch clips to 'work'
+✘ twitch clips to 'work' @cancelled(25-05-01 07:52)
+
+☐ Automatically scale images for og tags
+    LinkedIn and Twitter require certain sizes.
+    It should be possible to do this automatically
+    ~ https://gohugo.io/content-management/image-processing/#anchor
+    ~ https://ogp.me/#array
