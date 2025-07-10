@@ -82,7 +82,7 @@ C#, JavaScript, SQL, TypeScript
 
 ### Awards
 
-- **Microsoft MVP**
+- **Former Microsoft MVP**
 Category: Mixed Reality  
 First year awarded: 2010  
 Number of awards: 14  
