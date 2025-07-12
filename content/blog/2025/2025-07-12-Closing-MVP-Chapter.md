@@ -2,7 +2,7 @@
 id: 20250712
 draft: false
 title: Closing the MVP Chapter
-date: 2025-07-12T17:30:00+00:00
+date: 2025-07-12T00:00:00+00:00
 author: Sorskoot
 layout: post
 share: true
