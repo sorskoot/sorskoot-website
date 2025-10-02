@@ -1,241 +1,144 @@
 ---
-id: 20250916
-draft: true
-title: JS13KGames 2025
-date: 2025-09-16T01:00:00+00:00
+id: 20251001
+draft: false
+title: "JS13KGames 2025: COD Black Cat"
+date: 2025-10-01T01:00:00+00:00
 author: Sorskoot
 layout: post
 share: true
 comments: true
-guid: https://www.timmykokke.com/?p=20250916
-permalink: /2025/09/JS13KGames2025/
+guid: https://www.timmykokke.com/?p=20251001
+permalink: /2025/10/JS13KGames2025/
 categories:
-  - 
+  - JS13KGames
 tags:
-  - 
+  - WebXR
+  - JavaScript
+  - A-Frame
+  - Voxels
+  - Game Jam
 images:
-  - /images/2025/09/??.png
+  - /images/devlogStills/js13k2025/clawsOnDuty.png
 ---
 
-Sorskoot — 8/13/2025 13:38 PM
-Theme for js13k this year is "Black Cat"... 🐈‍⬛
-Now the question is how to make a 13KB WebXR game about a black cat... 🤔
+Hello Coders! 👾
 
-Sorskoot — 8/13/2025 18:19 PM
-First bold idea... COD: Black CAT.   Something like Rainbow Siege, but with cats and cod. Or something.
+Another year, another [JS13K Game Jam](https://js13kgames.com)! This time the theme was "Black Cat", and I had one month to create a complete a game in just 13KB zipped. Here's how I built "COD: Black Cat" - a VR voxel shooter.
 
-Sorskoot — 8/14/2025 15:26 PM
-Besides the usual geometry and textures,  the biggest challenges would be:
-coming up with some sort of shooting mechanic related to cats (nails?)
-enemies
-make it look extremely good (shaders and such)
+_Video of final result_
+{{< youtube nXnzAmyo_jE >}}
 
-I want to surpass every js13 I did in the past. I need a to stick to a very simple mechanic and go from there. Back to Space had that. Even though I didnt win that year I think that game had everything.
+You can play it at: [https://js13kgames.com/2025/games/cod-black-cat](https://js13kgames.com/2025/games/cod-black-cat)
 
-Sorskoot — 8/15/2025 17:36 PM
-Last night I had some wifi connection on the campsite, so I set up the basic build pipeline so I can use Aframe and TypeScript. I'm not 100% I will stick with Aframe, but it would be fun to change things up again.
+## The Initial Concept
 
-Sorskoot — 8/20/2025 17:03 PM
-I so have to do the COD: Black CAT idea... they introduced an "online" category, that you can also add to your codebase and communication between clients is handled outside of the entry.  Imagine 2 teams, one defending a bomb the others trying to dismantle it...
+When the theme was announced, my first thought was "how the hell do I make a 13KB WebXR game about a black cat?" But, after some brainstorming, I landed on a bold idea: COD: Black Cat. Think Rainbow Six Siege / Call of Duty Black Ops, but with cats and mice.
 
-Sorskoot — 8/20/2025 17:52 PM
-Big challeng for a game like this would be 3d content. I have some ideas on how to create voxelbased geometry in a very tiny way. It would be just a few bytes per model. I'm not sure how to hanle collisions yet for these. You need to be able to shoot under a table for example... but it would be worth exploring.
+The concept was simple but ambitious: defend against waves of mice while you try to reach a bomb and disarm it. The challenge was making this work in VR with all the usual constraints of geometry, textures, and mechanics.
 
-Sorskoot — 8/25/2025 17:06 PM
-I'm probably streaming development of js13k later today.... in 3 or 4 hours.
+## Technical Foundation
 
-Sorskoot — 8/27/2025 7:10 AM
-The little A-Frame voxel engine seems to be working. During the stream last night we completed the importing of models from MagicaVoxel in a tiny way.
-Image
+I decided to use A-Frame again for this project. My first introduction with WebVR was A-Frame, but I had not used it in years. But I did want to use TypeScript as well. While I wasn't 100% sure I'd stick with A-Frame at the start, it soon felt right to change things up.
 
-Sorskoot — 8/29/2025 23:38 PM
-Progress is a bit too slow. Stuff keeps interrupting. But, I've added paws as controllers 🐾
+### The Voxel Engine
 
-And I improved the encoder and decoder so that the models are now a string.  For example, this is the mouse.
+One of the biggest technical challenges was 3D content. I needed a way to create detailed models while keeping the file size microscopic. After some digging around I came across the [JS13K entry from Cody Ebberson from 2020](https://github.com/codyebberson/js13k-minipunk) which includes a tiny vixel engine. I decided to see if I could adapt that for my needs, including changing it to work with Three.js.
+
+While the basics of that engine worked perfect, I also needed a way to load models. My solution was a custom voxel-based geometry system that could compress models into just a few bytes. I wrote a converter that reads MagicaVoxel files, encodes them and then stores them as strings.
+
+Here's how the encoding worked:
+
+```bash
 00000000,22000000,20000000,03000000,03300000,13300000,03330000,03333000,00333000,13332300,03333300,03430000|000122200344432005666520066666000766670089a6a98006b6b60000030000|8,12,7,4
+```
 
-Since there is a large change certain patters repeat it first has a list of different rows in the model. Then it has 64 characters that tell what pattern to use in a 8x8 grid. I have limited the maximum amount of colors in 1 model to 15, but the entire scene can have more colors. So, right now it maps the numbers of the columns to the color indices of the palette.
+This string represents an entire mouse model! The system uses:
 
-The nice thing that these types of strings zip really well.
-Image
+- A list of unique row patterns in the model
+- 64 characters representing an 8x8 grid mapping to those row patterns creating a full cube
+- A maximum of 15 colors per model (though scenes can have more)
+- Excellent compression when zipped, because of repeating text.
 
-Sorskoot — 8/30/2025 0:05 AM
-Experimental floor.
-Image
+The beauty of this approach is that repeated patterns compress extremely well, and I could import models directly from MagicaVoxel.
 
-Sorskoot — 8/31/2025 20:53 PM
-Game is at 3.09 KB now...
-Lots of room for more... And an actual game 😛
+I played with the though of maybe adding a global dictionary for common patterns, but due to the time constraint I did not implement it.
 
-First priority now is to shoot mice.
-Then we need to complete a game loop, with:
-button to start
-game over state
-game win state
+{{< img-link "/images/devlogStills/js13k2025/mice01.png" "Mice" >}}
 
-Sorskoot — 8/31/2025 22:58 PM
-Added a little bit of functionality to my production build to show the size of the zipped version.. And also added that to a workflow on GitHub... Current size:
-[██░░░░░░░░] 23.1% of 13312 bytes | +10234 bytes remaining
+## Development Timeline
 
-Sorskoot — 9/1/2025 23:42 PM
-Progress is slow... But I changed the palette, made the voxel engine a bit more versatile and added a wall.
-[██░░░░░░░░] 27.0% of 13312 bytes | +9719 bytes remaining
+### Week 1: Vacation
 
-Sorskoot — 9/3/2025 20:43 PM
-True. I did make a little bit of progress yesterday too, and I just discovered something that I was expecting to be one of the hardest parts. The built-in ray tracer in A-Frame can detect exactly if a mesh is hit or not. I don't have to implement any custom voxel ray caster.
+This week I was still on vacation. I could only brainstorm and watch the first prototypes of others appear on Discord and social media.
 
-Wait. That even means I can remove the one in the voxel engine.
-Nice! more bytes for the game 🥳
-[██░░░░░░░░] 25.8% of 13312 bytes | +9880 bytes remaining
+### Week 2: Core Game Mechanics
 
-Oh, an this is including the smooth-locomotion I added yesterday, and a gun model on the paw. I'm going backwards in bytes 😅
+The second week I could finally start working.
 
-Sorskoot — 9/4/2025 23:29 PM
-Only had time to do a little bit tonight...
-But added a rotation option to the voxel models, and I added a ceiling. I also played a little bit with the lighting.
+This week was all about getting the basics working. I set up the voxel engine, got models importing from MagicaVoxel, and added VR controller support - complete with paws as controllers!
 
-[███░░░░░░░] 31.2% of 13312 bytes | +9154 bytes remaining
-Image
-That's a room with mice, VR controls and a chair in 4.06 KB 😁
+By the end of the week, I had a basic room with mice, VR controls, and furniture in just 4KB. That left plenty of room for actual gameplay.
 
-Sorskoot — 9/5/2025 23:46 PM
-worked on some bugfixes, performance issues and the  room generation during the live stream today...
-And we are at:
-[███░░░░░░░] 35.7% of 13312 bytes | +8563 bytes remaining
+I managed to also add:
 
-Sorskoot — 9/6/2025 23:27 PM
-Still a very busy week ahead to get this done, but I've added the doors and the mouse holes to the world generation, and I added some sort of collision detection to the walls and objects.
-[███░░░░░░░] 37.8% of 13312 bytes | +8282 bytes remaining
-There's at least a 1.000.000 places that this can be improved, but since there is the 13KB limit I'm going to try not to be bothered too much about it 🙂
+- Smooth locomotion for VR movement
+- Collision detection with walls and objects
+- Basic AI for the mice using finite state machines
+- A coroutine system ported from Wonderland Engine to handle scheduling
 
-Sorskoot — 9/7/2025 23:00 PM
-No visual changes today, but I added a simple A* path finding for the mice, because why not...
-I also added a simple finite state idea for the mice and ported my Wonderland Coroutine system to an AFrame system, to schedule things and keep that on the main game loop....
+I also experimented with A* pathfinding for the mice, but ultimately simplified to basic line-of-sight raycasting - sometimes simple is better in a jam!
 
-Take a couple of bytes though... But makes having the mice spawn, running around and attack a lot easier.
-[████░░░░░░] 41.7% of 13312 bytes | +7757 bytes remaining
+{{< img-link "/images/devlogStills/js13k2025/com.oculus.browser-20250901-234029.jpg" "VR Rendering" >}} {{< img-link "/images/devlogStills/js13k2025/com.oculus.browser-20250904-232729.jpg" "VR Rendering" >}}
 
-Sorskoot — 9/8/2025 23:23 PM
-I vibecoded a little editor for the map of the game...
-Image
-The map took up a little bit of space, but I have an idea to make it compress a little bit better if needed.
+### Week 3: Polish and Content
 
-[████░░░░░░] 42.0% of 13312 bytes | +7724 bytes remaining
-Here's a higher resolution...
-Image
-😂
+The third week was about making it feel like a real game:
 
-Sorskoot — 9/9/2025 23:11 PM
-I fixed some issues with the placement of the mouse holes. I also make them register themselves with the game system. So, that in the update loop they can be activated. I'm not 100% sure how I'm going to activate them. I think I will activate them in the neighbouring rooms to the room you are in. I think I need some checks there anyway to activate lighting to limit the amount of lights in the scene.
+- Mice now had proper behavior: spawning, searching, attacking, and fleeing
+- Added shooting mechanics with laser effects and particle systems
+- Created a level editor for designing the map layout
+- Implemented mouse hole blocking mechanics
 
-The mice now spawn using my coroutine port.
+{{< img-link "/images/devlogStills/js13k2025/mapeditor.png" "MapEditor" >}}
 
-[████░░░░░░] 44.3% of 13312 bytes | +7417 bytes remaining
-4 major things remain now. And then it's making things look good.
+### Final Days: Audio and Polish
 
-1) The mice need to have some state management and switch between searching, attacking and hiding.
-2) You need to be able to shoot them again
-3) You need to block off the mouse holes.
-4) You need to reach the bomb to disarm it.
+In the final stretch, I had more bytes than time - a rare luxury in JS13KGames! I added:
 
-After that the remainder of the bytes can be used to make it look better and add things like an effect when you get hit, and show a title and game over screen.
+- Sound effects using jsfxr (1.8KB for the entire audio system)
+- Visual effects like muzzle flashes and hit particles
+- A proper game loop with win/lose conditions
 
-Sorskoot — 9/9/2025 23:27 PM
-Did a small test with sound... JsFxr... I'm going to remove it again for now, but I leave this here for reference on how much KB it takes: 1844 bytes. Only if I really have enough space I might add sounds...
+{{< img-link "/images/devlogStills/js13k2025/furniture.png" "Furniture in MagicaVoxel" >}}
 
-[█████░░░░░] 58.1% of 13312 bytes | +5573 bytes remaining
-jsfxr is almost the same size as the voxel engine...
-Image
-Last year I used math to generate some sounds... I might just copy those...  That was nothing more that creating an audio buffer and generate some stuff into the buffer.
+## Technical Challenges
 
-Sorskoot — 9/10/2025 21:27 PM
-Mice are moving! Right now they randomly pick a direction and move 1 tile. The check the grid map to see if they can move there...
-[████░░░░░░] 46.7% of 13312 bytes | +7089 bytes remaining
-I added a debug map in the corner for now. This is automatically removed when doing a production build. Very nice feature in ESBuild.
-There's also some improvements to the grid too. Instead of adding just a 1 to the array, I add a bit flag. That way if there's something in a cell, I know what it is. I need that to improve the wall collisions. Now they are seen as 1 block, but the wall is at the edge.
-As pretty much everything in js13k, the movement and rotation can be improved by a lot... But this works.
+### Ray Casting Optimization
 
-Sorskoot — 9/10/2025 23:40 PM
-I now have the basic cycle of the mice implemented. I removed the a*. That was too complex for this right now. Specially since the walls are not full cells. I switched back to just a ray cast to check line of sight. The mice do a move and then check. If they see you the move towards you. Unless you hide. If they reach you they bite and then run back to their hole. It is very easy to trap them since they don't do any path finding.
+One pleasant surprise was discovering that A-Frame's built-in ray tracer could detect mesh hits precisely. This meant I didn't need to implement custom voxel ray casting, saving precious bytes for other features.
 
-[████░░░░░░] 48.2% of 13312 bytes | +6900 bytes remaining
-So the main TODO:
+I did run into a bit performance issue with the default A-Frame raycast setup. This would fire every frame by default and would constantly check for collision. On desktop, while testing this was not really noticable, but when running it on the Meta Quest 3, the performance was very bad. I settled with only casting a ray when needed.
 
-1) The mice need to have some state management and switch between searching, attacking and hiding.
-2) You need to be able to shoot them again
-3) You need to block off the mouse holes.
-4) You need to reach the bomb to disarm it.
-Right now, I feel this is the biggest challenge...
-Image
+### Performance vs Features
 
-Sorskoot — 9/11/2025 21:10 PM
-It is possible to hit the mice now! The red spheres are for debugging...
+With limited processing power in VR, I had to constantly balance features against performance. The mouse AI, for instance, uses simple state machines rather than complex pathfinding to keep the frame rate as smooth as possible.
 
-[████░░░░░░] 49.2% of 13312 bytes | +6762 bytes remaining
-Image
+{{< img-link "/images/devlogStills/js13k2025/mice02.png" "More Mice" >}}
 
-Sorskoot — 9/12/2025 0:29 AM
-We have shooting, killing of mice. The flee when you get bitten...
+## What I Learned
 
-Since I already had the code to place the spheres to test, I thought it might be nice to keep that. I changed it to a small black cube. Now it looks like you burned a little hole in the wall with your laser.
+This year taught me that having clear size constraints actually helps focus development. Instead of endless feature creep, I had to prioritize ruthlessly. The voxel compression system was particularly satisfying - proving that creative encoding can unlock possibilities that seemed impossible.
 
-Speaking of which, I added that too. Just a simple blue line that flashes. An to make it flash more. I also briefly flash a light.
+The A-Frame experiment also paid off. While I love Wonderland Engine, switching frameworks kept the challenge fresh and taught me new approaches to familiar problems.
 
-I also dropped in a couple of particles for when you hit a mouse to give it a little more impact.
+## The Final Result
 
-Total Size:
+"COD: Black Cat" ended up being a fully playable VR experience where you defend against waves of mice trying to reach a bomb. Players can shoot with laser weapons, block mouse holes, and navigate through procedurally arranged rooms - all in under 11KB!
 
-[█████░░░░░] 52.5% of 13312 bytes | +6328 bytes remaining
-I actually double checked if the size is correct...  I extracted the zip and played it. I can't believe this whole thing is not even 7KB. 🤯
-Image
+You can play the final version at: [https://js13kgames.com/2025/games/cod-black-cat](https://js13kgames.com/2025/games/cod-black-cat)
 
-Sorskoot — 9/12/2025 22:09 PM
-Busy, busy, busy... I drew/modeled some furniture...  Now the size is growing....
+While I wish I'd had more time for visual effects like SSAO or bloom and to optimize the performance a bit, I'm still proud of what I accomplished.
 
-[██████░░░░] 60.7% of 13312 bytes | +5233 bytes remaining
+Happy Coding! 🚀
 
-Next, fill the scene with furniture and mouseholes.
-Image
-Sorskoot — 9/12/2025 23:45 PM
-Got a map in place... With a lot of mouse holes... But now the performance is dead... 🙈
-
-[██████░░░░] 62.8% of 13312 bytes | +4955 bytes remaining
-Sorskoot — 9/13/2025 1:32 AM
-Time is up 🙁
-
-[██████░░░░] 68.2% of 13312 bytes | +4238 bytes remaining
-This year I had more bytes then time...
-There's a lot I wanted to add but it's not possible unfortunately...
-I'll be submitting in the morgning...
-Sorskoot — 9/13/2025 8:16 AM
-I mentioned earlier I was not going to use jsfxr, but since I have soo many bytes left, I dropped it in real quick... to have 4 sounds 😛
-
-[████████░░] 81.9% of 13312 bytes | +2412 bytes remaining
-Image
-
-Sorskoot — 9/13/2025 8:26 AM
-With a bit of AI and a bit of photoshop:
-
-Or do I get into trouble for this?
-Image
-
-Sorskoot — 9/13/2025 8:43 AM
-How about this?
-Image
-Do I dare to use it 🤔
-
-Sorskoot — 9/13/2025 9:37 AM
-Draft is playable, VR Only
-
-<https://drafts.js13kgames.com/cod-black-cat/>
-
-<https://hmd.link/?https://drafts.js13kgames.com/cod-black-cat/>
-I know WASD and mouse look are still in, somehow removing this caused a bug with the camera height in VR.  So I had to leave it...
-I settled with this image. I removed the cats in the background. I like it. It definitely still has the COD link, but I hope it's different enough to not trigger any Activision lawyers...
-Image
-
-Sorskoot — 9/13/2025 12:20 PM
-I submitted...
-
-Sorskoot — 9/13/2025 12:30 PM
-I wish I had a bit more time on this. I hoped to add some SSAO and bloom to make it look better. Size-wise it should have fitted. I also wanted to improve the performance a bit, so more mice could spawn. I know there are lots of places where things are very suboptimal... But, it's a jam with a time constraint...
+{{< img-link "/images/devlogStills/js13k2025/clawsOnDuty.png" "Claws On Duty" >}}
