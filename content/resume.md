@@ -1,22 +1,47 @@
-# Timmy Kokke
-
-> Email: [info (at) TimmyKokke.com](mailto:info (at) timmykokke.com)  
+---
+id: 20260201
+draft: true
+title: Timmy Kokke - Resume
+date: 2026-02-01T01:00:00+00:00
+author: Sorskoot
+layout: post
+share: true
+comments: true
+guid: https://www.timmykokke.com/?p=20260201
+permalink: /2026/02/resume/
+categories:
+  - 
+tags:
+  - 
+images:
+  - /images/2026/02/??.png
+---
+> Email: [info@timmyKokke.com](mailto:info@timmykokke.com)  
 > LinkedIn: [linkedin.com/in/timmykokke](https://www.linkedin.com/in/timmykokke)  
 > GitHub: [github.com/sorskoot](https://github.com/sorskoot)
 
-## 📝 Objective
+## About Me
 
-A highly-skilled and enthusiastic professional seeking a position as {Job Title} at {Company}, where I can apply my expertise in {key skills or technologies} to contribute to the success of the organization.
+I am an experienced (XR) Solutions Architect and Software Developer Lead with a strong background in Web, Unity3D, and XR applications. I have a proven track record of delivering innovative solutions for clients across various industries, including healthcare, finance, and gaming. I'm always seeking to leverage my expertise in XR and web technologies and software development to contribute to cutting-edge projects and drive technological advancements.
 
-## 💼 Experience
+## Experience
 
-### Senior Mixed Reality Software Developer
+### Senior XR Solutions Arhchitect
 
-**Wonderland GmbH** - Remote *(Aug 2023 - )*
+**Wonderland GmbH / Create Worlds** - Remote *(Aug 2023 - Mar 2026)*
+
+- Lead the architecture and development of cutting-edge WebXR solutions for diverse clients, ensuring seamless integration with existing systems and platforms.
+- Port games from Unity3D to WebXR, optimizing performance and user experience across various devices.
+- Test, release, and manage games on various online platforms such as CrazyGames,Meta Quest Store and Wonderland Cloud.
+- Build and maintain open source libraries and tools to support development such as Wonderland React-UI as well as various CLI utilities.
+
+**Skills**: VSCode · TypeScript · JavaScript · Unity3D · WebXR · Game Development · Customer Support · Problem Solving · Meta Quest · VR · Software Design · Blender · AI development · Azure · AWS · GitHub · GitLab · C# · React · Game Release Management
 
 ### Senior Mixed Reality Software Developer
 
 **Velicus B.V** - Remote *(Aug 2020 - Aug 2023)*
+
+- Developed and maintained applications for Microsoft HoloLens using Unity3D, C#, and MRTK for clients in healthcare. Highlights are CPR training, First responder training and training for ER personnel.
 
 **Skills**: Microsoft HoloLens · Unity3D · SQL · Full-Stack Development · Software Design · Technical Architecture · Blender · C# · JavaScript  · ASP.NET Core · Texturing · Game Development  
 
@@ -41,28 +66,31 @@ A highly-skilled and enthusiastic professional seeking a position as {Job Title}
 
 ### Senior Silverlight Developer
 
-**DreamTeam** - Heerenveen *(May 2011 - Dec 2012)*
-Silverlight, HTML, JavaScript, ASP.NET MVC, Windows Phone
+**DreamTeam / AppMachine** - Heerenveen *(May 2011 - Dec 2012)*
+*Skills*:Silverlight, HTML, JavaScript, ASP.NET MVC, Windows Phone
 
 ### Medior Developer
 
 **UNIT4 Internet Solutions / Amercom** - Amersfoort *(Feb 2010 - May 2011)*
 
+*Skills*: ASP.NET, C#, JavaScript, SQL Server, HTML, CSS, jQuery
+
 ### Software Engineer
 
-**Valk Software** - Montfoort -
-C#, WPF, WCF, Clarion
+**Valk Software** - Montfoort *(Dec 2007 - Feb 2010)*
+
+*Skills*: C#, WPF, WCF, Clarion, ASP.NET
 
 ### 3D Specialist
 
-**Movares** - Utrecht *(Sep 2002 - Dec 2007)*
-3D Studio, Autocad, Photoshop, C#, Java, Director, Flash
+**Holland Railconsult / Movares** - Utrecht *(Sep 2002 - Dec 2007)*
+*Skills*: 3D Studio, Autocad, Photoshop, C#, Java, Director, Flash
 
-## 🏫 Education
+## Education
 
 ### Game Development
 
-**NHA** - Online *(Apr 2023 - Present)*
+**NHA** - Online *(Apr 2023 - Apr 2024)*
 
 ### MBO, Technical Informatics
 
@@ -83,10 +111,7 @@ C#, JavaScript, SQL, TypeScript
 ### Awards
 
 - **Former Microsoft MVP**
-Category: Mixed Reality  
-First year awarded: 2010  
-Number of awards: 14  
-[Profile](https://mvp.microsoft.com/en-us/PublicProfile/4029159)
+Between 2010 and 2025 I've been awarded Microsoft MVP for my contributions to the Microsoft developer community. I've received recognition for expertise in Silverlight/Expresison Blend, Windows Developer Tools and Mixed Reality.
 
 ### Certifications
 
@@ -108,11 +133,14 @@ Number of awards: 14
 - Winner in WebXR Category of JS13KGames 2022
 - Winner in WebXR Category of JS13KGames 2021
 
-## 💬 Languages
+## Languages
 
 - Dutch *(Native)*
 - English *(Professional Working Proficiency)*
 
-## 🔗 Links to Notable Projects/Portfolio Website
+## Links to Notable Projects/Portfolio Website
 
 - [Personal Website / Blog](https://timmykokke.com)
+- [GitHub Profile](https://github.com/sorskoot)
+- [LinkedIn Profile](https://www.linkedin.com/in/timmykokke)
+- [YouTube Channel](https://youtube.com/c/sorskoot)
