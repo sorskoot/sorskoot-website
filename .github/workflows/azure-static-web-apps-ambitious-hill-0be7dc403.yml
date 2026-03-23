@@ -30,7 +30,7 @@ jobs:
                    node-version: 'latest'
                    cache: 'npm'
             - name: Build
-              run: npm build
+              run: npm run build
             - name: Build And Deploy
               id: builddeploy
               uses: Azure/static-web-apps-deploy@v1
