@@ -24,6 +24,11 @@ jobs:
               with:
                   hugo-version: 'latest'
                   extended: true
+            - name: Setup Node.js
+              uses: actions/setup-node@v6
+              with:
+                   node-version: 'latest'
+                   cache: 'npm'
             - name: Build And Deploy
               id: builddeploy
               uses: Azure/static-web-apps-deploy@v1
