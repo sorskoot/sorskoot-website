@@ -1,6 +1,6 @@
 ---
 id: 20260323
-draft: true
+draft: false
 title: Getting Started in Game Development
 date: 2026-03-23T01:00:00+00:00
 author: Sorskoot
