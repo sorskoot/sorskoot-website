@@ -65,7 +65,7 @@ fun is joining a game jam. This doesn't mean you have to lock yourself in a room
 else; there are a lot of jams taking place over a longer period. I've done a bunch of them over the years, all of them
 taking at least a week to a month.But the great thing is that it teaches you to get something done.
 
-{{< img-link "/images/backtospace.jpg" "My game Back to Space" >}}
+{{< img-link "/images/backToSpace.jpg" "My game Back to Space" >}}
 
 ## The Harsh Truth
 
