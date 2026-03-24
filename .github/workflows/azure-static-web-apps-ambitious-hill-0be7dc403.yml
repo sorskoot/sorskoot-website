@@ -33,14 +33,14 @@ jobs:
               run: npm run build
             - name: Gzip
               run: |
-                  ls -ltr
-                  ls -la /__w/sorskoot-website/sorskoot-website/public/
-                  gzip -k /__w/sorskoot-website/sorskoot-website/public/*.*
+                  # ls -ltr
+                  ls -la /public
+                  gzip -k /public/*.*
             - name: Upload package artifact
               uses: actions/upload-artifact@v7
               with:
                   name: sorskoot-website-deploy
-                  path: /__w/sorskoot-website/sorskoot-website/public/
+                  path: /public
             - name: Download package artifact
               uses: actions/download-artifact@v7
               with:
