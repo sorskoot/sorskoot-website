@@ -33,6 +33,7 @@ jobs:
               run: npm run build
             - name: Gzip
               run: |
+                  ls -ltr
                   ls -la /__w/sorskoot-website/sorskoot-website/public/
                   gzip -k /__w/sorskoot-website/sorskoot-website/public/*.*
             - name: Upload package artifact
