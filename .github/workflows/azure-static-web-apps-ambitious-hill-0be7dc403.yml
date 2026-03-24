@@ -37,7 +37,7 @@ jobs:
                   name: sorskoot-website-deploy
                   path: /__w/sorskoot-website/sorskoot-website/public/
             - name: Download package artifact
-              uses: actions/download-artifact@v2
+              uses: actions/download-artifact@v7
               with:
                 name: sorskoot-website-deploy
                 path: deploy
@@ -49,12 +49,12 @@ jobs:
                   repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
                   action: 'upload'
                   skip_app_build: true,
-                  app_artifact_location: '/deploy'
                   ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
                   # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-                  app_location: '/__w/sorskoot-website/sorskoot-website/' # App source code path
-                  api_location: '' # Api source code path - optional
-                  output_location: 'public' # Built app content directory - optional
+                  app_location: '/deploy/' # App source code path
+                  # api_location: '' # Api source code path - optional
+                  app_artifact_location: '/deploy'
+                  #output_location: 'public' # Built app content directory - optional
                   ###### End of Repository/Build Configurations ######
 
     close_pull_request_job:
