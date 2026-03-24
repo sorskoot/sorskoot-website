@@ -27,10 +27,15 @@ jobs:
             - name: Setup Node.js
               uses: actions/setup-node@v6
               with:
-                   node-version: 'latest'
-                   cache: 'npm'
+                  node-version: 'latest'
+                  cache: 'npm'
             - name: Build
-              run: npm run build
+              run: npm run build-site
+            - name: Upload package artifact
+              uses: actions/upload-artifact@v2
+              with:
+                  name: sorskoot-website-deploy
+                  path: /__w/sorskoot-website/sorskoot-website/public/
             - name: Build And Deploy
               id: builddeploy
               uses: Azure/static-web-apps-deploy@v1

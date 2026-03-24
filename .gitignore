@@ -1,7 +1,7 @@
-/.github
 /.idea
 /public
 /themes/hugo-initio/exampleSite
 /resources
 /node_modules
 **/*.backup
+.github/copilot-instructions.md
