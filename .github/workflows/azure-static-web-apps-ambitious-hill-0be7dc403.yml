@@ -32,7 +32,7 @@ jobs:
             - name: Build
               run: npm run build-site
             - name: Upload package artifact
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v7
               with:
                   name: sorskoot-website-deploy
                   path: /__w/sorskoot-website/sorskoot-website/public/
