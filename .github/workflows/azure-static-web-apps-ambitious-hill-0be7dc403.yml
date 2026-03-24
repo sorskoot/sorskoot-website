@@ -33,7 +33,7 @@ jobs:
               run: npm run build
             - name: Gzip
               run: |
-                  # ls -ltr
+                  tree
                   ls -la /public
                   gzip -k /public/*.*
             - name: Upload package artifact
