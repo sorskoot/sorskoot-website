@@ -69,5 +69,3 @@ Reflecting on this project so far, I am proud of what I’ve achieved with Rosie
 I did a bit of experimenting to see if I can get the visualization to run inside OBS, the only change I made is replacing the background with a solid green color so it can be chroma-keyed. As you can see in the tweet below it works! So, expect Rosie to show up in a live stream soon!
 
 Happy Coding! 🚀
-
-{{<  twitter user="Sorskoot" id="1805483013624467855" >}}

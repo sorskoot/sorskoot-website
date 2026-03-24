@@ -1,5 +1,5 @@
 baseURL = "https://miguelsimoni.github.io/hugo-initio-site/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Initio - Free, multipurpose html5 template by GetTemplate"
 theme = "hugo-initio"
 publishDir = "docs"
@@ -52,13 +52,6 @@ publishDir = "docs"
     footer = true
     sharethis = true
     network = "facebook"
-[[params.social]]
-	title = "twitter"
-	url = "https://twitter.com/nickname"
-    icon = "fa-twitter-square"
-    footer = true
-    sharethis = true
-    network = "twitter"
 [[params.social]]
 	title = "instagram"
 	url = "https://www.instagram.com/nickname"

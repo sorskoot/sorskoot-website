@@ -1,5 +1,5 @@
 baseURL = "localhost"
-languageCode = "en-us"
+locale = "en-us"
 title = "Timmy Kokke"
 theme = "initio"
 paginate = 10
@@ -85,13 +85,13 @@ pluralizeListTitles = false
 #    sharethis = true
 #    network = "facebook"
 
-[[params.social]]
-	title = "twitter"
-	url = "https://twitter.com/sorskoot"
-    icon = "fa-twitter-square"
-    footer = true
+#[ [params.social]]
+#	title = "x"
+#	url = "https://x.com/sorskoot"
+#    icon = "fa-x-square"
+#    footer = true
 # sharethis = true
-    network = "twitter"
+#    network = "x"
 [[params.social]]
 	title = "instagram"
 	url = "https://www.instagram.com/sorskoot360"
@@ -139,10 +139,10 @@ pluralizeListTitles = false
   [privacy.instagram]
     disable = false
     simple = false
-  [privacy.twitter]
-    disable = false
-    enableDNT = false
-    simple = false
+#  [privacy.x]
+#    disable = false
+#    enableDNT = false
+#    simple = false
   [privacy.vimeo]
     disable = false
     simple = false
