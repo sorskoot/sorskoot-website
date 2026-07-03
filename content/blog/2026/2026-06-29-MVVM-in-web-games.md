@@ -1,6 +1,6 @@
 ---
 id: 20260629
-draft: true
+draft: false
 title: MVVM In Web Games
 date: 2026-06-29T01:00:00+00:00
 author: Sorskoot
@@ -10,16 +10,18 @@ comments: true
 guid: https://www.timmykokke.com/?p=20260629
 permalink: /2026/06/MVVMinwebgames/
 categories:
-  - 
+  - TypeScript
 tags:
-  - 
+  - Architecture
+  - TypeScript
+  - Game Development
 images:
-  - /images/2026/06/??.png
+  - /images/2026/06/mvvm-in-game-title.png
 ---
 
-# MVVM
+Hello Coders! 👾
 
-I used this pattern a lot back in the days of Silverlight and WPF. It is a great way to separate concerns in a project. I realized it works pretty well for games too! Back then I used C# with the INotifyPropertyChanged interface. In this post I well be using TypeScript and a reactive state system. The principles are the same though. It's all about separating concerns and keeping the code maintainable.
+Back in the days of Silverlight and later WPF MVVM was my go-to pattern to bind my _models_ to the _views_. It is a great way to separate concerns in a project. I realized it works pretty well for games too! Back then, I used C# with the INotifyPropertyChanged interface. In this post, I will be using **TypeScript** and a reactive state system. The principles are the same though. It's all about separating concerns and keeping the code maintainable.
 
 ## Building Games with MVVM
 
@@ -29,59 +31,40 @@ MVVM helps separate game rules, game flow, and presentation concerns into distin
 
 ## What Is MVVM?
 
-MVVM stands for:
-
-- Model
-- View
-- ViewModel
+MVVM stands for: `Model`-`View`-`ViewModel`. The name is slightly misleading because it implies that the ViewModel is a model of the view. In reality, the ViewModel is a mediator between the View and the Model.
 
 Each layer has a clear responsibility.
 
-```text
-User
-  ↓
-View
-  ↓
-ViewModel
-  ↓
-Services / Domain Models
-  ↓
-Game State
+```mermaid
+stateDiagram
+    View --> ViewModel : Function
+    ViewModel --> View : Callbacks / Hook
+    ViewModel --> Model : Function
+    Model --> ViewModel : Preact Signal
 ```
 
-The goal is to keep rendering, presentation logic, and business logic separate.
+The goal, in the case of games, is to keep rendering, logic, and data or services separate. The view and the model should never directly talk to each other. Instead, the ViewModel acts as a mediator between the two. The ViewModel is the only place where logic is allowed.
+
 
 ## The Model
 
 The Model represents game data and domain state.
 
-In a game, examples include:
+In a game, this could be: Puzzle definitions; Tile information; Current puzzle state; Move counts; Session progress.
 
-- Puzzle definitions
-- Tile information
-- Current puzzle state
-- Move counts
-- Session progress
-
-The Model should not know:
-
-- How the UI is rendered
-- Which buttons exist
-- Whether the game uses Wonderland Engine, Unity, Unreal, or a web browser
+The Model does not have to know anything about how the UI is rendered, which buttons exist, or what game engine is used. It should be completely independent of the presentation layer.
 
 A good Model focuses entirely on representing the state and behavior of the game domain.
 
 ### Does The Model Contain Logic?
 
-This is one of the most misunderstood topics in MVVM.
+If you look at it very strictly, yes, the model should not contain logic. However, in reality, that statement is often a bit too simplistic.
 
-Many articles claim that Models should not contain logic. In practice, that statement is usually too simplistic and often incorrect for game development.
-
-A more useful guideline is:
+But a useful guideline I like to use is:
 
 - Models should not contain presentation logic.
 - Models should not contain UI logic.
-- Models should contain domain logic.
+- Models may contain _VERY_ simple domain logic.
 
 For example:
 
@@ -100,7 +83,7 @@ export class Player {
 }
 ```
 
-Both `addScore()` and `takeDamage()` contain logic, but they are responsible for managing the player's state. That makes them domain logic and a perfectly reasonable responsibility for the Model.
+While both `addScore()` and `takeDamage()` technically contain logic in this example, but they are responsible for managing the player's state. That makes them domain logic and a perfectly reasonable responsibility for the Model.
 
 The confusion often comes from mixing different kinds of logic together.
 
@@ -145,11 +128,7 @@ This is also ViewModel responsibility.
 
 ### A Useful Rule Of Thumb
 
-Ask yourself:
-
-"Would this code still exist if the user interface disappeared?"
-
-If the answer is yes:
+Ask yourself: "Would this code still exist if the user interface disappeared?". If the answer is yes, then it's probably domain logic.
 
 ```ts
 player.takeDamage(10);
@@ -157,67 +136,31 @@ character.levelUp();
 puzzle.validate();
 ```
 
-it is probably domain logic.
-
-If the answer is no:
+If the answer is no, then it's probably presentation logic.
 
 ```ts
-showHealthWarning;
-scoreText;
-isStartButtonEnabled;
+showHealthWarning();
+scoreText();
+isStartButtonEnabled();
 ```
-
-it is probably presentation logic.
 
 The most maintainable game architectures keep these two categories separate.
 
 ## The View
 
-The View is what the player sees and interacts with.
+The View is what the player sees and interacts with. For example, Main menu screens, HUD elements, Puzzle complete dialogs or Buttons and labels.
 
-Examples include:
-
-- Main menu screens
-- HUD elements
-- Puzzle complete dialogs
-- Buttons and labels
-
-The View should:
-
-- Render information
-- Bind user interactions
-- Observe state changes
-
-The View should not:
-
-- Validate puzzle rules
-- Manage game progression
-- Coordinate multiple systems
-
-If a button click starts containing game rules, the View is becoming too smart.
+The View should be responsible for rendering information, binding to user interactions and observing state changes. However, the View should not validate puzzle rules or manage game progression. If you have a function that is called when a player clicks a button, and it contains more than passing it on the ViewModel (it contains some game rules for example), the View is becoming too smart.
 
 ## The ViewModel
 
-The ViewModel sits between the View and the rest of the application.
-
-Its job is to translate application behavior into a format that is easy for the View to consume.
-
-In a typical TypeScript game, ViewModels might be implemented as hooks, controllers, or presentation models such as:
+The ViewModel sits between the View and the rest of the application. Its job is to translate application behavior into a format that is easy for the View to consume. In a typical TypeScript game that's using React, ViewModels might be implemented as hooks, controllers, or presentation models such as:
 
 - `useMainMenuViewModel()`
 - `useGameHudViewModel()`
 - `useSettingsViewModel()`
 
-The ViewModel:
-
-- Calls services
-- Exposes commands
-- Provides derived UI state
-- Adapts domain information for presentation
-
-The ViewModel should not contain core game rules.
-
-Those belong in domain models and services.
+The ViewModel is responsible for calling services, exposing commands, providing derived UI state, and adapting domain information for presentation. Ideally, you would even want to move the game logic even deeper into services, so the ViewModel is mainly responsible of orchestrating the flow of information between the View and the Model and making sure the data is handled correctly.
 
 ## MVVM in a Game Flow
 
@@ -226,95 +169,58 @@ Consider a player starting a new puzzle.
 ```text
 Player clicks Start
 	↓
-MainMenuPanel
+MainMenuPanel (View)
 	↓
-useMainMenuViewModel
+useMainMenuViewModel (ViewModel)
 	↓
-GameFlowService
+GameFlowService (Service)
 	↓
-PuzzleService
+PuzzleService (Service)
 	↓
-Puzzle Session Created
+Puzzle Session Created (Model)
 	↓
-Signals Update
+Signals Update (ViewModel)
 	↓
-UI Refreshes
+UI Refreshes (View)
 ```
 
-Notice that the UI never directly manipulates puzzle data.
-
-Instead, it asks the ViewModel to perform an action, and the ViewModel delegates that work to the appropriate service.
+Notice that the UI never directly manipulates puzzle data. Instead, it asks the ViewModel to perform an action, and the ViewModel delegates that work to the appropriate service.
 
 ## Why Use MVVM in Games?
 
 ### 1. Better Separation of Concerns
 
-One of the biggest problems in game projects is that gameplay code slowly leaks into UI code.
+One of the biggest problems in game projects (as it is basically with all software projects) is that gameplay code might slowly leak into UI code or data repositories. Just a quick bugfix here, a new feature there, and slowly the codebase becomes a mess. And when you realize this, it's often too late to easily fix it.
 
-Menus start containing game rules.
-Buttons begin modifying state directly.
-UI components become responsible for progression systems.
+Menus start containing game rules, buttons begin modifying state directly, and UI components become responsible for progression systems. Until you want to add a new feature or there's a bug, and you need to spend hours trying to fix it with risking breaking something else. This is a common problem in many game projects, especially when multiple developers are working on the same codebase.
 
 MVVM prevents this by giving each layer a clearly defined responsibility.
 
 ### 2. Easier Testing
 
-When game logic lives outside UI components, it becomes much easier to test.
+When game logic lives outside UI components, it becomes much easier to test. For example, to test some input validation, it's easier to test when you don't have to actually interact with the UI. Or if you want to test some session management, it's easier to test without actually loading a scene in a game engine. The great thing is that you can test ViewModels and Services in isolation. This significantly reduces the cost of maintaining larger projects.
 
-For example:
-
-- Puzzle validation can be tested without rendering a screen.
-- Session management can be tested without a game engine.
-- ViewModels can be tested without loading a scene.
-
-This significantly reduces the cost of maintaining larger projects.
+Even if you are not writing automated tests at the start of the project, having a clear separation of concerns keeps the option open to add them later.
 
 ### 3. Engine Independence
 
-A strong architecture keeps domain logic independent from engine-specific code.
+A strong architecture keeps domain logic independent from engine-specific code. Game Components in Wonderland Engine or other engines act as adapters. In a well-structured MVVM setup, Services coordinate gameplay. Domain models own state.
 
-In the Nurikabe architecture:
-
-- Wonderland Components act as adapters.
-- Services coordinate gameplay.
-- Domain models own puzzle state.
-
-As a result, the core puzzle logic could potentially be reused in another engine.
+As a result, the core game logic (or parts of it) could potentially be reused in another engine and tested separately without having to rely on engine-specific features.
 
 ### 4. Cleaner Scaling
 
-Many prototypes start simple.
-
-Then features arrive:
-
-- Save systems
-- Tutorials
-- Achievements
-- Analytics
-- Daily challenges
-- Multiple puzzle types
-
-Without clear boundaries, every new feature increases complexity.
-
-MVVM helps control that complexity by keeping responsibilities organized.
+Many prototypes start simple. Then more features arrive. You want to add a save system, tutorial, analytics, different ways to play, challenges, achievements, the list goes on and on. The more features you add, the more complex the codebase becomes. And the greater the risk of getting into unmaintainable spaghetti. Good patterns like MVVM help control that complexity by keeping responsibilities organized.
 
 ### 5. Improved Team Collaboration
 
-When responsibilities are clearly defined:
-
-- UI developers can work on Views.
-- Gameplay developers can work on Services and Models.
-- Technical designers can focus on game rules.
-
-The architecture naturally reduces conflicts between systems.
+When responsibilities are clearly defined UI developers can work on Views, Gameplay developers can work on Services and Models, and Technical designers can focus on game rules. The architecture naturally reduces merge conflicts between systems.
 
 ## MVVM and Reactive State
 
-MVVM becomes especially powerful when combined with reactive state management.
+MVVM becomes especially powerful when combined with reactive state management. Many modern game architectures use reactive state systems. Instead of manually refreshing UI, state changes automatically propagate through the system. In my current games, I use [Preact Signals](https://preactjs.com/guide/v10/signals/) for this purpose. I don't rely on the entire Preact library. They provide a package `@preact/signals-core` that only contains the Signals.
 
-Many modern game architectures use reactive state systems.
-
-Instead of manually refreshing UI, state changes automatically propagate through the system.
+The flow of a game might look like this:
 
 ```text
 Tile State Changes
@@ -326,60 +232,41 @@ ViewModel Observes
 View Re-renders
 ```
 
-This creates predictable and maintainable data flow.
+This creates predictable and maintainable data flows.
 
 ## Common Mistakes
 
+There are a couple of common mistakes developers might make when implementing MVVM. There's no tools (maybe AI nowadays) that can prevent code ending up in the wrong location. Some governance and code reviews are often necessary to keep the architecture clean. Often the mistakes are made because intellisense makes it easy to refecence and call a service or model directly. It gives a suggestion, it's accepted, and the first tiny violation is made. Then the next one, and the next one. Until the architecture is broken and the codebase is a mess.
+
 ### Putting Business Logic in the View
 
+```
 Bad:
-
-- Button decides whether a puzzle is complete.
-- UI directly modifies game state.
+    - Button decides whether a puzzle is complete.
+    - UI directly modifies game state.
 
 Better:
-
-- View calls a ViewModel command.
-- Service performs validation.
-
+    - View calls a ViewModel command.
+    - Service performs validation.
+```
 ### Putting UI Logic in Services
 
+```
 Bad:
-
-- Service knows about panels and buttons.
+    - Service knows about panels and buttons.
 
 Better:
-
-- Service exposes state.
-- ViewModel decides how the UI should present it.
+    - Service exposes state.
+    - ViewModel decides how the UI should present it.
+```
 
 ### Creating Massive ViewModels
 
-A ViewModel should adapt state for a specific screen.
-
-If it starts coordinating large portions of the game, responsibilities should move into dedicated services.
-
-## When Should You Use MVVM?
-
-MVVM is a particularly good fit when:
-
-- The game has multiple screens.
-- UI complexity is growing.
-- You want automated testing.
-- Multiple developers are involved.
-- Long-term maintainability matters.
-
-For a tiny game jam prototype, MVVM may be more structure than necessary.
-
-For a game intended to evolve over time, the investment often pays for itself quickly.
+There's a risk that a ViewModel can become too large. A ViewModel should adapt state for a specific screen. If it starts coordinating large portions of the game, responsibilities should move into dedicated services. When also using depenceny injection through the constructor, it becomes easy to see when a ViewModel is doing too much, as there will be too many dependencies injected into the constructor. If that happens, it's a good indication that the ViewModel is doing too much and should be split into smaller, more focused components. I usually try to keep the dependencies to a maximum of 5. If it goes beyond that, it's time to refactor.
 
 ## Final Thoughts
 
-MVVM is not about adding layers for the sake of architecture. It is about assigning ownership correctly.
-
-- Models own state.
-- ViewModels own presentation logic.
-- Views own rendering.
+MVVM is not about adding layers for the sake of architecture. It is about assigning ownership correctly: Models own state; ViewModels own presentation logic; Views own rendering.
 
 MVVM helps keep gameplay rules independent from UI concerns while supporting scalable, event-driven architectures. Combined with services, reactive state, and domain-focused models, it creates a foundation that can grow from a simple prototype into a much larger game without collapsing under its own complexity.
 
@@ -390,12 +277,17 @@ MVVM helps keep gameplay rules independent from UI concerns while supporting sca
 The Model owns game state.
 
 ```ts
-export class PlayerModel {
-	public health = 100;
-	public score = 0;
+interface IPlayerModel {
+    health: ReadonlySignal<number>;
+    score: ReadonlySignal<number>;
+}
+
+export class PlayerModel implements IPlayerModel {
+	public health = signal(100);
+	public score = signal(0);
 
 	public addScore(points: number): void {
-		this.score += points;
+		this.score.value += points;
 	}
 }
 ```
@@ -407,8 +299,12 @@ The Model knows nothing about buttons, menus, or rendering.
 Services contain application and gameplay logic.
 
 ```ts
+export interface IGameService {
+    defeatEnemy(): void;
+}
+
 export class GameService {
-	public constructor(private readonly player: PlayerModel) {}
+	public constructor(private readonly player: IPlayerModel) {}
 
 	public defeatEnemy(): void {
 		this.player.addScore(100);
@@ -423,8 +319,8 @@ The ViewModel adapts gameplay state for the UI.
 ```ts
 export class HudViewModel {
 	public constructor(
-		private readonly player: PlayerModel,
-		private readonly gameService: GameService
+		private readonly player: IPlayerModel,
+		private readonly gameService: IGameService
 	) {}
 
 	public get scoreText(): string {
@@ -468,5 +364,12 @@ UI Refresh
 
 Each layer has a single responsibility, making the system easier to reason about, test, and extend.
 
-If your game is expected to grow, MVVM is one of the most practical architectural patterns available for keeping that growth manageable.
+## Wrap Up
+
+If your game is expected to grow (and it probably will), MVVM is one of the most practical architectural patterns available for keeping that growth manageable. There are a couple of patterns and principles that go very well with MVVM in games, such as the Service Locator pattern, Event-Driven Architecture, and even the SOLID principles. But those are topics for another post. Stay tuned for more!
+
+Happy Coding! 🚀
+
+{{< img-link "/images/2026/06/mvvm-in-game-title.png" "Cartoon visualization of MVVM in games showing a person with neatly folded clothes" >}}
+
 

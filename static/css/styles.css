@@ -1300,4 +1300,23 @@ footer.entry-meta .meta-in {
   color: 333;
 }
 
+.mermaid {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  text-align: center;
+  width: 100%;
+}
+.mermaid .edgeLabel > p {
+  padding: 8px 32px 8px 32px;
+  border-radius: 5px;
+  font-size: 0.7em;
+  border: 1px solid rgba(115, 87, 128, 0.25);
+}
+.mermaid .nodeLabel > p {
+  padding: 8px 32px 8px 32px;
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=styles.css.map */
