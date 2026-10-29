@@ -1,9 +1,6 @@
 if ('serviceWorker' in navigator) {
-    if (!navigator.serviceWorker.controller) {
-        //no active SW found, register...
-        navigator.serviceWorker.register('/sw.js', {
-            scope: '/'
-        })
-    }
+    // register on every visit, so the browser also checks for a new sw.js.
+    navigator.serviceWorker.register('/sw.js', {
+        scope: '/'
+    });
 }
-
