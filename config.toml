@@ -149,3 +149,16 @@ pluralizeListTitles = false
   [privacy.youtube]
     disable = false
     privacyEnhanced = false
+
+# Expose static/images as resources so the home page can generate thumbnails.
+# Adding a mount drops the default for that target, so assets and static are re-declared.
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "static/images"
+    target = "assets/images"
