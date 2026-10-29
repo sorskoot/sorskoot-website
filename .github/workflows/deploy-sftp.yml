@@ -1,0 +1,50 @@
+name: Build and Deploy via SFTP
+
+on:
+    push:
+        branches:
+            - master
+    workflow_dispatch:
+
+concurrency:
+    group: deploy-sftp
+    cancel-in-progress: false
+
+jobs:
+    build_and_deploy_job:
+        runs-on: ubuntu-latest
+        name: Build and Deploy Job
+        steps:
+            - uses: actions/checkout@v5
+              with:
+                  submodules: true
+                  lfs: false
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v3
+              with:
+                  hugo-version: 'latest'
+                  extended: true
+            - name: Setup Node.js
+              uses: actions/setup-node@v6
+              with:
+                  node-version: 'latest'
+                  cache: 'npm'
+            - name: Build
+              run: npm run build
+            - name: Install lftp
+              run: sudo apt-get update && sudo apt-get install -y lftp
+            - name: Deploy via SFTP
+              env:
+                  SFTP_HOST: ${{ secrets.FTP_HOST }}
+                  SFTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+                  LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+                  # Folder on the server the site is served from, relative to the SFTP login folder
+                  REMOTE_DIR: ./
+              run: |
+                  # --ignore-time compares by size only, since a fresh checkout makes every file look newer
+                  lftp --env-password -u "$SFTP_USERNAME" "sftp://$SFTP_HOST" -e "
+                      set sftp:auto-confirm yes;
+                      set net:max-retries 3;
+                      mirror --reverse --ignore-time --parallel=4 --verbose public/ $REMOTE_DIR;
+                      bye
+                  "
