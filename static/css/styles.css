@@ -280,23 +280,36 @@ a:hover {
 
 **********************************************************************/
 #head {
-  background: #f4f4f4 url(../images/bg_head.png) top right;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  --fixed-bg-image: url(../images/bg_head.png);
+  position: relative;
+  clip-path: inset(0);
   color: #7c7c7c;
   padding: 30px 0 35px 0;
-  background-position-x: center;
-  background-size: contain;
   background-color: #32313b;
 }
-@media (max-width: 1024px), (hover: none), (prefers-reduced-motion: reduce) {
-  #head {
-    background-attachment: scroll;
-  }
+#head::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: var(--fixed-bg-image);
+  pointer-events: none;
+  will-change: transform;
+}
+#head::before {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
 }
 @media (max-width: 640px) {
   #head {
     max-height: 450px;
+  }
+  #head::before {
+    position: absolute;
   }
 }
 
@@ -1196,35 +1209,44 @@ footer.entry-meta .meta-in {
 
 .fixed-section-title {
   position: relative;
+  clip-path: inset(0);
   opacity: 0.65;
-  background-attachment: fixed;
+  min-height: 200px;
+}
+.fixed-section-title::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: var(--fixed-bg-image);
+  pointer-events: none;
+  will-change: transform;
+}
+.fixed-section-title::before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 200px;
-}
-@media (max-width: 1024px), (hover: none), (prefers-reduced-motion: reduce) {
-  .fixed-section-title {
-    background-attachment: scroll;
-  }
 }
 .fixed-section-title.fixed-arvr {
-  background-image: url("../images/arvr.jpg");
+  --fixed-bg-image: url("../images/arvr.jpg");
 }
 .fixed-section-title.fixed-blog {
-  background-image: url("../images/blog.jpg");
+  --fixed-bg-image: url("../images/blog.jpg");
 }
 .fixed-section-title.fixed-webxr {
-  background-image: url("../images/webxr.jpg");
+  --fixed-bg-image: url("../images/webxr.jpg");
 }
 .fixed-section-title.fixed-twitch {
-  background-image: url("../images/twitchbanner.jpg");
+  --fixed-bg-image: url("../images/twitchbanner.jpg");
 }
 .fixed-section-title.fixed-youtube {
-  background-image: url("../images/youtubebanner.jpg");
+  --fixed-bg-image: url("../images/youtubebanner.jpg");
 }
 .fixed-section-title.fixed-agenda {
-  background-image: url("../images/agenda.jpg");
+  --fixed-bg-image: url("../images/agenda.jpg");
 }
 .fixed-section-title .caption {
   position: absolute;
