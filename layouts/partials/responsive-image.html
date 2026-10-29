@@ -1,0 +1,39 @@
+{{/*
+  Renders a lazy-loaded <img>. Local raster images get width/height and a
+  resized WebP srcset; GIF, SVG and remote images are passed through as-is.
+  Params: src, alt, title (optional), page (optional, for page bundle images).
+*/}}
+{{ $src := .src }}
+{{ $img := false }}
+{{ $u := urls.Parse $src }}
+{{ if not $u.IsAbs }}
+  {{ with .page }}{{ $img = .Resources.Get $u.Path }}{{ end }}
+  {{ if not $img }}{{ $img = resources.Get (strings.TrimPrefix "/" $u.Path) }}{{ end }}
+{{ end }}
+{{ $attrs := dict "src" $src }}
+{{ with $img }}
+  {{ if and (eq .ResourceType "image") (in (slice "png" "jpeg" "jpg" "webp") .MediaType.SubType) }}
+    {{ $full := .Process "webp q80" }}
+    {{ $fallback := $full }}
+    {{ $set := slice }}
+    {{ range slice 480 800 1200 1600 }}
+      {{ if lt . $img.Width }}
+        {{ $r := $img.Resize (printf "%dx webp q80" .) }}
+        {{ $set = $set | append (printf "%s %dw" $r.RelPermalink .) }}
+        {{ $fallback = $r }}
+      {{ end }}
+    {{ end }}
+    {{ $set = $set | append (printf "%s %dw" $full.RelPermalink .Width) }}
+    {{ $attrs = dict
+      "src" $fallback.RelPermalink
+      "srcset" (delimit $set ", ")
+      "sizes" "(min-width: 768px) 720px, 100vw"
+      "width" .Width
+      "height" .Height
+    }}
+  {{ end }}
+{{ end }}
+<img src="{{ $attrs.src }}"
+  {{- with $attrs.srcset }} srcset="{{ . }}" sizes="{{ $attrs.sizes }}"{{ end }}
+  {{- with $attrs.width }} width="{{ . }}" height="{{ $attrs.height }}"{{ end }}
+  alt="{{ .alt }}"{{ with .title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">

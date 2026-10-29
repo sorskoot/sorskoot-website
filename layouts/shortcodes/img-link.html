@@ -1,5 +1,5 @@
 <p>
     <a href="{{ index .Params 0 }}" target="_blank">
-        <img src="{{ index .Params 0 }}" title="{{ index .Params 1 }}">
+        {{ partial "responsive-image.html" (dict "src" (index .Params 0) "alt" (index .Params 1) "title" (index .Params 1) "page" .Page) }}
     </a>
 </p>
