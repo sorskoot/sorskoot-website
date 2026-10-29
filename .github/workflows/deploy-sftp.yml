@@ -39,7 +39,7 @@ jobs:
                   SFTP_USERNAME: ${{ secrets.FTP_USERNAME }}
                   LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
                   # Folder on the server the site is served from, relative to the SFTP login folder
-                  REMOTE_DIR: ./
+                  REMOTE_DIR: ./www
               run: |
                   # --ignore-time compares by size only, since a fresh checkout makes every file look newer
                   lftp --env-password -u "$SFTP_USERNAME" "sftp://$SFTP_HOST" -e "
