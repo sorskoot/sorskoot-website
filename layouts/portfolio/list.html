@@ -42,13 +42,13 @@
                         </div>
                         {{ if .Params.github }}
                         <div>
-                            <i style="font-size:1.2em" class="fa fa-github fa-2"></i> &nbsp; <a
+                            <span style="font-size:1.2em">{{ partial "icon.html" "fa-github" }}</span> &nbsp; <a
                                 href="{{ .Params.github }}" target="_blank">{{ .Params.github }}</a>
                         </div>
                         {{ end }}
                         {{ if .Params.link }}
                         <div>
-                            <i style="font-size:1.2em" class="fa fa-link fa-2"></i> &nbsp; <a href="{{ .Params.link }}"
+                            <span style="font-size:1.2em">{{ partial "icon.html" "fa-link" }}</span> &nbsp; <a href="{{ .Params.link }}"
                                 target="_blank">{{ .Params.link }}</a>
                         </div>
                         {{ end }}
