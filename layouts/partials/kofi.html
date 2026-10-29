@@ -1,9 +1,30 @@
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 <script>
-  kofiWidgetOverlay.draw('sorskoot', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#323842',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
+  (function () {
+    function loadKofi() {
+      var s = document.createElement('script');
+      s.src = 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js';
+      s.async = true;
+      s.onload = function () {
+        kofiWidgetOverlay.draw('sorskoot', {
+          'type': 'floating-chat',
+          'floating-chat.donateButton.text': 'Support me',
+          'floating-chat.donateButton.background-color': '#323842',
+          'floating-chat.donateButton.text-color': '#fff'
+        });
+      };
+      document.body.appendChild(s);
+    }
+    function scheduleKofi() {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadKofi, { timeout: 3000 });
+      } else {
+        setTimeout(loadKofi, 1);
+      }
+    }
+    if (document.readyState === 'complete') {
+      scheduleKofi();
+    } else {
+      window.addEventListener('load', scheduleKofi);
+    }
+  })();
 </script>

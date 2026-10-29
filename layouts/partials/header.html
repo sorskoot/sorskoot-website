@@ -25,7 +25,9 @@
 
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
 
-	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5b5ce62a4970c900111bbb9b&product=sop' async='async'></script>
+	{{ if and .IsPage .Params.Share }}
+	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=sop' async='async'></script>
+	{{ end }}
 
     <script type="text/javascript" src="{{ .Site.BaseURL }}/sw-register.js"></script>
 	

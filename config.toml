@@ -74,9 +74,6 @@ pluralizeListTitles = false
     property = "5b5ce62a4970c900111bbb9b"
     custom = false
 
-[params.google.analytics]
-    trackerID = "UA-11559922-2"
-
 #[[params.social]]
 #	title = "facebook"
 #	url = "https://www.facebook.com/sorskoot"
