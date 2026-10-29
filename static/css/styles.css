@@ -961,9 +961,18 @@ footer.entry-meta .meta-in {
   font-size: 30px;
 }
 
-.follow-me-icons i {
+.follow-me-icons a {
+  display: inline-block;
   padding: 15px 0;
   margin: 0 10px 0 0;
+}
+
+/* Inline SVG icons (layouts/partials/icon.html) */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
 }
 
 /* Max page width
@@ -987,6 +996,7 @@ footer.entry-meta .meta-in {
   cursor: pointer;
   font-weight: bold;
   color: #666666;
+  font-size: 2em;
 }
 .st-custom-button[data-network]:hover, .st-custom-button[data-network]:focus {
   color: #004488;
