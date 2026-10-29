@@ -13,7 +13,7 @@ Hugo static site for Timmy Kokke's (Sorskoot) personal website and blog, live at
 - `npm run build`: production build into `public/` with base URL `https://timmykokke.com`.
 - `npm run sass` / `npm run sass:watch`: compile `assets/css/styles.scss` to `static/css/styles.css`. The compiled CSS is committed and served from `static/`; Hugo does not run Sass itself, so recompile after editing SCSS.
 
-There are no tests or linters. Deployment is automatic: pushing to `master` runs `.github/workflows/azure-static-web-apps-*.yml`, which builds with Hugo extended and deploys `public/` to Azure Static Web Apps.
+There are no tests or linters. Deployment is automatic: pushing to `master` runs `.github/workflows/deploy-ftp.yml`, which builds with Hugo extended and uploads `public/` to the hosting provider over FTP (secrets `FTP_HOST`, `FTP_USERNAME`, `FTP_PASSWORD`).
 
 ## Structure
 

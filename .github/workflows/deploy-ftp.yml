@@ -1,0 +1,44 @@
+name: Build and Deploy via FTP
+
+on:
+    push:
+        branches:
+            - master
+    workflow_dispatch:
+
+concurrency:
+    group: deploy-ftp
+    cancel-in-progress: false
+
+jobs:
+    build_and_deploy_job:
+        runs-on: ubuntu-latest
+        name: Build and Deploy Job
+        steps:
+            - uses: actions/checkout@v5
+              with:
+                  submodules: true
+                  lfs: false
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v3
+              with:
+                  hugo-version: 'latest'
+                  extended: true
+            - name: Setup Node.js
+              uses: actions/setup-node@v6
+              with:
+                  node-version: 'latest'
+                  cache: 'npm'
+            - name: Build
+              run: npm run build
+            - name: Deploy via FTP
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+              with:
+                  server: ${{ secrets.FTP_HOST }}
+                  username: ${{ secrets.FTP_USERNAME }}
+                  password: ${{ secrets.FTP_PASSWORD }}
+                  # Use 'ftps' if the host supports FTP over TLS
+                  protocol: ftps
+                  local-dir: ./public/
+                  # Folder on the server the site is served from, e.g. 'public_html/'
+                  server-dir: ./
