@@ -289,9 +289,13 @@ a:hover {
   background-size: contain;
   background-color: #32313b;
 }
+@media (max-width: 1024px), (hover: none), (prefers-reduced-motion: reduce) {
+  #head {
+    background-attachment: scroll;
+  }
+}
 @media (max-width: 640px) {
   #head {
-    background-attachment: initial;
     max-height: 450px;
   }
 }
@@ -1199,6 +1203,11 @@ footer.entry-meta .meta-in {
   background-size: cover;
   min-height: 200px;
 }
+@media (max-width: 1024px), (hover: none), (prefers-reduced-motion: reduce) {
+  .fixed-section-title {
+    background-attachment: scroll;
+  }
+}
 .fixed-section-title.fixed-arvr {
   background-image: url("../images/arvr.jpg");
 }
@@ -1206,7 +1215,7 @@ footer.entry-meta .meta-in {
   background-image: url("../images/blog.jpg");
 }
 .fixed-section-title.fixed-webxr {
-  background-image: url("../images/webxr.png");
+  background-image: url("../images/webxr.jpg");
 }
 .fixed-section-title.fixed-twitch {
   background-image: url("../images/twitchbanner.jpg");
