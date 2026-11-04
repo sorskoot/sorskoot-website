@@ -84,7 +84,7 @@ Summary for devs of [Guidelines on prohibited artificial intelligence practices]
   - Text-only sentiment analysis (para. 251).
   - Physical states such as pain or fatigue, so driver drowsiness detection is fine (para. 249).
   - Detecting that someone is smiling.
-  - Customer-facing use, such as detecting anger on a call-centre customer's voice (para. 259).
+  - Customer-facing use, such as detecting anger on a call-centre customer's voice (para. 254).
 - **Banned.** Analysing the emotions of call-centre staff, emotional tone in hybrid-work video calls, and recruitment or probation-period use.
 - **Other contexts (para. 266).** Emotion recognition outside work and education is high-risk, not banned.
 

@@ -1,20 +1,20 @@
 ---
-id: 20261027
-draft: true
+id: 20261104
+draft: false
 title: Trustworthy AI
-date: 2026-10-27T01:00:00+00:00
+date: 2026-11-04T01:00:00+00:00
 author: Sorskoot
 layout: post
 share: true
 comments: true
-guid: https://www.timmykokke.com/?p=20261027
-permalink: /2026/10/TrustworthyAI/
+guid: https://www.timmykokke.com/?p=20261104
+permalink: /2026/11/TrustworthyAI/
 categories:
   - AI
 tags:
   - Responsible AI
 images:
-  - /images/2026/10/??.png
+  - /images/2026/10/TrustworthyAI.png
 ---
 
 Hello Coders! 👾
@@ -31,7 +31,7 @@ The AI Act takes a risk-based approach. The important question isn't which model
 
 The same model can end up in very different systems. A feature that drafts a job description is a different thing from one that ranks applicants, even when both call the same API. So before looking at any article of the Act, I would describe what the AI actually does. Compliance follows from that description.
 
-This applies to two situations, and they raise different questions.
+As software engineers, we run into AI in two different ways: in the tools we use to build software, and in the features we ship. They raise different questions.
 
 ### The tools we use to build software
 
@@ -53,6 +53,8 @@ Adding an AI feature to our software needs its own assessment, because now the A
 
 A short record of the purpose, data flow, and permissions gives our privacy, security, and legal colleagues something concrete to assess. This isn't a claim that every coding assistant needs a formal AI Act compliance dossier. It's a way to avoid discovering an important obligation after the implementation is finished.
 
+And there's good news. Most AI systems fall outside the prohibited, high-risk, and transparency categories, and have no specific requirements under the Act. Legislation can sound scary, but for a lot of what we build, the answer will be that little extra applies.
+
 ## Know Your Role
 
 The Act distinguishes between **providers** and **deployers**. A provider develops an AI system, or has one developed, and places it on the market or puts it into service under its own name. A deployer uses an AI system under its authority in a professional context.
@@ -73,10 +75,11 @@ Here is the timeline I would keep nearby, based on the Commission's [current ove
 
 | Date | Main milestone |
 |---|---|
-| 2&nbsp;February&nbsp;2025 | Prohibited AI practices and AI literacy obligations began applying. |
+| 2&nbsp;February&nbsp;2025 | Prohibited AI practices and AI literacy obligations began applying. The literacy obligation has since been simplified. |
 | 2&nbsp;August&nbsp;2025 | Governance rules and obligations for general-purpose AI models began applying, with transition arrangements for some existing models. |
 | 27&nbsp;July&nbsp;2026 | The AI Omnibus amendments entered into force. |
-| 2&nbsp;August&nbsp;2026 | Most remaining provisions began applying, including Article 50 transparency obligations. Exceptions and transition arrangements still matter. |
+| 2&nbsp;August&nbsp;2026 | Most remaining provisions began applying, including Article 50 transparency obligations, and enforcement started. |
+| 2&nbsp;December&nbsp;2026 | Two new prohibitions are scheduled to apply: AI systems generating non-consensual sexual deepfakes and child sexual abuse material. This is also the transition deadline for certain providers of synthetic content systems that were on the market before 2 August 2026 to comply with the Article 50(2) marking requirement. |
 | 2&nbsp;December&nbsp;2027&nbsp;&nbsp; | High-risk requirements for Annex III use cases are scheduled to apply. |
 | 2&nbsp;August&nbsp;2028 | High-risk requirements for qualifying AI systems connected to regulated products under Annex I are scheduled to apply. |
 
@@ -86,7 +89,9 @@ Those extensions don't postpone GDPR or remove the AI Act obligations that alrea
 
 ## Know What Is Prohibited
 
-The prohibited practices in [Article 5](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-5) are the part that has applied the longest, and the fines are the highest: up to €35 million or 7% of worldwide annual turnover. The list includes manipulative or deceptive techniques that cause significant harm, exploiting vulnerabilities related to age, disability, or social and economic situation, social scoring, predicting an individual's risk of offending based on profiling alone, untargeted scraping of facial images, emotion recognition at work and in education, and biometric categorisation that infers things like political opinions or religion. Real-time remote biometric identification for law enforcement is restricted too.
+The prohibited practices in [Article 5](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-5) are among the first parts of the Act that applied, and the fines are the highest: up to €35 million or 7% of worldwide annual turnover, whichever is higher. The list includes manipulative or deceptive techniques that cause significant harm, exploiting vulnerabilities related to age, disability, or social and economic situation, social scoring, predicting an individual's risk of offending based on profiling alone, untargeted scraping of facial images, emotion recognition at work and in education, and biometric categorisation that infers things like political opinions or religion. Real-time remote biometric identification for law enforcement is restricted too.
+
+The AI Omnibus added two more prohibitions that apply from 2 December 2026: AI systems that generate realistic sexually explicit images or videos of an identifiable person without their consent, and systems that generate child sexual abuse material. If you build image or video generation features, that is worth knowing about now.
 
 The Commission's [guidelines on prohibited AI practices](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act) are worth reading as a developer, because they say a few things that are easy to miss. The prohibitions cover misuse too, so a deployer using your emotion-inference tool at work is a problem even if your terms of use forbid it. Open source doesn't exempt a system that falls under Article 5, and respecting robots.txt doesn't make facial image scraping "targeted". Providers are expected to build in effective safeguards when misuse is foreseeable. Research and testing before market placement is excluded, but real-world testing is not. The guidelines are non-binding, and the examples are indicative, so each case needs its own assessment.
 
@@ -199,3 +204,5 @@ For sensitive uses, involve the people responsible for legal compliance, privacy
 The principles from 2024 still stand. For us as software engineers, the difference is that they need to show up in our architecture, acceptance criteria, code reviews, and release process. Not only in the prompt.
 
 Happy Coding! 🚀
+
+{{< img-link "/images/2026/10/TrustworthyAI.png" "Developer and AI watching TrustWorthy AI pyramid" >}}
