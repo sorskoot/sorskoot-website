@@ -1084,6 +1084,25 @@ footer.entry-meta .meta-in {
   height: 100%;
   flex-direction: column;
 }
+.grid-item h3 {
+  height: 4.2em;
+  margin: 10px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+.grid-item .summary {
+  flex-grow: 0;
+  line-height: 1.5em;
+  height: 10.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  line-clamp: 7;
+}
 
 .grid-item-big {
   width: 500px;

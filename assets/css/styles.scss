@@ -1115,6 +1115,29 @@ footer.entry-meta .meta-in {
     height: 100%;
     flex-direction: column;
   }
+
+  // Fixed title and summary heights so all boxes line up,
+  // no matter how many lines the text needs.
+  h3 {
+    height: 3 * 1.4em;
+    margin: 10px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+
+  .summary {
+    flex-grow: 0;
+    line-height: 1.5em;
+    height: 7 * 1.5em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+  }
 }
 
 
