@@ -1,3 +1,4 @@
+refLinksErrorLevel = "ERROR"
 baseURL = "localhost"
 locale = "en-us"
 title = "Timmy Kokke"

@@ -48,7 +48,7 @@ images:
 ---
 ```
 
-`permalink` defines the public URL; internal links between posts use it (e.g. `/2024/03/ResponsibleAI/`).
+`permalink` is a leftover from WordPress and is ignored by Hugo. Real URLs are `/blog/<year>/<lowercased-filename>/`. Link between posts with `{{< ref "blog/2024/2024-03-14-ResponsibleAI.md" >}}`, never with a hardcoded path; `refLinksErrorLevel = "ERROR"` in `config.toml` makes a broken ref fail the build.
 
 ## Writing style for blog posts
 
