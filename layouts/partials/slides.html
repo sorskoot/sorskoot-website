@@ -1,6 +1,6 @@
 <div>
     <div class="slides">
-        {{ range $index, $area := .Site.Data.slides }}
+        {{ range $index, $area := hugo.Data.slides }}
         <div class="slide">
             <iframe src="{{ .iframe }}" width="298" height="243" frameborder="0" marginwidth="0" marginheight="0"
                 scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"

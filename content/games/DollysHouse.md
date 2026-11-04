@@ -9,7 +9,7 @@ share: true
 comments: true
 guid: https://www.timmykokke.com/?p=DollysHouse
 permalink: /Games/DollysHouse
-image: /images/games/DollysHouse.png
+image: /images/games/DollysHouse/DollysHouse.png
 types: 
 - GameJam
 

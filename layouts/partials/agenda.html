@@ -1,5 +1,5 @@
 <div class="row section agenda topspace">
-    {{ range $index, $area := .Site.Data.agenda }}
+    {{ range $index, $area := hugo.Data.agenda }}
         {{ if not .past }}
         <div class="agenda-item">
             <div class="agenda-date">
