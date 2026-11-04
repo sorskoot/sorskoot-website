@@ -712,6 +712,33 @@ img {
   text-decoration: underline;
 }
 
+.entry-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+
+.entry-content th,
+.entry-content td {
+  padding: 0.6em 0.8em;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.entry-content th {
+  border-bottom-width: 2px;
+}
+
+.entry-content tbody tr:nth-child(even) {
+  background: rgba(128, 128, 128, 0.08);
+}
+
+.entry-content td:first-child {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
 .meta-nav,
 .more-link {
   font-family: Georgia, serif;
