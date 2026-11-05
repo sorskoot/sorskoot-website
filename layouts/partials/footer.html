@@ -74,7 +74,7 @@
                 <div class="widget-body">
                     <p class="text-right">
                         Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}<br>
-                        Privacy: <a href="{{ .Site.BaseURL }}/privacy-policy">Privacy Policy</a><br>
+                        Privacy: <a href="{{ .Site.BaseURL }}/privacy">Privacy</a> - no tracking, no cookies<br>
                         Design based on: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> -
                         Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
                     </p>
@@ -90,9 +90,9 @@
 {{ partial "kofi.html" . }}
 
 {{ if .Store.Get "hasMermaid" }}
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true,  theme: 'base', themeVariables:{fontSize: '20px' }});
+  <script src="{{ .Site.BaseURL }}js/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true, theme: 'base', themeVariables: { fontSize: '20px' } });
   </script>
 {{ end }}
 
