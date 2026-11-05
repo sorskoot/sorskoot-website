@@ -1,1 +1,13 @@
-<script src="https://gist.github.com/sorskoot/{{ index .Params 0 }}.js"></script>
+{{- $id := index .Params 0 -}}
+{{- $url := printf "https://gist.github.com/sorskoot/%s" $id -}}
+{{- /* Fetch the gist at build time, so visitors never contact GitHub just by reading the post. */ -}}
+{{- $code := "" -}}
+{{- with try (resources.GetRemote (printf "https://gist.githubusercontent.com/sorskoot/%s/raw" $id)) -}}
+  {{- with .Value -}}{{- $code = .Content -}}{{- end -}}
+{{- end -}}
+{{- if $code -}}
+<pre><code>{{ $code }}</code></pre>
+<p><a href="{{ $url }}" target="_blank" rel="noopener noreferrer">View this gist on GitHub</a></p>
+{{- else -}}
+<p><a href="{{ $url }}" target="_blank" rel="noopener noreferrer">View the code on GitHub Gist</a></p>
+{{- end -}}

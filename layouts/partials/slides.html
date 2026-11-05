@@ -2,10 +2,12 @@
     <div class="slides">
         {{ range $index, $area := hugo.Data.slides }}
         <div class="slide">
-            <iframe src="{{ .iframe }}" width="298" height="243" frameborder="0" marginwidth="0" marginheight="0"
-                scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
-                allowfullscreen>
-            </iframe>
+            {{ partial "embed-facade.html" (dict
+                "src" (printf "https:%s" .iframe)
+                "href" (printf "https:%s" .link)
+                "label" "▶ Show slides"
+                "provider" "SlideShare"
+                "width" "298" "height" "243") }}
             <div style="margin-bottom:5px"> <strong>
                     <a href="{{ .link }}" title="{{ .title }}" target="_blank">
                         {{ .title }}</a> </strong>

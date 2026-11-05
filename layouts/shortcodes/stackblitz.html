@@ -1,1 +1,6 @@
-<iframe src="https://stackblitz.com/edit/{{ index .Params 0 }}?embed=1&file={{ index .Params 1 }}&view=preview" width="650" height="400"></iframe>
+{{ partial "embed-facade.html" (dict
+  "src" (printf "https://stackblitz.com/edit/%s?embed=1&file=%s&view=preview" (index .Params 0) (index .Params 1))
+  "href" (printf "https://stackblitz.com/edit/%s" (index .Params 0))
+  "label" "▶ Load live demo"
+  "provider" "StackBlitz"
+  "width" "650" "height" "400") }}

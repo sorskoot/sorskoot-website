@@ -1,5 +1,16 @@
-<iframe width="560" height="315" 
-src="https://www.youtube.com/embed/{{ index .Params 0 }}" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+{{- $id := "" -}}{{- with .Params -}}{{- $id = index . 0 -}}{{- end -}}
+{{- if $id -}}
+{{- $thumb := "" -}}
+{{- /* Fetch the thumbnail at build time, so visitors never contact YouTube until they click play. */ -}}
+{{- with try (resources.GetRemote (printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" $id)) -}}
+  {{- with .Value -}}{{- $thumb = .RelPermalink -}}{{- end -}}
+{{- end -}}
+{{ partial "embed-facade.html" (dict
+  "src" (printf "https://www.youtube-nocookie.com/embed/%s?autoplay=1" $id)
+  "href" (printf "https://www.youtube.com/watch?v=%s" $id)
+  "label" "▶ Play video"
+  "provider" "YouTube"
+  "thumb" $thumb
+  "width" "560" "height" "315"
+  "allow" "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture") }}
+{{- end -}}

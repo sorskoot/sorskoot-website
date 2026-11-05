@@ -1,0 +1,11 @@
+{{/*
+  Click-to-load embed. Nothing from the third party is requested until the visitor clicks.
+  Params: src (iframe url), href (plain link fallback), label, provider, thumb (optional local image url),
+          width, height, allow (optional)
+*/}}
+<div class="embed-facade" data-src="{{ .src }}" data-width="{{ .width }}" data-height="{{ .height }}"{{ with .allow }} data-allow="{{ . }}"{{ end }} style="width:{{ .width }}px;aspect-ratio:{{ .width }}/{{ .height }};{{ with .thumb }}background-image:url('{{ . }}'){{ end }}">
+    <a class="embed-facade-link" href="{{ .href }}" target="_blank" rel="noopener noreferrer">
+        <span class="embed-facade-label">{{ .label }}</span>
+        <span class="embed-facade-note">Click to load the {{ .provider }} player. {{ .provider }} will receive your IP address and may set cookies. Or open it on {{ .provider }}.</span>
+    </a>
+</div>

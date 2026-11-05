@@ -25,3 +25,21 @@ navbarToggle.onclick = function(){
 		navbarCollapse.classList.add('show');
 	}
 }
+
+// Click-to-load embeds. The third-party iframe is only created after a click.
+document.querySelectorAll('.embed-facade').forEach(function (facade) {
+	facade.addEventListener('click', function (e) {
+		e.preventDefault();
+		let iframe = document.createElement('iframe');
+		iframe.src = facade.dataset.src;
+		iframe.width = facade.dataset.width;
+		iframe.height = facade.dataset.height;
+		iframe.setAttribute('allowfullscreen', '');
+		iframe.setAttribute('loading', 'lazy');
+		iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+		if (facade.dataset.allow) {
+			iframe.setAttribute('allow', facade.dataset.allow);
+		}
+		facade.replaceWith(iframe);
+	});
+});

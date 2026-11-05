@@ -1,1 +1,7 @@
-<iframe src="https://clips.twitch.tv/embed?clip={{ index .Params 0 }}&autoplay=false" frameborder="0" allowfullscreen="true" height="378" width="620"></iframe>
+{{- $id := index .Params 0 -}}
+{{ partial "embed-facade.html" (dict
+  "src" (printf "https://clips.twitch.tv/embed?clip=%s&parent=timmykokke.com&autoplay=true" $id)
+  "href" (printf "https://clips.twitch.tv/%s" $id)
+  "label" "▶ Play clip"
+  "provider" "Twitch"
+  "width" "620" "height" "378") }}

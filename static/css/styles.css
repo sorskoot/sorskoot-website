@@ -1407,4 +1407,41 @@ footer.entry-meta .meta-in {
   border-radius: 5px;
 }
 
+.embed-facade {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  width: 560px;
+  aspect-ratio: 16/9;
+  margin: 1em 0;
+  background: #323842 center/cover no-repeat;
+  color: #fff;
+}
+.embed-facade .embed-facade-link {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.45);
+}
+.embed-facade .embed-facade-label {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+.embed-facade .embed-facade-note {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  max-width: 90%;
+}
+
+iframe {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
