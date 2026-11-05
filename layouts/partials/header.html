@@ -16,18 +16,12 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/bootstrap.no-icons.min.css">
 	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,700&display=swap">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/fonts.css">
 	<!-- Custom styles -->
 	
 	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/styles.css">
 
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
-
-	{{ if and .IsPage .Params.Share }}
-	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=sop' async='async'></script>
-	{{ end }}
 
     <script type="text/javascript" src="{{ .Site.BaseURL }}/sw-register.js"></script>
 	

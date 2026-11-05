@@ -1,5 +1,5 @@
 // Bump the version to drop all cached pages and assets on the next visit.
-const Version = 'v2';
+const Version = 'v3';
 const PageCache = `TimmyKokke-pages-${Version}`;
 const AssetCache = `TimmyKokke-assets-${Version}`;
 const CurrentCaches = [PageCache, AssetCache];
