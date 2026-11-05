@@ -14,7 +14,7 @@ This website does not track you. There are no analytics, no advertising, no cook
 ## What happens when you visit
 
 - Everything on the site (pages, images, fonts and scripts) is served from timmykokke.com itself. Your browser does not contact Google, Disqus, ShareThis or any other third party just because you read a page.
-- The hosting provider keeps standard server logs (such as IP address, time and requested page) to keep the site running and secure. I don't use these logs to track visitors.
+- The hosting provider keeps standard server logs (such as IP address, time, requested page and browser) to keep the site running and secure. These logs are kept for 3 days. I don't use them to track visitors.
 - The site registers a service worker that caches pages and assets in your own browser, so the site loads faster and works offline. This data stays on your device. You can remove it at any time by clearing your site data.
 
 ## Embedded content and links

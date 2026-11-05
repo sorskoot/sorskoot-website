@@ -9,8 +9,9 @@ The tracker removal is done (ShareThis, Disqus, Google Fonts, Ko-fi widget, CDN 
 - [ ] **Old front matter.** 145 posts still have `comments: true` and `share: true`. This is harmless. Clean up if wanted, and update the snippet that adds the frontmatter.
 - [x] **Theme leftovers.** Done: the `initio` theme is removed and the 7 files still in use now live in `layouts/`.
 - [x] **Old IE shim.** Done: the `html5shiv.js` line is removed from `layouts/partials/header.html`.
-- [ ] **Hosting logs.** Check what the hosting provider logs and for how long. Make sure the website privacy section matches.
+- [x] **Hosting logs.** Done: the logs hold IP address, time, page, referrer and browser. The host keeps them for 3 days. The website privacy page says so.
 - [ ] **Verify in a browser.** Test the click-to-load embeds (YouTube, Twitch, StackBlitz, SlideShare) and the fonts on a real page. Check the Network tab for third-party requests before any click.
 - [x] **Bring back the Ko-fi button.** Done: `layouts/partials/kofi.html` is a plain fixed-position link, styled in `styles.scss`, with no JS. Original notes: Build it as our own floating "Support me" button (custom HTML, CSS and JS in the site) that opens an external Ko-fi page (`https://ko-fi.com/sorskoot`) when clicked. The button must not load anything from `storage.ko-fi.com`. Ko-fi only gets contacted after the click, so it stays GDPR-safe. Decide where it goes (floating bottom corner like before, or in the footer), match the old colors (`#323842` background, white text), and keep it working without JS. The plain footer link is already removed.
-- [ ] **Commit the changes.** Nothing is committed yet. Split into logical commits (trackers, embeds, images, config, privacy policy).
-
+- [x] **Commit the changes.** Done.
+- [ ] **Missing favicon.ico.** Browsers request `/favicon.ico` automatically and get a 404 (seen in the hosting logs). The site icon is `icons/gt_favicon.png`. Add a `static/favicon.ico` to stop the errors.
+- [ ] **404s from Meta's crawler.** The logs show requests such as `/blog/2023/2026-10-30-rosie-chatgpt/` and `/twitch/2019-05/2026-10-30-notes/`. The real posts have different dates (for example `2023-03-16-rosie-chatgpt`). Nothing in the repo contains `2026-10-30`, so find where the links come from (a feed, a shared link, an old redirect) and add redirects or fix the source if it is on the site.
