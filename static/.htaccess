@@ -1,0 +1,2 @@
+# Show the site 404 page instead of the host default.
+ErrorDocument 404 /404.html
