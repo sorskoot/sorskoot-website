@@ -27,22 +27,16 @@
 
 				<div id="share">
                     {{ if .Params.Share }}
-                       {{ partial "sharethis.html" . }}
+                       {{ partial "share-links.html" . }}
                     {{ end }}
 				</div>
 			</div>
 		</div> <!-- /row share -->
-		<div class="clearfix"></div>
 		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
-
-				<div id="comments">
-                    {{ if .Params.Comments }}
-                       {{ partial "disqus.html" . }}
-                    {{ end }}
-				</div>
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<p>Questions or thoughts? Reach out on <a href="https://www.linkedin.com/in/timmykokke/" rel="noopener">LinkedIn</a> or <a href="mailto:{{ .Site.Params.email }}">email me</a>.</p>
 			</div>
-		</div> <!-- /row comments -->
+		</div> <!-- /row contact -->
 	</div>	<!-- /container -->
 
 </main>

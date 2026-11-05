@@ -1,0 +1,13 @@
+{{/* Plain share links. No scripts, no cookies, nothing is loaded until the visitor clicks. */}}
+{{ $url := .Permalink | urlquery }}
+{{ $title := .Title | plainify | urlquery }}
+<div class="row">
+    <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 text-center">
+        <p class="share-links">
+            Share this post:
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url }}" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="https://bsky.app/intent/compose?text={{ $title }}%20{{ $url }}" target="_blank" rel="noopener noreferrer">Bluesky</a> |
+            <a href="mailto:?subject={{ $title }}&body={{ $url }}">Email</a>
+        </p>
+    </div>
+</div>
