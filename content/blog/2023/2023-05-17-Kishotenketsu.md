@@ -35,7 +35,7 @@ Let's look at a short example of how a story works with Kishōtenketsu.
 	In an age-old mountain realm (Ki), a group of dwarves stumbled upon a sealed cavern while mining for precious gems (Shō). To their astonishment, breaking the seal unleashed a gentle, luminous creature with healing powers (Ten). The dwarves and the mystical being formed an unbreakable bond, revitalizing their community through newfound wisdom and prosperity (Ketsu).
 
 
-![Kishōtenketsu in 4 steps](https://upload.wikimedia.org/wikipedia/commons/8/86/Kishotenketsu_Story_structure.png "Kishōtenketsu in 4 steps")
+![Kishōtenketsu in 4 steps](/images/2023/05/Kishotenketsu_Story_structure.png "Kishōtenketsu in 4 steps")
 *[ By KimYunmi - Own work, CC BY-SA 4.0 ]*
 
 ### Super Mario 3D

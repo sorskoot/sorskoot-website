@@ -30,4 +30,3 @@ Later the game got a few smaller upgrades and moved beyond the 13k. Although muc
 ## View the original 13k games 2019 Jam entry
 - https://js13kgames.com/entries/back-to-space
 
-![](https://heyvr.io/media/user/thumbnails/d8b22aedab44e2299ad1bec1eb713695-lg.jpg)
