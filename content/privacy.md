@@ -20,7 +20,7 @@ This website does not track you. There are no analytics, no advertising, no cook
 ## Embedded content and links
 
 - Videos (YouTube), Twitch clips and live demos (StackBlitz) are not loaded automatically. You see a placeholder first, and the third-party player only loads after you click it. From that moment, that provider receives your IP address and may set cookies, under its own privacy policy. You can also use the link on the placeholder to open the content on the provider's site instead.
-- Share links (LinkedIn, Bluesky, email) and the "Support me" link to Ko-fi are plain links. They only contact those services if you click them.
+- Share links (LinkedIn, Bluesky, X, email) and the "Support me" link to Ko-fi are plain links. They only contact those services if you click them.
 - Other links on this site lead to external websites that have their own privacy policies.
 
 ## Contact

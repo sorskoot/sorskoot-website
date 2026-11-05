@@ -15,4 +15,4 @@ The tracker removal is done (ShareThis, Disqus, Google Fonts, Ko-fi widget, CDN 
 - [x] **Commit the changes.** Done.
 - [x] **Missing favicon.ico.** Done: `static/favicon.ico` is made from `icons/gt_favicon.png`. It is only 16x16, so replace it with a sharper icon later if you want.
 - [x] **404s from Meta's crawler.** Done: the crawler invents URLs with the wrong date (our feed and sitemap are correct), so there are no redirects. Instead there is a real `layouts/404.html` and `static/.htaccess` (`ErrorDocument 404 /404.html`).
-- [ ] **Check the 404 page on the live site.** Open a URL that does not exist. If you still see the host's bare "not found" page, the host is not using the `.htaccess` file. Then set the 404 page to `/404.html` in the hosting portal.
+- [x] **Check the 404 page on the live site.** Done: works correctly. Open a URL that does not exist. If you still see the host's bare "not found" page, the host is not using the `.htaccess` file. Then set the 404 page to `/404.html` in the hosting portal.
