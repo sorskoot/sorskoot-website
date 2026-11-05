@@ -2,7 +2,6 @@ refLinksErrorLevel = "ERROR"
 baseURL = "localhost"
 locale = "en-us"
 title = "Timmy Kokke"
-theme = "initio"
 paginate = 10
 pluralizeListTitles = false
 

@@ -17,7 +17,7 @@ There are no tests or linters. Deployment is automatic: pushing to `master` runs
 
 ## Structure
 
-- Theme is `initio`, vendored in `themes/initio/` (not a submodule). Site-level overrides live in `layouts/` and take precedence over the theme; edit `layouts/`, not the theme.
+- There is no theme. All templates live in `layouts/`. The site started from the MIT-licensed `initio` theme, whose license is kept in `layouts/LICENSE-initio.md`.
 - `content/blog/<year>/YYYY-MM-DD-Title.md` holds posts. `content/blog/drafts/` holds unfinished posts. `content/devlogs/` has per-project devlog folders.
 - Images go in `static/images/<year>/<month>/` and are referenced as `/images/<year>/<month>/file.png`.
 - `data/*.json` (games, recentworks, agenda, slides) feeds the home page partials in `layouts/partials/`; toggles for those sections are the `show*` params in `config.toml`.
