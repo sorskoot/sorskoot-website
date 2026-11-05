@@ -7,13 +7,13 @@ weight = 10
 
 Timmy has been described as an expert in C#, JavaScript and web technologies. He is a senior developer, technical lead with a lot of knowledge about architecture. He has been building software, primarily for the web, for over 2 decades ranging from large web portals and mobile apps to creating 3D artist impressions and virtual reality.
 
-Timmy currently works at Senior WebXR Solutions Architect at [Wonderland GmbH](https://wonderlandengine.com). He founded the [WebXR NL meetup](https://webxr.nl) and helps running the [WebXR Discord](https://discord.gg/webxr). He is on twitter at [@sorskoot](https://twitter.com/sorskoot), blogs regularly on <https://timmykokke.com> and you can find him coding live at <https://youtube.com/sorskoot>.
+Timmy currently works as a Software Engineer at [Team Rockstars IT](https://www.teamrockstars.nl). He founded the [WebXR NL meetup](https://webxr.nl) and helps running the [WebXR Discord](https://discord.gg/webxr). He is on twitter at [@sorskoot](https://twitter.com/sorskoot), blogs regularly on <https://timmykokke.com> and you can find him coding live at <https://youtube.com/sorskoot>.
 
 ![about](../images/mac.jpg)
 
 ## DISCLAIMER
 
-Last updated: **July, 2025**
+Last updated: **November, 2026**
 
 ### WEBSITE DISCLAIMER
 
@@ -22,7 +22,7 @@ The views expressed on this Site are strictly my own and do not necessarily refl
 
 ### EXTERNAL LINKS DISCLAIMER
 
-The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability or completeness by me. I DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE OR ANY WEBSITE OR FEATURE LINKED IN ANY BANNER OR OTHER ADVERTISING. I WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.
+The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other promotions. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability or completeness by me. I DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE OR ANY WEBSITE OR FEATURE LINKED IN ANY BANNER OR OTHER PROMOTION. I WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.
 
 ### PROFESSIONAL DISCLAIMER
 
@@ -32,5 +32,4 @@ The Site cannot and does not contain software developer advice. The software dev
 
 The Site may contain links to affiliate websites, and I might receive an affiliate commission for any purchases made by you on the affiliate website using such links. Our affiliates include the following:
 
-- Manning Publishing
 - Humble Bundle
